@@ -1,0 +1,958 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>College Football Ratings · Pace &amp; Pate Analytics</title>
+<meta name="description" content="2026 college football ratings, win probabilities, projections, PnP Resume rankings, player values and Kalshi/Vegas comparisons from Pace &amp; Pate Analytics. Projections, not betting advice.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap">
+<style>
+:root {
+  --font-anthropic-sans: "Inter", system-ui, -apple-system, "Segoe UI", sans-serif;
+  --font-anthropic-serif: "Source Serif 4", Georgia, serif;
+  --color-fg: #1d1f23; --color-fg-muted: #6b6f76; --color-bg: #f6f5f2; --color-panel: #ffffff; --color-border-line: #e2e0da;
+  --color-ok: #1a7f37; --color-bad: #c0392b; --color-warn: #b7791f;
+  --cds-chart-muted: #c9ccd1; --cds-chart-1: #2f6fdd;
+  --cds-gap-xs: 4px; --cds-gap-sm: 8px; --cds-gap-md: 12px; --cds-gap-lg: 20px;
+  --cds-pad-xs: 4px; --cds-pad-sm: 8px; --cds-pad-md: 12px; --cds-pad-lg: 16px;
+  --cds-radius: 8px; --cds-font-size-caption: 12px; --cds-font-size-body: 14px; --cds-font-size-heading: 18px; --cds-font-size-title: 26px;
+  --cds-font-weight-medium: 600; --cds-dur-slow: .3s;
+  color-scheme: light;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --color-fg: #e8e6e1; --color-fg-muted: #9a9ea6; --color-bg: #15171a; --color-panel: #1d2024; --color-border-line: #33373d;
+  --color-ok: #4cc06a; --color-bad: #ef6b5b; --color-warn: #e0a548; --cds-chart-muted: #4a4f57; --cds-chart-1: #6ea2f5; color-scheme: dark; } }
+:root[data-theme="dark"] {
+  --color-fg: #e8e6e1; --color-fg-muted: #9a9ea6; --color-bg: #15171a; --color-panel: #1d2024; --color-border-line: #33373d;
+  --color-ok: #4cc06a; --color-bad: #ef6b5b; --color-warn: #e0a548; --cds-chart-muted: #4a4f57; --cds-chart-1: #6ea2f5; color-scheme: dark; }
+html { -webkit-text-size-adjust: 100%; }
+[hidden] { display: none !important; }
+body { margin: 0; background: var(--color-bg); color: var(--color-fg); font-family: var(--font-anthropic-sans); }
+.site-top { border-bottom: 1px solid var(--color-border-line); background: var(--color-panel); }
+.site-top .in, .site-main, .site-foot .in { max-width: 1240px; margin: 0 auto; padding: 12px 16px; box-sizing: border-box; }
+.site-top .in { display: flex; justify-content: space-between; align-items: baseline; gap: 8px 16px; flex-wrap: wrap; }
+.site-top .brand { font-family: var(--font-anthropic-serif); font-weight: 600; font-size: 18px; }
+.site-top .asof { font-size: 12px; color: var(--color-fg-muted); }
+.site-main { padding-top: 20px; padding-bottom: 32px; }
+.site-foot { border-top: 1px solid var(--color-border-line); font-size: 12px; color: var(--color-fg-muted); }
+.site-foot a { color: inherit; }
+select, input { font: inherit; color: var(--color-fg); background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: 6px; padding: 4px 8px; }
+:root { --cds-chart-grid: var(--color-border-line); --cds-surface-popover: var(--color-panel); --cds-border: var(--color-border-line);
+  --cds-shadow-popover: 0 4px 16px rgba(0,0,0,.12); --cds-text-secondary: var(--color-fg-muted); }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="js/dash.js"></script>
+</head>
+<body>
+<header class="site-top"><div class="in"><span class="brand">Pace &amp; Pate Analytics · College Football</span><span class="asof" id="site-asof">Updated every morning</span></div></header>
+<main class="site-main" id="dash-root">
+<style>
+.cf { font-family: var(--font-anthropic-sans); color: var(--color-fg); display: flex; flex-direction: column; gap: var(--cds-gap-lg); }
+.cf h1 { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: 0; }
+.cf .lede { color: var(--color-fg-muted); margin: var(--cds-gap-xs) 0 0; font-size: var(--cds-font-size-body); max-width: 60rem; line-height: 1.5; }
+.cf .lede b { color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.cf .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap: var(--cds-gap-md); }
+.cf .card { background: var(--color-panel); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); padding: var(--cds-pad-lg); min-width: 0; }
+.cf .card h2 { font-size: var(--cds-font-size-heading); font-weight: var(--cds-font-weight-medium); margin: 0; }
+.cf .note { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); margin: var(--cds-gap-xs) 0 var(--cds-gap-md); line-height: 1.45; }
+.cf .tile .label { color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); }
+.cf .tile .big { font-family: var(--font-anthropic-serif); font-weight: 400; font-size: var(--cds-font-size-title); margin: var(--cds-gap-xs) 0; font-variant-numeric: tabular-nums; line-height: 1.15; }
+.cf .tile .sub { font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); font-variant-numeric: tabular-nums; }
+.cf .controls { display: flex; gap: var(--cds-gap-sm); flex-wrap: wrap; align-items: center; margin-bottom: var(--cds-gap-sm); }
+.cf input[type=search], .cf select { font: inherit; font-size: var(--cds-font-size-body); padding: var(--cds-pad-xs) var(--cds-pad-sm); border: 1px solid var(--color-border-line); border-radius: var(--cds-radius); background: var(--color-bg); color: var(--color-fg); min-width: 0; max-width: 100%; }
+.cf input[type=search] { flex: 1 1 12rem; max-width: 22rem; }
+.cf .scroll { max-height: 600px; overflow: auto; }
+.cf table { width: 100%; border-collapse: collapse; font-size: var(--cds-font-size-body); font-variant-numeric: tabular-nums; }
+.cf th { position: sticky; top: 0; background: var(--color-panel); text-align: right; font-weight: var(--cds-font-weight-medium); font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; z-index: 1; }
+.cf th.l, .cf td.l { text-align: left; }
+.cf td { text-align: right; padding: var(--cds-pad-xs) var(--cds-pad-sm); border-bottom: 1px solid var(--color-border-line); white-space: nowrap; }
+.cf td.team { font-weight: var(--cds-font-weight-medium); white-space: normal; min-width: 8rem; }
+.cf .barcell { display: flex; align-items: center; gap: var(--cds-gap-sm); justify-content: flex-end; }
+.cf .bar { height: 8px; border-radius: 4px; background: var(--cds-chart-muted); }
+.cf .up { color: var(--color-ok); } .cf .down { color: var(--color-bad); }
+.cf td.big { font-weight: var(--cds-font-weight-medium); color: var(--color-fg); }
+.cf td.qb { white-space: normal; min-width: 14rem; max-width: 24rem; text-align: left; font-size: var(--cds-font-size-caption); color: var(--color-warn); }
+.cf .chk { display: inline-flex; gap: var(--cds-gap-xs); align-items: center; font-size: var(--cds-font-size-body); color: var(--color-fg-muted); }
+@media (max-width: 720px) { .cf .hide-narrow { display: none; } }
+.cf .tabs { display: flex; gap: var(--cds-gap-xs); flex-wrap: wrap; border-bottom: 1px solid var(--color-border-line); }
+.cf .tabs button { font: inherit; font-size: var(--cds-font-size-body); background: none; border: 0; border-bottom: 2px solid transparent; color: var(--color-fg-muted); padding: var(--cds-pad-xs) var(--cds-pad-sm); cursor: pointer; margin-bottom: -1px; }
+.cf .tabs button[aria-selected="true"] { color: var(--color-fg); border-bottom-color: var(--color-fg); font-weight: var(--cds-font-weight-medium); }
+.cf .two { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); gap: var(--cds-gap-lg); }
+.cf .method p { margin: 0 0 var(--cds-gap-sm); font-size: var(--cds-font-size-body); line-height: 1.5; }
+.cf .pf-head { display: flex; justify-content: space-between; gap: var(--cds-gap-md); flex-wrap: wrap; align-items: flex-start; }
+.cf .chartbox { position: relative; min-height: 220px; }
+.cf .chartbox svg { display: block; }
+.cf .chartbox .ax { fill: var(--color-fg-muted); font-size: 11px; }
+.cf .chartbox .lab { fill: var(--color-fg); font-size: 12px; }
+.cf .chartbox .grid { stroke: var(--cds-chart-grid); }
+.cf .tip { position: absolute; pointer-events: none; background: var(--cds-surface-popover); border: 1px solid var(--cds-border); border-radius: var(--cds-radius); box-shadow: var(--cds-shadow-popover); padding: var(--cds-pad-xs) var(--cds-pad-sm); font-size: var(--cds-font-size-caption); white-space: nowrap; }
+.cf .tip .k { color: var(--cds-text-secondary); }
+.cf .legend { display: flex; gap: var(--cds-gap-md); flex-wrap: wrap; font-size: var(--cds-font-size-caption); color: var(--color-fg-muted); margin-bottom: var(--cds-gap-sm); }
+.cf .legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 4px; vertical-align: middle; }
+.cf [data-dash-source-state=empty] { color: transparent; }
+.cf [data-dash-source-state=refreshing] { opacity: .5; transition: opacity var(--cds-dur-slow); }
+.cf .fail { display: flex; align-items: center; justify-content: center; gap: var(--cds-gap-xs); color: var(--color-fg-muted); font-size: var(--cds-font-size-caption); min-height: 4rem; }
+.cf .fail::before { content: ""; width: .375rem; height: .375rem; border-radius: 50%; background: var(--color-bad); }
+</style>
+
+<div class="cf">
+  <header id="top">
+    <h1>2026 college football ratings</h1>
+    <p class="lede"><b data-draw="top-team" data-source="current" data-field="team" data-row="0">—</b> is No. 1 right now, <b data-draw="top-net" data-source="current" data-field="rating" data-row="0">—</b> points better than an average FBS team on a neutral field. Every team's rating starts from its preseason rating and is updated after each game by both the final score and the play-by-play efficiency (expected points added), against every opponent including FCS teams. Projections, not betting advice.</p>
+  </header>
+
+  <nav class="tabs" role="tablist" aria-label="Sections">
+    <button type="button" role="tab" data-t="ratings" aria-selected="true">Ratings</button>
+    <button type="button" role="tab" data-t="week" aria-selected="false">This week</button>
+    <button type="button" role="tab" data-t="projections" aria-selected="false">Projections</button>
+    <button type="button" role="tab" data-t="resume" aria-selected="false">Resume</button>
+    <button type="button" role="tab" data-t="players" aria-selected="false">Players</button>
+    <button type="button" role="tab" data-t="teams" aria-selected="false">Teams</button>
+    <button type="button" role="tab" data-t="preseason" aria-selected="false">Preseason</button>
+    <button type="button" role="tab" data-t="method" aria-selected="false">How it's built</button>
+  </nav>
+
+  <section class="tiles" id="headline" data-tab="ratings">
+    <div class="card tile">
+      <div class="label">No. 1 right now</div>
+      <div class="big" data-draw="top-team" data-source="current" data-field="team" data-row="0">—</div>
+      <div class="sub"><span data-draw="top-net" data-source="current" data-field="rating" data-row="0">—</span> pts vs an average FBS team · preseason No. <span data-draw="top-pre" data-source="current" data-field="pre_rank" data-row="0">—</span></div>
+    </div>
+    <div class="card tile">
+      <div class="label">Biggest climb since the preseason</div>
+      <div class="big" data-draw="mv-up-team" data-source="movers" data-field="team" data-where="kind=riser">—</div>
+      <div class="sub">Up <span data-draw="mv-up-n" data-source="movers" data-field="rank_change" data-where="kind=riser">—</span> spots, to No. <span data-draw="mv-up-rank" data-source="movers" data-field="rank" data-where="kind=riser">—</span></div>
+    </div>
+    <div class="card tile">
+      <div class="label">Biggest drop since the preseason</div>
+      <div class="big" data-draw="mv-dn-team" data-source="movers" data-field="team" data-where="kind=faller">—</div>
+      <div class="sub">Down <span data-draw="mv-dn-n" data-source="movers" data-field="rank_change" data-where="kind=faller">—</span> spots, to No. <span data-draw="mv-dn-rank" data-source="movers" data-field="rank" data-where="kind=faller">—</span></div>
+    </div>
+    <div class="card tile">
+      <div class="label">Most likely to win out</div>
+      <div class="big" data-draw="wo-team" data-source="winout" data-field="team" data-row="0">—</div>
+      <div class="sub"><span data-draw="wo-p" data-source="winout" data-field="p_win_out" data-row="0">—</span>% chance to win every remaining regular-season game</div>
+    </div>
+  </section>
+
+  <section class="card" id="current-card" data-tab="ratings">
+    <h2>Current ratings</h2>
+    <p class="note">Rating = projected margin against an average FBS team on a neutral field, in points. ± = how sure the model is: the true rating sits within that range 90% of the time. Offense is EPA per play gained, defense EPA per play allowed (lower is better), both adjusted for opponent. Records include games against FCS teams. "Since preseason" is spots gained or lost from the preseason ranking.</p>
+    <div class="controls"><input type="search" class="q-current" placeholder="Search teams or conferences" aria-label="Search current ratings"></div>
+    <div class="scroll">
+      <table id="current-table" data-source="current" data-row-key="team">
+        <thead><tr>
+          <th data-field="rank">Rank</th>
+          <th class="l" data-field="team">Team</th>
+          <th class="l hide-narrow" data-field="conf">Conf</th>
+          <th data-field="wins">W</th>
+          <th data-field="losses">L</th>
+          <th data-field="rating">Rating</th>
+          <th class="hide-narrow" data-field="plus_minus">±</th>
+          <th class="hide-narrow" data-field="off_epa">Off EPA</th>
+          <th class="hide-narrow" data-field="def_epa">Def EPA</th>
+          <th data-field="rank_change">Since preseason</th>
+          <th class="hide-narrow" data-field="pre_rank">Preseason rank</th>
+        </tr></thead>
+        <tbody data-draw="current-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="tracker-card" data-tab="ratings">
+    <h2>How the model is doing this season</h2>
+    <p class="note">Every prediction is logged before kickoff and scored once the game is final; nothing is scored after the fact. "Model said" is the average win probability given the favorite; "Favorite won" is how often it did. Brier score: lower is better (a coin flip scores 0.250).</p>
+    <span data-draw="tracker-state" data-source="tracker"></span>
+    <p class="note tracker-empty" hidden>No logged games scored yet. Logging starts with this week's games; the first results post once they're final.</p>
+    <table id="tracker-table" class="tracker-full" data-source="tracker" data-row-key="group">
+      <thead><tr>
+        <th class="l" data-field="group">Games where the model said</th>
+        <th data-field="games">Games</th>
+        <th data-field="model_said">Model said</th>
+        <th data-field="favorite_won">Favorite won</th>
+        <th class="hide-narrow" data-field="brier">Brier</th>
+        <th class="hide-narrow" data-field="avg_margin_miss">Avg margin miss</th>
+      </tr></thead>
+      <tbody data-draw="tracker-body"></tbody>
+    </table>
+  </section>
+
+  <section class="card" id="week-card" data-tab="week" hidden>
+    <h2>This week: our win probabilities vs Kalshi</h2>
+    <p class="note">Kalshi prices as of <b data-draw="kx-asof" data-source="kx_asof" data-field="asof_et" data-row="0">—</b> ET. We differ from Kalshi by <span data-draw="diff-flag">—</span> or more percentage points on <b data-draw="kx-big" data-source="kx_counts" data-field="big" data-row="0">—</b> of the <b data-draw="kx-live" data-source="kx_counts" data-field="live" data-row="0">—</b> games with a live price.</p>
+    <p class="note">Kalshi is that market's price for our favorite: the midpoint of its bid and ask. Ours − Kalshi is our win probability minus Kalshi's, in percentage points. Model side is the team our model likes more against Kalshi's buy price (the ask), and gap after fee is our win probability for that team minus the buy price and Kalshi's taker fee, in cents per $1 contract; gaps of <span data-draw="gap-flag">—</span>¢ or more are highlighted. Vegas-implied is the favorite's win probability implied by the current Vegas spread. QB news marks a team whose quarterback in its last game wasn't its usual starter, plus any injury news we've added by hand: the model can't see who's playing, so a big gap on a QB-news game is usually the market pricing the quarterback in. Thinly traded markets can sit far from a fair price. Prices are a snapshot from the time above, not live, and gaps go blank once a game kicks off. Against the Vegas close in 2023–2026, our biggest disagreements with the market were more often our mistakes than the market's, so read a big gap as a reason to check our number first. Research comparison, not betting advice.</p>
+    <div class="controls">
+      <label class="chk"><input type="checkbox" class="kx-only"> Only games where we differ by <span data-draw="diff-flag">—</span>+ points</label>
+      <label class="chk"><input type="checkbox" class="kx-noqb"> Hide games with QB or injury news</label>
+      <label class="chk">Sort <select class="kx-sort" aria-label="Sort this week's games"><option value="kick">by kickoff</option><option value="diff">by biggest difference</option><option value="gap">by gap after fee</option></select></label>
+    </div>
+    <p class="note">Every remaining game this week involving an FBS team, including games against FCS opponents, from the latest ratings. Margin = projected margin for the favorite, in points. Win probability includes how sure the model is about both teams. Tested on the 2023–2025 seasons with every prediction made before kickoff: when it said 75%, favorites won 75% of the time; at 85%, 86%. Projections, not betting advice.</p>
+    <div class="scroll">
+      <table id="week-table" data-source="this_week" data-row-key="game_id">
+        <thead><tr>
+          <th class="l" data-field="day">Day</th>
+          <th class="l hide-narrow" data-field="time_et">Time (ET)</th>
+          <th class="l" data-field="game">Game</th>
+          <th class="l hide-narrow" data-field="favorite">Favorite</th>
+          <th data-field="win_prob">Our win %</th>
+          <th data-field="margin">Margin</th>
+          <th data-field="kalshi_p">Kalshi</th>
+          <th class="hide-narrow" data-field="vegas_p">Vegas-implied</th>
+          <th data-field="diff_pp">Ours − Kalshi</th>
+          <th class="l hide-narrow" data-field="side_team">Model side</th>
+          <th class="hide-narrow" data-field="side_buy">Kalshi buy</th>
+          <th data-field="side_gap">Gap after fee</th>
+          <th class="l" data-field="qb_flag">QB / injury news</th>
+          <th class="l hide-narrow" data-field="kalshi_state">Kalshi market</th>
+          <th class="hide-narrow" data-field="kalshi_volume">Traded</th>
+        </tr></thead>
+        <tbody data-draw="week-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="spreads-card" data-tab="week" hidden>
+    <h2>Kalshi spreads vs Vegas</h2>
+    <p class="note">For each game, the Kalshi spread market ("wins by over X points") priced furthest below its fair price, where fair comes from the current Vegas spread and accounts for key numbers: college football margins pile up on 3, 7, 10, 14, 17 and 21, so a half point across 3 or 7 is worth far more than one across 5. Gap after fee = fair price minus Kalshi's buy price and taker fee, in cents per $1 contract. Our cover % for the same bet is context only: tested against closing spreads from 2017 on, our projected margin has added nothing beyond the Vegas line, so the fair price comes from Vegas, not from us. The Vegas line is the latest one pulled and can lag a moving market; thin Kalshi markets (little traded) may not fill at the price shown. Research comparison, not betting advice.</p>
+    <div class="controls">
+      <label class="chk"><input type="checkbox" class="sp-noqb"> Hide games with QB or injury news</label>
+    </div>
+    <div class="scroll">
+      <table id="spreads-table" data-source="kalshi_spreads" data-row-key="game_id">
+        <thead><tr>
+          <th class="l" data-field="day">Day</th>
+          <th class="l hide-narrow" data-field="time_et">Time (ET)</th>
+          <th class="l" data-field="game">Game</th>
+          <th class="l" data-field="vegas_line">Vegas line</th>
+          <th class="l hide-narrow" data-field="our_line">Our line</th>
+          <th class="l" data-field="bet">Kalshi market</th>
+          <th data-field="price">Buy</th>
+          <th data-field="fair_vegas">Fair (Vegas)</th>
+          <th data-field="gap_vs_vegas">Gap after fee</th>
+          <th class="hide-narrow" data-field="our_cover">Our cover %</th>
+          <th class="l" data-field="qb_flag">QB / injury news</th>
+          <th class="hide-narrow" data-field="volume">Traded</th>
+        </tr></thead>
+        <tbody data-draw="spreads-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="proj-card" data-tab="projections" hidden>
+    <h2>Projected regular-season records</h2>
+    <p class="note">Every remaining regular-season game, including those against FCS teams, simulated 10,000 times. Each simulation first draws how good every team really is from the model's own uncertainty (the ± on the Ratings tab), lets each team's form drift week to week, then plays the schedule, so a team better than its rating wins more of all its games, not just a few. Range = the middle 80% of simulated win totals. 6+ wins = chance of reaching six regular-season wins (bowl eligibility counts at most one FCS win, so read it as a guide). Excludes conference championship games and bowls. Projections, not betting advice.</p>
+    <div class="controls">
+      <input type="search" class="q-proj" placeholder="Search teams" aria-label="Search projections">
+      <select data-draw="conf-select" data-source="projections" aria-label="Conference"></select>
+    </div>
+    <div class="scroll">
+      <table id="proj-table" data-source="projections" data-row-key="team">
+        <thead><tr>
+          <th data-field="rank">Rank</th>
+          <th class="l" data-field="team">Team</th>
+          <th class="l hide-narrow" data-field="conf">Conf</th>
+          <th data-field="record_now">Now</th>
+          <th class="hide-narrow" data-field="games_left">Left</th>
+          <th data-field="proj_record">Projected</th>
+          <th data-field="w_range">Win range</th>
+          <th data-field="p_win_out">Win out</th>
+          <th class="hide-narrow" data-field="p_bowl">6+ wins</th>
+        </tr></thead>
+        <tbody data-draw="proj-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tiles" id="resume-tiles" data-tab="resume" hidden>
+    <div class="card tile">
+      <div class="label">No. 1 PnP Resume</div>
+      <div class="big" data-draw="rs-top" data-source="resume" data-field="team" data-row="0">—</div>
+      <div class="sub"><span data-draw="rs-top-w" data-source="resume" data-field="wins" data-row="0">—</span>–<span data-draw="rs-top-l" data-source="resume" data-field="losses" data-row="0">—</span> · <span data-draw="rs-top-wab" data-source="resume" data-field="wab" data-row="0">—</span> wins above a playoff team</div>
+    </div>
+    <div class="card tile">
+      <div class="label">Resume well ahead of its rating</div>
+      <div class="big" data-draw="rs-over-team" data-source="resume_gaps" data-field="team" data-where="kind=over">—</div>
+      <div class="sub">Resume No. <span data-draw="rs-over-r" data-source="resume_gaps" data-field="resume_rank" data-where="kind=over">—</span> · power rating No. <span data-draw="rs-over-p" data-source="resume_gaps" data-field="power_rank" data-where="kind=over">—</span></div>
+    </div>
+    <div class="card tile">
+      <div class="label">Rating well ahead of its resume</div>
+      <div class="big" data-draw="rs-under-team" data-source="resume_gaps" data-field="team" data-where="kind=under">—</div>
+      <div class="sub">Power rating No. <span data-draw="rs-under-p" data-source="resume_gaps" data-field="power_rank" data-where="kind=under">—</span> · resume No. <span data-draw="rs-under-r" data-source="resume_gaps" data-field="resume_rank" data-where="kind=under">—</span></div>
+    </div>
+    <div class="card tile">
+      <div class="label">Luckiest top-25 resume</div>
+      <div class="big" data-draw="rs-lucky-team" data-source="resume_luck" data-field="team" data-row="0">—</div>
+      <div class="sub"><span data-draw="rs-lucky-w" data-source="resume_luck" data-field="wins" data-row="0">—</span> wins, <span data-draw="rs-lucky-x" data-source="resume_luck" data-field="xwins" data-row="0">—</span> deserved · resume No. <span data-draw="rs-lucky-r" data-source="resume_luck" data-field="resume_rank" data-row="0">—</span>, deserved No. <span data-draw="rs-lucky-d" data-source="resume_luck" data-field="d_resume_rank" data-row="0">—</span></div>
+    </div>
+  </section>
+
+  <section class="card" id="resume-card" data-tab="resume" hidden>
+    <h2>Resume rankings</h2>
+    <p class="note">What each team has done, not how good it is. Built for a top-25 ballot: the power rating on the Ratings tab answers "who would win?", this answers "who has earned it?"</p>
+    <p class="note"><b>PnP Resume</b> is our top 25. It blends wins above a playoff team (70%) with Colley (30%), using only actual wins and losses, then respects head-to-head: when two teams are comparable (the winner has no more losses, the two are close on the blend, and the move is 6 spots or fewer), the winner ranks directly above the team it beat, unless that would put it above a team that beat it. "Elite team matches" is the chance a top-4 team would match the record against the same schedule; lower is harder. The other columns are the pieces, so you can check every spot.</p>
+    <p class="note">Wins above a playoff team = actual wins minus the wins a playoff-caliber team (our No. <b data-draw="rs-bench">—</b>) would expect against the same schedule, at the same sites. Opponent strength comes from our ratings; the team's own rating plays no part, and margin doesn't matter, only wins and losses. "Playoff team matches" is the chance that team would do as well or better: lower is a harder record to earn. Colley is the classic computer ranking from wins and losses alone, adjusted for schedule, with no margin, site or preseason opinion. Schedule rank = how many losses a playoff team would expect against it (No. 1 is the hardest). Rating vs resume = power-rating rank minus resume rank: positive means the resume is better than the team. FCS opponents count, as one pooled FCS team. Ranks of best wins and losses are power-rating ranks.</p>
+    <p class="note">Deserved versions take the luck out. Deserved wins = for each game, the chance a team wins when it plays the way it did (its play-by-play efficiency margin, with garbage time removed; the scoreboard and site play no part), added up over the season. Luck = actual wins minus deserved wins: +2 means about two more wins than the play earned. Deserved resume and deserved Colley rebuild both rankings from those deserved results. Composite = the average of all four ranks. Some of what looks like luck is real: since 2015, teams that won more than their play earned kept beating expectations a little, from things efficiency misses such as special teams and finishing drives. So read luck as "this record flatters them", not as a prediction.</p>
+    <div class="controls">
+      <input type="search" class="q-resume" placeholder="Search teams or conferences" aria-label="Search resume rankings">
+      <label class="chk">Rank by <select class="rs-sort" aria-label="Rank resume table by"><option value="pnp">PnP Resume</option><option value="wab">wins above a playoff team</option><option value="dwab">deserved resume</option><option value="colley">Colley</option><option value="dcolley">deserved Colley</option><option value="composite">composite of all four</option><option value="luck">luck (most first)</option></select></label>
+    </div>
+    <div class="scroll">
+      <table id="resume-table" data-source="resume" data-row-key="team">
+        <thead><tr>
+          <th data-field="pnp_rank">PnP Resume</th>
+          <th class="l" data-field="team">Team</th>
+          <th class="l hide-narrow" data-field="conf">Conf</th>
+          <th data-field="wins">W</th>
+          <th data-field="losses">L</th>
+          <th data-field="wab">Wins above playoff team</th>
+          <th class="hide-narrow" data-field="p_match">Playoff team matches</th>
+          <th class="hide-narrow" data-field="p_match4">Elite team matches</th>
+          <th data-field="resume_rank">WAB rank</th>
+          <th data-field="colley_rank">Colley</th>
+          <th data-field="xwins">Deserved W</th>
+          <th data-field="luck">Luck</th>
+          <th data-field="d_resume_rank">Deserved resume</th>
+          <th class="hide-narrow" data-field="d_colley_rank">Deserved Colley</th>
+          <th data-field="composite_rank">Composite</th>
+          <th data-field="power_rank">Power rating</th>
+          <th class="hide-narrow" data-field="rank_gap">Rating vs resume</th>
+          <th class="hide-narrow" data-field="sched_rank">Schedule</th>
+          <th class="l" data-field="best_win">Best win</th>
+          <th class="l hide-narrow" data-field="losses_to">Losses</th>
+          <th class="l hide-narrow" data-field="pnp_note">Head-to-head</th>
+        </tr></thead>
+        <tbody data-draw="resume-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="tiles" id="player-tiles" data-tab="players" hidden>
+    <div class="card tile">
+      <div class="label">Most valuable quarterback</div>
+      <div class="big" data-draw="pl-qb" data-source="player_tops" data-field="player" data-where="kind=QB">—</div>
+      <div class="sub"><span data-draw="pl-qb-team" data-source="player_tops" data-field="team" data-where="kind=QB">—</span> · <span data-draw="pl-qb-v" data-source="player_tops" data-field="value_pg" data-where="kind=QB">—</span> pts per game above a backup</div>
+    </div>
+    <div class="card tile">
+      <div class="label">Most valuable running back</div>
+      <div class="big" data-draw="pl-rb" data-source="player_tops" data-field="player" data-where="kind=RB">—</div>
+      <div class="sub"><span data-draw="pl-rb-team" data-source="player_tops" data-field="team" data-where="kind=RB">—</span> · <span data-draw="pl-rb-v" data-source="player_tops" data-field="value_pg" data-where="kind=RB">—</span> pts per game above an average back</div>
+    </div>
+    <div class="card tile">
+      <div class="label">Most productive receiver</div>
+      <div class="big" data-draw="pl-wr" data-source="player_tops" data-field="player" data-where="kind=WR/TE">—</div>
+      <div class="sub"><span data-draw="pl-wr-team" data-source="player_tops" data-field="team" data-where="kind=WR/TE">—</span> · <span data-draw="pl-wr-v" data-source="player_tops" data-field="value_pg" data-where="kind=WR/TE">—</span> EPA per game on his targets</div>
+    </div>
+  </section>
+
+  <section class="card" id="players-card" data-tab="players" hidden>
+    <h2>Player values</h2>
+    <p class="note">Each position is valued the way it held up best when we tested it on later seasons, in points per game. Quarterbacks: expected points added per play (passes, sacks and runs), shrunk toward the league average until he has about 150 plays, minus what a backup-level quarterback produces, times his plays per game. Archetype comes from how he plays (how often he runs, sacks and throwaways, volume), not how well. Running backs: the model's estimate of expected points per carry above an average back after taking out his offensive line and play-calling (the offense's own effect) and the defenses he faced, times carries per game. Receivers: there is no reliable skill number for receivers (their EPA is mostly the quarterback and the offense), so value here is the EPA on passes thrown his way per game, a description of production, not a rating. Target share and air yards per target (aDOT) are the steadier signals. YAC = yards after the catch per catch; CPOE = completion percentage over expected on his targets. Qualifying: 100+ QB plays, 50+ carries, 25+ targets. FBS teams only.</p>
+    <div class="controls">
+      <label class="chk">Position <select class="pl-group" aria-label="Position group"><option value="QB">Quarterbacks</option><option value="RB">Running backs</option><option value="WR/TE">Receivers (WR / TE)</option></select></label>
+      <input type="search" class="q-players" placeholder="Search players, teams or conferences" aria-label="Search players">
+    </div>
+    <div class="scroll">
+      <table id="players-table" data-source="players" data-row-key="player_id">
+        <thead><tr>
+          <th data-field="pos_rank">Rank</th>
+          <th class="l" data-field="player">Player</th>
+          <th class="l" data-field="pos">Pos</th>
+          <th class="l" data-field="team">Team</th>
+          <th class="l hide-narrow" data-field="conf">Conf</th>
+          <th class="hide-narrow" data-field="games">G</th>
+          <th class="l hide-narrow" data-field="usage">Usage</th>
+          <th data-field="value_pg">Value (pts/g)</th>
+          <th data-field="epa_play">EPA per play</th>
+          <th class="pl-col" data-cols="QB RB" data-field="adj">Adjusted EPA</th>
+          <th data-field="share">Team share</th>
+          <th class="l pl-col" data-cols="QB" data-field="archetype">Archetype</th>
+          <th class="pl-col" data-cols="RB" data-field="ypc">Yds per carry</th>
+          <th class="pl-col" data-cols="WR/TE" data-field="adot">aDOT</th>
+          <th class="pl-col" data-cols="WR/TE" data-field="yac">YAC</th>
+          <th class="pl-col hide-narrow" data-cols="WR/TE" data-field="cpoe">CPOE</th>
+        </tr></thead>
+        <tbody data-draw="players-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="team-card" data-tab="teams" hidden>
+    <div class="pf-head">
+      <div>
+        <h2>Team profile</h2>
+        <p class="note">Opponent-adjusted efficiency this season. Percentiles compare with every rated FBS team; higher is better for both offense and defense.</p>
+      </div>
+      <select data-draw="team-select" data-source="teams" aria-label="Team"></select>
+    </div>
+    <div class="tiles">
+      <div class="tile"><div class="label">Rank · net rating</div><div class="big">No. <span data-draw="tp-rank" data-source="teams" data-field="rank">—</span></div><div class="sub"><span data-draw="tp-net" data-source="teams" data-field="net_pts">—</span> pts vs an average FBS team · <span data-draw="tp-conf" data-source="teams" data-field="conf">—</span></div></div>
+      <div class="tile"><div class="label">Offense (EPA per play)</div><div class="big" data-draw="tp-off" data-source="teams" data-field="off_epa_total">—</div><div class="sub"><span data-draw="tp-off-p" data-source="teams" data-field="off_epa_total_pct">—</span>th percentile</div></div>
+      <div class="tile"><div class="label">Defense (EPA per play allowed)</div><div class="big" data-draw="tp-def" data-source="teams" data-field="def_epa_total">—</div><div class="sub"><span data-draw="tp-def-p" data-source="teams" data-field="def_epa_total_pct">—</span>th percentile</div></div>
+    </div>
+    <h3 class="note" style="margin-top: var(--cds-gap-md)">Percentile by phase</h3>
+    <div class="chartbox" data-draw="tp-chart" data-source="teams"></div>
+  </section>
+
+  <section class="card" id="teams-list" data-tab="teams" hidden>
+    <h2>All teams, efficiency by phase</h2>
+    <p class="note">EPA per play, opponent-adjusted. Defense columns are EPA allowed: lower is better.</p>
+    <div class="controls"><input type="search" class="q-teams" placeholder="Search teams" aria-label="Search teams"></div>
+    <div class="scroll">
+      <table id="teams-table" data-source="teams" data-row-key="team">
+        <thead><tr>
+          <th data-field="rank">Rank</th>
+          <th class="l" data-field="team">Team</th>
+          <th data-field="off_epa_pass">Off pass</th>
+          <th data-field="off_epa_rush">Off rush</th>
+          <th class="hide-narrow" data-field="off_epa_total">Off all</th>
+          <th data-field="def_epa_pass">Def pass</th>
+          <th data-field="def_epa_rush">Def rush</th>
+          <th class="hide-narrow" data-field="def_epa_total">Def all</th>
+        </tr></thead>
+        <tbody data-draw="teams-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="pre-card" data-tab="preseason" hidden>
+    <h2>Preseason ratings (published August 2026)</h2>
+    <p class="note">The ratings every team started the season with, in points vs an average FBS team. Built from roster talent (player-level value and recruiting), the head coach's record of winning above or below his talent, a first-year-coach adjustment, and returning production. This is each team's starting point; every game since has moved it, and how much each game counts is learned from past seasons.</p>
+    <div class="controls"><input type="search" class="q-pre" placeholder="Search teams" aria-label="Search preseason ratings"></div>
+    <div class="scroll">
+      <table id="pre-table" data-source="preseason" data-row-key="team">
+        <thead><tr>
+          <th data-field="rank">Rank</th>
+          <th class="l" data-field="team">Team</th>
+          <th class="l hide-narrow" data-field="conf">Conf</th>
+          <th data-field="rating">Rating</th>
+          <th class="hide-narrow" data-field="talent_z">Talent (z)</th>
+          <th class="hide-narrow" data-field="decayed_cewae">Coach +/−</th>
+          <th class="hide-narrow" data-field="year1_term">New-coach adj.</th>
+        </tr></thead>
+        <tbody data-draw="pre-body"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card method" id="method-card" data-tab="method" hidden>
+    <h2>How the ratings are built, and how good they are</h2>
+    <p class="note">Backtested on every game between FBS teams from 2017 through 2025 that had a closing line, each predicted only from information available before kickoff.</p>
+    <div class="two">
+      <div>
+        <p>The ratings are a Bayesian model. Each team's strength is an estimate with a known uncertainty. It starts the season from the preseason rating (roster talent, the coach's record against his talent, returning production) blended with how the team finished last season, and widens a little each week because teams change.</p>
+        <p>Every game then updates both teams twice over: once from the final score (with lopsided blowouts trimmed) and once from the play-by-play efficiency margin, the expected points each offense added. The model learns from past seasons how much to trust each reading, how fast the preseason rating should give way to results, and how much home field is worth (about 2.8 points this season; it's re-tuned before each season on the previous three). Because beating a team that later proves good keeps paying off, every rating is adjusted for the whole schedule, FCS opponents included.</p>
+        <p>The Vegas closing line is the bar. On the 2023–2025 seasons, which the model never saw while it was being tuned, its average miss was 0.35 points per game larger than the close, and 0.1 late in the season.</p>
+      </div>
+      <div>
+        <div class="legend"><span><i style="background: var(--cds-chart-muted)"></i>Vegas closing line</span><span><i class="sw0"></i>Bayesian model (this dashboard)</span><span><i class="sw1"></i>Previous model (v2)</span><span><i class="sw2"></i>Efficiency only, no preseason prior</span></div>
+        <div class="chartbox" data-draw="bt-chart" data-source="backtest"></div>
+      </div>
+    </div>
+    <table id="bt-table" data-source="backtest" data-row-key="row_id" style="margin-top: var(--cds-gap-md)">
+      <thead><tr>
+        <th class="l" data-field="phase">Weeks</th>
+        <th class="l" data-field="model">Model</th>
+        <th data-field="games">Games</th>
+        <th data-field="mae">Avg miss (pts)</th>
+        <th data-field="win_acc">Winners picked</th>
+      </tr></thead>
+      <tbody data-draw="bt-body"></tbody>
+    </table>
+  </section>
+</div>
+
+<script>
+dash.calc('movers', {
+  inputs: ['current'],
+  title: 'Biggest movers since preseason',
+  description: 'Team with the largest climb and the largest drop from its preseason rank.',
+  fn: (current) => {
+    const rows = current.filter(r => r.rank_change !== '' && r.rank_change != null)
+      .map(r => ({ team: r.team, rank: Number(r.rank), rank_change: Number(r.rank_change) }));
+    const up = rows.reduce((a, b) => (b.rank_change > a.rank_change ? b : a));
+    const dn = rows.reduce((a, b) => (b.rank_change < a.rank_change ? b : a));
+    return [{ kind: 'riser', team: up.team, rank: up.rank, rank_change: up.rank_change },
+            { kind: 'faller', team: dn.team, rank: dn.rank, rank_change: -dn.rank_change }];
+  }
+});
+dash.calc('winout', {
+  inputs: ['projections'],
+  title: 'Most likely to win out',
+  description: 'Team with the highest simulated chance of winning every remaining FBS game.',
+  fn: (projections) => {
+    const rows = projections.filter(r => r.p_win_out !== '' && r.p_win_out != null).map(r => ({ team: r.team, p_win_out: Number(r.p_win_out) }));
+    rows.sort((a, b) => b.p_win_out - a.p_win_out);
+    return rows.slice(0, 1);
+  }
+});
+</script>
+
+<script>
+window.CF = (() => {
+  const f1 = d3.format('.1f'), f0 = d3.format(',.0f'), f3 = d3.format('.3f');
+  const num = (v) => (v === '' || v == null ? NaN : Number(v));
+  const sgn1 = (v) => Number.isNaN(v) ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + f1(Math.abs(v));
+  const sgnE = (v) => Number.isNaN(v) ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + f3(Math.abs(v));
+  const intOr = (v) => Number.isNaN(v) ? '—' : f0(v);
+  const rowsOf = (id) => { const s = dash.data(id); return s.status === 'ok' ? s.data : null; };
+  const failRow = (tbody, cols) => { const tr = document.createElement('tr'); const td = document.createElement('td'); td.colSpan = cols; const d = document.createElement('div'); d.className = 'fail'; d.textContent = 'Failed to load'; td.append(d); tr.append(td); tbody.replaceChildren(tr); };
+  const query = (sel) => { const el = document.querySelector(sel); return el ? el.value.trim().toLowerCase() : ''; };
+  const makeRow = (key) => { const tr = document.createElement('tr'); if (key != null) tr.dataset.key = String(key); const cell = (text, cls) => { const td = document.createElement('td'); if (cls) td.className = cls; td.textContent = text; tr.append(td); return td; }; return { tr, cell }; };
+  return { f1, f0, f3, num, sgn1, sgnE, intOr, rowsOf, failRow, query, makeRow };
+})();
+</script>
+
+<script>
+// tabs: the click sets a filter name no query uses; onData shows the open tab's sections
+const tabButtons = document.querySelectorAll('.cf .tabs button');
+tabButtons.forEach((b) => b.addEventListener('click', () => { dash.setParams({ tab: b.dataset.t }); dash.setLink(b.dataset.t); }));
+const fromHash = location.hash.slice(1);
+if (fromHash && [...tabButtons].some((b) => b.dataset.t === fromHash)) dash.setParams({ tab: fromHash });
+dash.onData(() => {
+  const tab = dash.params().tab || 'ratings';
+  tabButtons.forEach((b) => b.setAttribute('aria-selected', String(b.dataset.t === tab)));
+  document.querySelectorAll('.cf [data-tab]').forEach((s) => { s.hidden = s.dataset.tab !== tab; });
+  const tr = CF.rowsOf('tracker');
+  document.querySelectorAll('.cf .tracker-empty').forEach((el) => { el.hidden = !tr || tr.length > 0; });
+  document.querySelectorAll('.cf .tracker-full').forEach((el) => { el.hidden = !!tr && tr.length === 0; });
+});
+document.querySelectorAll('.cf .q-current').forEach((el) => el.addEventListener('input', () => dash.draw('current-body')));
+document.querySelectorAll('.cf .q-proj').forEach((el) => el.addEventListener('input', () => dash.draw('proj-body')));
+document.querySelectorAll('.cf .q-teams').forEach((el) => el.addEventListener('input', () => dash.draw('teams-body')));
+document.querySelectorAll('.cf .q-pre').forEach((el) => el.addEventListener('input', () => dash.draw('pre-body')));
+</script>
+
+<script>
+// single values
+const one = (name, ds, pick, fmt) => dash.draw(name, (el) => {
+  const rows = CF.rowsOf(ds);
+  const r = rows ? pick(rows) : null;
+  el.textContent = r ? fmt(r) : '—';
+});
+one('top-team', 'current', (r) => r[0], (r) => r.team);
+one('top-net', 'current', (r) => r[0], (r) => CF.sgn1(CF.num(r.rating)));
+one('top-pre', 'current', (r) => r[0], (r) => CF.intOr(CF.num(r.pre_rank)));
+one('mv-up-team', 'movers', (r) => r.find((x) => x.kind === 'riser'), (r) => r.team);
+one('mv-up-n', 'movers', (r) => r.find((x) => x.kind === 'riser'), (r) => CF.f0(r.rank_change));
+one('mv-up-rank', 'movers', (r) => r.find((x) => x.kind === 'riser'), (r) => CF.f0(r.rank));
+one('mv-dn-team', 'movers', (r) => r.find((x) => x.kind === 'faller'), (r) => r.team);
+one('mv-dn-n', 'movers', (r) => r.find((x) => x.kind === 'faller'), (r) => CF.f0(r.rank_change));
+one('mv-dn-rank', 'movers', (r) => r.find((x) => x.kind === 'faller'), (r) => CF.f0(r.rank));
+one('wo-team', 'winout', (r) => r[0], (r) => r.team);
+one('wo-p', 'winout', (r) => r[0], (r) => CF.f1(r.p_win_out));
+
+// current ratings table
+dash.draw('current-body', (tbody) => {
+  const s = dash.data('current');
+  if (s.status === 'error') return CF.failRow(tbody, 11);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const q = CF.query('.q-current');
+  const view = s.data.filter((r) => !q || String(r.team).toLowerCase().includes(q) || String(r.conf).toLowerCase().includes(q));
+  const nets = s.data.map((r) => CF.num(r.rating));
+  const w = d3.scaleLinear([d3.min(nets), d3.max(nets)], [4, 64]);
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(CF.f0(CF.num(r.rank)));
+    cell(r.team, 'l team');
+    cell(r.conf, 'l hide-narrow');
+    cell(CF.intOr(CF.num(r.wins))); cell(CF.intOr(CF.num(r.losses)));
+    const td = document.createElement('td'); const wrap = document.createElement('div'); wrap.className = 'barcell';
+    const bar = document.createElement('div'); bar.className = 'bar'; if (CF.num(r.rank) <= 25) bar.style.background = dash.colors[0];
+    bar.style.width = w(CF.num(r.rating)) + 'px';
+    const t = document.createElement('span'); t.textContent = CF.sgn1(CF.num(r.rating)); wrap.append(bar, t); td.append(wrap); tr.append(td);
+    cell('±' + CF.f1(CF.num(r.plus_minus)), 'hide-narrow');
+    cell(CF.sgnE(CF.num(r.off_epa)), 'hide-narrow');
+    cell(CF.sgnE(CF.num(r.def_epa)), 'hide-narrow');
+    const ch = CF.num(r.rank_change);
+    cell(Number.isNaN(ch) ? '—' : (ch > 0 ? '+' : ch < 0 ? '−' : '') + CF.f0(Math.abs(ch)), Number.isNaN(ch) ? '' : (ch >= 10 ? 'up' : ch <= -10 ? 'down' : ''));
+    cell(CF.intOr(CF.num(r.pre_rank)), 'hide-narrow');
+    return tr;
+  }));
+});
+
+// tracker
+dash.draw('tracker-state', (el) => { el.textContent = ''; });
+dash.draw('tracker-body', (tbody) => {
+  const s = dash.data('tracker');
+  if (s.status === 'error') return CF.failRow(tbody, 6);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  tbody.replaceChildren(...s.data.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(r.group, 'l'); cell(CF.f0(CF.num(r.games)));
+    cell(CF.f1(CF.num(r.model_said)) + '%'); cell(CF.f1(CF.num(r.favorite_won)) + '%');
+    cell(CF.f3(CF.num(r.brier)), 'hide-narrow'); cell(CF.f1(CF.num(r.avg_margin_miss)), 'hide-narrow');
+    return tr;
+  }));
+});
+
+// this week, with Kalshi prices
+const KX_DIFF = 10, KX_GAP = 0.10;
+dash.calc('kx_asof', {
+  inputs: ['this_week'],
+  title: 'Kalshi snapshot time',
+  description: 'When the Kalshi prices on the This week tab were taken, in Eastern time.',
+  fn: (this_week) => {
+    const t = this_week.map((r) => r.kalshi_asof_utc).filter(Boolean).sort().pop();
+    return [{ asof_et: t ? new Date(t).toLocaleString('en-US', { timeZone: 'America/New_York', weekday: 'short', month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit' }) : '' }];
+  }
+});
+dash.calc('kx_counts', {
+  inputs: ['this_week'],
+  title: 'Games where we differ from Kalshi',
+  description: 'Games this week with a live Kalshi price, and how many differ from our win probability by 10 or more percentage points.',
+  fn: (this_week) => {
+    const live = this_week.filter((r) => r.kalshi_state === 'live' && r.diff_pp !== '' && r.diff_pp != null);
+    return [{ live: live.length, big: live.filter((r) => Math.abs(Number(r.diff_pp)) >= 10).length }];
+  }
+});
+dash.draw('diff-flag', (el) => { el.textContent = String(KX_DIFF); });
+dash.draw('gap-flag', (el) => { el.textContent = String(Math.round(KX_GAP * 100)); });
+one('kx-asof', 'kx_asof', (r) => r[0], (r) => r.asof_et || '—');
+one('kx-big', 'kx_counts', (r) => r[0], (r) => CF.f0(r.big));
+one('kx-live', 'kx_counts', (r) => r[0], (r) => CF.f0(r.live));
+dash.draw('week-body', (tbody) => {
+  const s = dash.data('this_week');
+  if (s.status === 'error') return CF.failRow(tbody, 15);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  let only = false, noqb = false, sort = 'kick';
+  document.querySelectorAll('.cf .kx-only').forEach((el) => { only = only || el.checked; });
+  document.querySelectorAll('.cf .kx-noqb').forEach((el) => { noqb = noqb || el.checked; });
+  document.querySelectorAll('.cf .kx-sort').forEach((el) => { sort = el.value || sort; });
+  const n = CF.num;
+  const key = (v) => (Number.isNaN(v) ? -Infinity : v);
+  let view = s.data.filter((r) => (!only || Math.abs(n(r.diff_pp)) >= KX_DIFF) && (!noqb || !r.qb_flag));
+  if (sort === 'diff') view = view.slice().sort((a, b) => key(Math.abs(n(b.diff_pp))) - key(Math.abs(n(a.diff_pp))));
+  if (sort === 'gap') view = view.slice().sort((a, b) => key(n(b.side_gap)) - key(n(a.side_gap)));
+  const pct = (v) => (Number.isNaN(v) ? '—' : Math.round(100 * v) + '%');
+  const cents = (v, signed) => (Number.isNaN(v) ? '—' : (signed && v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(100 * v)) + '¢');
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(r.game_id);
+    cell(r.day, 'l'); cell(r.time_et, 'l hide-narrow'); cell(r.game, 'l team'); cell(r.favorite, 'l hide-narrow');
+    cell(r.win_prob); cell(CF.f1(n(r.margin)));
+    cell(pct(n(r.kalshi_p)));
+    cell(pct(n(r.vegas_p)), 'hide-narrow');
+    const d = n(r.diff_pp); cell(CF.sgn1(d), Math.abs(d) >= KX_DIFF ? 'big' : '');
+    cell(r.side_team || '—', 'l hide-narrow'); cell(cents(n(r.side_buy), false), 'hide-narrow');
+    const g = n(r.side_gap); cell(cents(g, true), g >= KX_GAP ? 'up' : '');
+    cell(r.qb_flag || '—', 'qb');
+    cell(r.kalshi_state || '—', 'l hide-narrow'); cell(CF.intOr(n(r.kalshi_volume)), 'hide-narrow');
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .kx-only, .cf .kx-noqb, .cf .kx-sort').forEach((el) => el.addEventListener('change', () => dash.draw('week-body')));
+
+// Kalshi spreads vs the Vegas-implied fair price
+dash.draw('spreads-body', (tbody) => {
+  const s = dash.data('kalshi_spreads');
+  if (s.status === 'error') return CF.failRow(tbody, 12);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  let noqb = false;
+  document.querySelectorAll('.cf .sp-noqb').forEach((el) => { noqb = noqb || el.checked; });
+  const n = CF.num;
+  const key = (v) => (Number.isNaN(v) ? -Infinity : v);
+  const view = s.data.filter((r) => !noqb || !r.qb_flag).slice().sort((a, b) => key(n(b.gap_vs_vegas)) - key(n(a.gap_vs_vegas)));
+  const pct = (v) => (Number.isNaN(v) ? '—' : Math.round(100 * v) + '%');
+  const cents = (v, signed) => (Number.isNaN(v) ? '—' : (signed && v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(Math.round(100 * v)) + '¢');
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(r.game_id);
+    cell(r.day, 'l'); cell(r.time_et, 'l hide-narrow'); cell(r.game, 'l team');
+    cell(r.vegas_line || '—', 'l'); cell(r.our_line || '—', 'l hide-narrow');
+    cell(r.bet || r.state || '—', 'l');
+    cell(cents(n(r.price), false)); cell(pct(n(r.fair_vegas)));
+    const g = n(r.gap_vs_vegas); cell(cents(g, true), g >= KX_GAP ? 'up' : '');
+    cell(pct(n(r.our_cover)), 'hide-narrow');
+    cell(r.qb_flag || '—', 'qb');
+    cell(CF.intOr(n(r.volume)), 'hide-narrow');
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .sp-noqb').forEach((el) => el.addEventListener('change', () => dash.draw('spreads-body')));
+
+// projections + conference picker
+dash.draw('conf-select', (sel) => {
+  const rows = CF.rowsOf('projections');
+  const confs = rows ? [...new Set(rows.map((r) => r.conf))].sort() : [];
+  sel.replaceChildren(new Option('All conferences', ''), ...confs.map((c) => new Option(c, c)));
+  sel.value = dash.params().conf || '';
+  sel.onchange = () => dash.setParams({ conf: sel.value || null });
+});
+dash.draw('proj-body', (tbody) => {
+  const s = dash.data('projections');
+  if (s.status === 'error') return CF.failRow(tbody, 9);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const q = CF.query('.q-proj'); const conf = dash.params().conf || '';
+  const view = s.data.filter((r) => (!q || String(r.team).toLowerCase().includes(q)) && (!conf || r.conf === conf));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(CF.f0(CF.num(r.rank))); cell(r.team, 'l team'); cell(r.conf, 'l hide-narrow');
+    cell(r.record_now); cell(CF.intOr(CF.num(r.games_left)), 'hide-narrow');
+    cell(r.proj_record); cell(r.w_range);
+    const p = CF.num(r.p_win_out); cell(Number.isNaN(p) ? '—' : CF.f1(p) + '%');
+    const b = CF.num(r.p_bowl); cell(Number.isNaN(b) ? '—' : CF.f1(b) + '%', 'hide-narrow');
+    return tr;
+  }));
+});
+
+// resume rankings
+const RES_BENCH = 12;
+dash.draw('rs-bench', (el) => { el.textContent = String(RES_BENCH); });
+dash.calc('resume_gaps', {
+  inputs: ['resume'],
+  title: 'Resume vs power rating',
+  description: 'Among top-25 resumes, the one our power rating ranks furthest below it; among top-25 power ratings, the one with the weakest resume.',
+  fn: (resume) => {
+    const rk = (x) => Number(x.pnp_rank ?? x.resume_rank);
+    const r = resume.map((x) => ({ team: x.team, resume_rank: rk(x), power_rank: Number(x.power_rank), gap: Number(x.power_rank) - rk(x) }));
+    const over = r.filter((x) => x.resume_rank <= 25).sort((a, b) => b.gap - a.gap)[0];
+    const under = r.filter((x) => x.power_rank <= 25).sort((a, b) => a.gap - b.gap)[0];
+    return [{ kind: 'over', ...over }, { kind: 'under', ...under }];
+  }
+});
+const fWab = d3.format('+.2f');
+dash.calc('resume_luck', {
+  inputs: ['resume'],
+  title: 'Luckiest top-25 resume',
+  description: 'Among the top 25 resumes, the team whose actual wins most exceed its deserved wins.',
+  fn: (resume) => {
+    const r = resume.filter((x) => Number(x.pnp_rank ?? x.resume_rank) <= 25)
+      .map((x) => ({ team: x.team, wins: Number(x.wins), xwins: Number(x.xwins), luck: Number(x.luck), resume_rank: Number(x.pnp_rank ?? x.resume_rank), d_resume_rank: Number(x.d_resume_rank) }));
+    r.sort((a, b) => b.luck - a.luck);
+    return r.slice(0, 1);
+  }
+});
+one('rs-lucky-team', 'resume_luck', (r) => r[0], (r) => r.team);
+one('rs-lucky-w', 'resume_luck', (r) => r[0], (r) => CF.f0(r.wins));
+one('rs-lucky-x', 'resume_luck', (r) => r[0], (r) => CF.f1(r.xwins));
+one('rs-lucky-r', 'resume_luck', (r) => r[0], (r) => CF.f0(r.resume_rank));
+one('rs-lucky-d', 'resume_luck', (r) => r[0], (r) => CF.f0(r.d_resume_rank));
+one('rs-top', 'resume', (r) => r[0], (r) => r.team);
+one('rs-top-w', 'resume', (r) => r[0], (r) => CF.f0(CF.num(r.wins)));
+one('rs-top-l', 'resume', (r) => r[0], (r) => CF.f0(CF.num(r.losses)));
+one('rs-top-wab', 'resume', (r) => r[0], (r) => fWab(CF.num(r.wab)).replace('-', '−'));
+one('rs-over-team', 'resume_gaps', (r) => r.find((x) => x.kind === 'over'), (r) => r.team);
+one('rs-over-r', 'resume_gaps', (r) => r.find((x) => x.kind === 'over'), (r) => CF.f0(r.resume_rank));
+one('rs-over-p', 'resume_gaps', (r) => r.find((x) => x.kind === 'over'), (r) => CF.f0(r.power_rank));
+one('rs-under-team', 'resume_gaps', (r) => r.find((x) => x.kind === 'under'), (r) => r.team);
+one('rs-under-p', 'resume_gaps', (r) => r.find((x) => x.kind === 'under'), (r) => CF.f0(r.power_rank));
+one('rs-under-r', 'resume_gaps', (r) => r.find((x) => x.kind === 'under'), (r) => CF.f0(r.resume_rank));
+dash.draw('resume-body', (tbody) => {
+  const s = dash.data('resume');
+  if (s.status === 'error') return CF.failRow(tbody, 21);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const q = CF.query('.q-resume');
+  let sort = 'pnp';
+  document.querySelectorAll('.cf .rs-sort').forEach((el) => { sort = el.value || sort; });
+  const n = CF.num;
+  const by = { pnp: (r) => n(r.pnp_rank), wab: (r) => n(r.resume_rank), dwab: (r) => n(r.d_resume_rank), colley: (r) => n(r.colley_rank),
+               dcolley: (r) => n(r.d_colley_rank), composite: (r) => n(r.composite), luck: (r) => -n(r.luck) }[sort] || ((r) => n(r.pnp_rank));
+  let view = s.data.filter((r) => !q || String(r.team).toLowerCase().includes(q) || String(r.conf).toLowerCase().includes(q));
+  view = view.slice().sort((a, b) => by(a) - by(b) || n(a.pnp_rank) - n(b.pnp_rank));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(CF.intOr(n(r.pnp_rank)), 'big'); cell(r.team, 'l team'); cell(r.conf, 'l hide-narrow');
+    cell(CF.intOr(n(r.wins))); cell(CF.intOr(n(r.losses)));
+    const w = n(r.wab); cell(Number.isNaN(w) ? '—' : fWab(w).replace('-', '−'), 'big');
+    const p = n(r.p_match); cell(Number.isNaN(p) ? '—' : (p < 0.01 ? '<1%' : Math.round(100 * p) + '%'), 'hide-narrow');
+    const p4 = n(r.p_match4); cell(Number.isNaN(p4) ? '—' : (p4 < 0.01 ? '<1%' : Math.round(100 * p4) + '%'), 'hide-narrow');
+    cell(CF.intOr(n(r.resume_rank)));
+    cell(CF.intOr(n(r.colley_rank)));
+    const xw = n(r.xwins); cell(Number.isNaN(xw) ? '—' : CF.f1(xw));
+    const lk = n(r.luck); cell(Number.isNaN(lk) ? '—' : CF.sgn1(lk), lk >= 1.5 ? 'down' : lk <= -1.5 ? 'up' : '');
+    cell(CF.intOr(n(r.d_resume_rank))); cell(CF.intOr(n(r.d_colley_rank)), 'hide-narrow');
+    cell(CF.intOr(n(r.composite_rank)), 'big');
+    cell(CF.intOr(n(r.power_rank)));
+    const g = n(r.rank_gap);
+    cell(Number.isNaN(g) ? '—' : (g > 0 ? '+' : g < 0 ? '−' : '') + CF.f0(Math.abs(g)), 'hide-narrow ' + (g >= 10 ? 'up' : g <= -10 ? 'down' : ''));
+    cell(CF.intOr(n(r.sched_rank)), 'hide-narrow');
+    cell(r.best_win || '—', 'l team');
+    cell(r.losses_to || '—', 'l qb hide-narrow');
+    cell(r.pnp_note ? r.pnp_note.charAt(0).toUpperCase() + r.pnp_note.slice(1) : '', 'l qb hide-narrow');
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .q-resume').forEach((el) => el.addEventListener('input', () => dash.draw('resume-body')));
+document.querySelectorAll('.cf .rs-sort').forEach((el) => el.addEventListener('change', () => dash.draw('resume-body')));
+
+// player values
+dash.calc('player_tops', {
+  inputs: ['players'],
+  title: 'Top player by position',
+  description: 'The highest-valued quarterback, running back and receiver this season.',
+  fn: (players) => ['QB', 'RB', 'WR/TE'].map((g) => {
+    const r = players.filter((x) => x.group === g).sort((a, b) => Number(b.value_pg) - Number(a.value_pg))[0];
+    return r ? { kind: g, player: r.player, team: r.team, value_pg: Number(r.value_pg) } : { kind: g, player: '', team: '', value_pg: null };
+  })
+});
+const plGroup = () => { let g = 'QB'; document.querySelectorAll('.cf .pl-group').forEach((el) => { g = el.value || g; }); return g; };
+const plCols = () => {
+  const g = plGroup();
+  document.querySelectorAll('.cf #players-table th.pl-col').forEach((th) => { th.hidden = !th.dataset.cols.split(' ').includes(g); });
+};
+plCols();
+const plTop = (name, kind, fmt) => one(name, 'player_tops', (r) => r.find((x) => x.kind === kind), fmt);
+plTop('pl-qb', 'QB', (r) => r.player || '—'); plTop('pl-qb-team', 'QB', (r) => r.team || '—'); plTop('pl-qb-v', 'QB', (r) => CF.sgn1(r.value_pg));
+plTop('pl-rb', 'RB', (r) => r.player || '—'); plTop('pl-rb-team', 'RB', (r) => r.team || '—'); plTop('pl-rb-v', 'RB', (r) => CF.sgn1(r.value_pg));
+plTop('pl-wr', 'WR/TE', (r) => r.player || '—'); plTop('pl-wr-team', 'WR/TE', (r) => r.team || '—'); plTop('pl-wr-v', 'WR/TE', (r) => CF.sgn1(r.value_pg));
+dash.draw('players-body', (tbody) => {
+  const s = dash.data('players');
+  if (s.status === 'error') return CF.failRow(tbody, 16);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const g = plGroup(); const q = CF.query('.q-players'); const n = CF.num;
+  const view = s.data.filter((r) => r.group === g && (!q || [r.player, r.team, r.conf].some((v) => String(v).toLowerCase().includes(q))))
+    .slice().sort((a, b) => n(a.pos_rank) - n(b.pos_rank));
+  const pct = (v) => (Number.isNaN(v) ? '—' : Math.round(100 * v) + '%');
+  const dec = (v, k) => (Number.isNaN(v) ? '—' : d3.format('.' + k + 'f')(v));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(r.player_id);
+    cell(CF.intOr(n(r.pos_rank))); cell(r.player, 'l team'); cell(r.pos, 'l'); cell(r.team, 'l'); cell(r.conf, 'l hide-narrow');
+    cell(CF.intOr(n(r.games)), 'hide-narrow'); cell(r.usage, 'l hide-narrow');
+    cell(CF.sgn1(n(r.value_pg)), 'big'); cell(CF.sgnE(n(r.epa_play)));
+    if (g !== 'WR/TE') cell(CF.sgnE(n(r.adj)));
+    cell(pct(n(r.share)));
+    if (g === 'QB') { const p = n(r.archetype_p); cell(r.archetype ? r.archetype + (p < 0.6 ? ' (lean)' : '') : '—', 'l'); }
+    if (g === 'RB') cell(dec(n(r.ypc), 1));
+    if (g === 'WR/TE') { cell(dec(n(r.adot), 1)); cell(dec(n(r.yac), 1)); const c = n(r.cpoe); cell(Number.isNaN(c) ? '—' : CF.sgn1(c), 'hide-narrow'); }
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .pl-group').forEach((el) => el.addEventListener('change', () => { plCols(); dash.draw('players-body'); }));
+document.querySelectorAll('.cf .q-players').forEach((el) => el.addEventListener('input', () => dash.draw('players-body')));
+
+// team profile
+const pickedTeam = (rows) => { const t = dash.params().team; return rows.find((r) => r.team === t) || rows[0]; };
+dash.draw('team-select', (sel) => {
+  const rows = CF.rowsOf('teams');
+  const names = rows ? rows.map((r) => r.team).sort((a, b) => a.localeCompare(b)) : [];
+  sel.replaceChildren(...names.map((n) => new Option(n, n)));
+  if (rows && rows.length) sel.value = pickedTeam(rows).team;
+  sel.onchange = () => dash.setParams({ team: sel.value });
+});
+const tpOne = (name, fmt) => dash.draw(name, (el) => { const rows = CF.rowsOf('teams'); el.textContent = rows && rows.length ? fmt(pickedTeam(rows)) : '—'; });
+tpOne('tp-rank', (r) => CF.f0(CF.num(r.rank)));
+tpOne('tp-net', (r) => CF.sgn1(CF.num(r.net_pts)));
+tpOne('tp-conf', (r) => r.conf);
+tpOne('tp-off', (r) => CF.sgnE(CF.num(r.off_epa_total)));
+tpOne('tp-off-p', (r) => CF.f0(CF.num(r.off_epa_total_pct)));
+tpOne('tp-def', (r) => CF.sgnE(CF.num(r.def_epa_total)));
+tpOne('tp-def-p', (r) => CF.f0(CF.num(r.def_epa_total_pct)));
+dash.draw('tp-chart', (box) => {
+  box.replaceChildren();
+  const rows = CF.rowsOf('teams');
+  if (!rows || !rows.length) return;
+  const r = pickedTeam(rows);
+  const items = [['Offense: passing', 'off_epa_pass_pct'], ['Offense: rushing', 'off_epa_rush_pct'], ['Offense: all plays', 'off_epa_total_pct'],
+                 ['Defense: passing', 'def_epa_pass_pct'], ['Defense: rushing', 'def_epa_rush_pct'], ['Defense: all plays', 'def_epa_total_pct']]
+    .map(([label, k]) => ({ label, v: CF.num(r[k]) }));
+  const W = Math.max(280, box.clientWidth), rowH = 28, H = items.length * rowH + 24;
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const probe = svg.append('text').attr('class', 'lab').text('Offense: all plays');
+  const left = probe.node().getComputedTextLength() + 12; probe.remove();
+  const x = d3.scaleLinear([0, 100], [left, W - 40]);
+  svg.append('g').selectAll('line').data([0, 25, 50, 75, 100]).join('line').attr('class', 'grid')
+    .attr('x1', (d) => x(d)).attr('x2', (d) => x(d)).attr('y1', 0).attr('y2', H - 20);
+  svg.append('g').selectAll('text').data([0, 50, 100]).join('text').attr('class', 'ax')
+    .attr('x', (d) => x(d)).attr('y', H - 6).attr('text-anchor', 'middle').text((d) => d);
+  const g = svg.append('g').selectAll('g').data(items).join('g').attr('transform', (d, i) => `translate(0, ${i * rowH})`);
+  g.append('text').attr('class', 'lab').attr('x', 0).attr('y', rowH / 2 + 4).text((d) => d.label);
+  g.append('rect').attr('x', x(0)).attr('y', rowH / 2 - 7).attr('height', 14).attr('rx', 3)
+    .attr('width', (d) => Math.max(0, x(Number.isNaN(d.v) ? 0 : d.v) - x(0)))
+    .style('fill', (d, i) => (i < 3 ? dash.colors[0] : dash.colors[1]));
+  g.append('text').attr('class', 'ax').attr('x', (d) => x(Number.isNaN(d.v) ? 0 : d.v) + 6).attr('y', rowH / 2 + 4).text((d) => (Number.isNaN(d.v) ? '—' : CF.f0(d.v)));
+});
+
+// all-teams table
+dash.draw('teams-body', (tbody) => {
+  const s = dash.data('teams');
+  if (s.status === 'error') return CF.failRow(tbody, 8);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const q = CF.query('.q-teams');
+  const view = s.data.filter((r) => !q || String(r.team).toLowerCase().includes(q)).slice().sort((a, b) => CF.num(a.rank) - CF.num(b.rank));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(CF.f0(CF.num(r.rank))); cell(r.team, 'l team');
+    cell(CF.sgnE(CF.num(r.off_epa_pass))); cell(CF.sgnE(CF.num(r.off_epa_rush))); cell(CF.sgnE(CF.num(r.off_epa_total)), 'hide-narrow');
+    cell(CF.sgnE(CF.num(r.def_epa_pass))); cell(CF.sgnE(CF.num(r.def_epa_rush))); cell(CF.sgnE(CF.num(r.def_epa_total)), 'hide-narrow');
+    return tr;
+  }));
+});
+
+// preseason table
+dash.draw('pre-body', (tbody) => {
+  const s = dash.data('preseason');
+  if (s.status === 'error') return CF.failRow(tbody, 7);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const q = CF.query('.q-pre');
+  const view = s.data.filter((r) => !q || String(r.team).toLowerCase().includes(q) || String(r.conf).toLowerCase().includes(q));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(CF.f0(CF.num(r.rank))); cell(r.team, 'l team'); cell(r.conf, 'l hide-narrow');
+    cell(CF.sgn1(CF.num(r.rating)));
+    cell(CF.sgnE(CF.num(r.talent_z)).replace(/(\.\d{2})\d$/, '$1'), 'hide-narrow');
+    cell(CF.sgn1(CF.num(r.decayed_cewae)), 'hide-narrow');
+    const y = CF.num(r.year1_term); cell(y === 0 ? '—' : CF.sgn1(y), 'hide-narrow');
+    return tr;
+  }));
+});
+
+// backtest chart + table
+dash.draw('bt-body', (tbody) => {
+  const s = dash.data('backtest');
+  if (s.status === 'error') return CF.failRow(tbody, 5);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  tbody.replaceChildren(...s.data.map((r) => {
+    const { tr, cell } = CF.makeRow(r.row_id);
+    cell(r.phase, 'l'); cell(r.model, 'l'); cell(CF.f0(CF.num(r.games)));
+    cell(CF.f1(CF.num(r.mae))); cell(d3.format('.1%')(CF.num(r.win_acc)));
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .sw0').forEach((el) => { el.style.background = dash.colors[0]; });
+document.querySelectorAll('.cf .sw1').forEach((el) => { el.style.background = dash.colors[1]; });
+document.querySelectorAll('.cf .sw2').forEach((el) => { el.style.background = dash.colors[2]; });
+dash.draw('bt-chart', (box) => {
+  box.replaceChildren();
+  const rows = CF.rowsOf('backtest');
+  if (!rows) return;
+  const phases = [...new Set(rows.map((r) => r.phase))];
+  const models = ['Vegas closing line', 'Bayesian model (this dashboard)', 'Margin v2 (previous)', 'Base EPA model'];
+  const color = (m) => (m === models[0] ? 'var(--cds-chart-muted)' : m === models[1] ? dash.colors[0] : m === models[2] ? dash.colors[1] : dash.colors[2]);
+  const W = Math.max(280, box.clientWidth), H = 220, m = { t: 8, r: 8, b: 26, l: 34 };
+  const svg = d3.select(box).append('svg').attr('width', '100%').attr('viewBox', `0 0 ${W} ${H}`);
+  const x0 = d3.scaleBand(phases, [m.l, W - m.r]).paddingInner(0.25);
+  const x1 = d3.scaleBand(models, [0, x0.bandwidth()]).padding(0.08);
+  const maxV = d3.max(rows, (r) => CF.num(r.mae));
+  const y = d3.scaleLinear([0, Math.ceil(maxV)], [H - m.b, m.t]);
+  svg.append('g').selectAll('line').data(y.ticks(4)).join('line').attr('class', 'grid')
+    .attr('x1', m.l).attr('x2', W - m.r).attr('y1', (d) => y(d)).attr('y2', (d) => y(d));
+  svg.append('g').selectAll('text').data(y.ticks(4)).join('text').attr('class', 'ax')
+    .attr('x', m.l - 6).attr('y', (d) => y(d) + 4).attr('text-anchor', 'end').text((d) => d);
+  svg.append('g').selectAll('text').data(phases).join('text').attr('class', 'ax')
+    .attr('x', (d) => x0(d) + x0.bandwidth() / 2).attr('y', H - 8).attr('text-anchor', 'middle').text((d) => d);
+  const tip = document.createElement('div'); tip.className = 'tip'; tip.hidden = true; box.append(tip);
+  svg.append('g').selectAll('rect').data(rows).join('rect')
+    .attr('x', (r) => x0(r.phase) + x1(r.model)).attr('width', x1.bandwidth())
+    .attr('y', (r) => y(CF.num(r.mae))).attr('height', (r) => y(0) - y(CF.num(r.mae))).attr('rx', 3)
+    .style('fill', (r) => color(r.model))
+    .on('mousemove', (ev, r) => {
+      const k = document.createElement('div'); k.className = 'k'; k.textContent = r.phase;
+      const v = document.createElement('div'); v.textContent = `${r.model}: ${CF.f1(CF.num(r.mae))} pts`;
+      tip.replaceChildren(k, v); tip.hidden = false;
+      const bx = box.getBoundingClientRect(); const tw = tip.offsetWidth;
+      tip.style.left = Math.min(Math.max(0, ev.clientX - bx.left + 10), bx.width - tw) + 'px';
+      tip.style.top = Math.max(0, ev.clientY - bx.top - 40) + 'px';
+    })
+    .on('mouseleave', () => { tip.hidden = true; });
+});
+</script>
+
+</main>
+<footer class="site-foot"><div class="in">Projections, not betting advice. Ratings, win probabilities and resume rankings are Pace &amp; Pate Analytics' own model, built from CollegeFootballData.com play-by-play and results. Kalshi prices are public market data (read-only); Vegas-implied numbers come from published betting lines.</div></footer>
+<script>
+fetch('data/meta.json', { cache: 'no-cache' }).then(r => r.json()).then(m => {
+  if (m.updated) document.getElementById('site-asof').textContent = 'Data updated ' + new Date(m.updated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+  dash._start(m.v);
+}).catch(() => dash._start());
+</script>
+</body>
+</html>
