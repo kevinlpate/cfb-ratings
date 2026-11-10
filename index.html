@@ -394,6 +394,23 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     <div class="chartbox" data-draw="tp-chart" data-source="teams"></div>
   </section>
 
+  <section class="card" id="team-sched" data-tab="teams" hidden>
+    <h2>Schedule</h2>
+    <p class="note"><span data-draw="ts-summary" data-source="team_games teams">—</span> Win chance for a finished game is what the model said before kickoff (using only earlier games); for an upcoming game it is today's number. Opponent ranks are current power-rating ranks.</p>
+    <div class="scroll">
+      <table id="team-sched-table">
+        <thead><tr><th>Wk</th><th class="l">Date</th><th class="l">Opponent</th><th class="l">Result</th><th>Win chance</th><th>Expected margin</th></tr></thead>
+        <tbody data-draw="ts-body" data-source="team_games teams"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card" id="team-players" data-tab="teams" hidden>
+    <h2>Players</h2>
+    <p class="note">Offensive skill players with enough snaps to rate, from the Players tab. Value = points per game a player adds over a typical backup at his position (quarterbacks and running backs; receivers are descriptive, from the plays where they were targeted). National rank is among all FBS players at the position. No defensive player data yet.</p>
+    <div data-draw="tpl-body" data-source="players teams"></div>
+  </section>
+
   <section class="card" id="teams-list" data-tab="teams" hidden>
     <h2>All teams, efficiency by phase</h2>
     <p class="note">EPA per play, opponent-adjusted. Defense columns are EPA allowed: lower is better.</p>
@@ -859,6 +876,68 @@ dash.draw('tp-chart', (box) => {
     .attr('width', (d) => Math.max(0, x(Number.isNaN(d.v) ? 0 : d.v) - x(0)))
     .style('fill', (d, i) => (i < 3 ? dash.colors[0] : dash.colors[1]));
   g.append('text').attr('class', 'ax').attr('x', (d) => x(Number.isNaN(d.v) ? 0 : d.v) + 6).attr('y', rowH / 2 + 4).text((d) => (Number.isNaN(d.v) ? '—' : CF.f0(d.v)));
+});
+
+
+// team schedule + players (2026-11-09)
+const pct0 = (p) => (Number.isNaN(p) ? '—' : p > 0.99 ? '>99%' : p < 0.01 ? '<1%' : Math.round(100 * p) + '%');
+const teamName = () => { const rows = CF.rowsOf('teams'); return rows && rows.length ? pickedTeam(rows).team : null; };
+const tgRows = () => { const s = dash.data('team_games'); const t = teamName(); return s && s.status === 'ok' && t ? s.data.filter((r) => r.team === t) : null; };
+dash.draw('ts-summary', (el) => {
+  const g = tgRows(); if (!g) { el.textContent = ''; return; }
+  const n = CF.num, fin = g.filter((r) => r.status === 'final'), up = g.filter((r) => r.status !== 'final');
+  const w = fin.filter((r) => r.result === 'W').length, l = fin.filter((r) => r.result === 'L').length;
+  const ex = d3.sum(fin, (r) => n(r.win_prob)), exu = d3.sum(up, (r) => n(r.win_prob));
+  el.textContent = `${teamName()} is ${w}–${l}; the model expected ${CF.f1(ex)} wins from these games before they were played.` +
+    (up.length ? ` ${up.length} left, worth ${CF.f1(exu)} expected wins.` : '');
+});
+dash.draw('ts-body', (tbody) => {
+  const s = dash.data('team_games');
+  if (s.status === 'error') return CF.failRow(tbody, 6);
+  const g = tgRows(); if (!g) return tbody.replaceChildren();
+  const n = CF.num;
+  tbody.replaceChildren(...g.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(r.season_type === 'postseason' ? 'Post' : CF.intOr(n(r.week)));
+    cell(r.date, 'l');
+    const rk = n(r.opp_rank);
+    const opp = (r.site === 'away' ? '@ ' : r.site === 'neutral' ? 'vs ' : '') + r.opp + (r.opp_fcs === 'True' ? ' (FCS)' : Number.isNaN(rk) ? '' : ` (No. ${rk})`);
+    cell(opp, 'l team');
+    if (r.status === 'final') cell(`${r.result} ${CF.intOr(n(r.pts))}–${CF.intOr(n(r.opp_pts))}`, 'l ' + (r.result === 'W' ? 'up' : r.result === 'L' ? 'down' : ''));
+    else cell('—', 'l');
+    cell(pct0(n(r.win_prob)), r.status === 'final' ? '' : 'big');
+    const m = n(r.exp_margin); cell(Number.isNaN(m) ? '—' : CF.sgn1(m));
+    return tr;
+  }));
+});
+dash.draw('tpl-body', (box) => {
+  const s = dash.data('players'); const t = teamName();
+  if (s.status === 'error') { box.innerHTML = '<div class="fail">Failed to load player data</div>'; return; }
+  if (s.status !== 'ok' || !t) { box.replaceChildren(); return; }
+  const n = CF.num, dec = (v, k) => (Number.isNaN(v) ? '—' : d3.format('.' + k + 'f')(v)), pc = (v) => (Number.isNaN(v) ? '—' : Math.round(100 * v) + '%');
+  const groups = [
+    ['QB', 'Quarterbacks', ['Style'], (r) => [r.archetype ? r.archetype + (n(r.archetype_p) < 0.6 ? ' (lean)' : '') : '—']],
+    ['RB', 'Running backs', ['Yds/carry'], (r) => [dec(n(r.ypc), 1)]],
+    ['WR/TE', 'Receivers', ['aDOT', 'YAC'], (r) => [dec(n(r.adot), 1), dec(n(r.yac), 1)]]];
+  const parts = [];
+  for (const [g, label, extra, fx] of groups) {
+    const rows = s.data.filter((r) => r.team === t && r.group === g).sort((a, b) => n(b.value_pg) - n(a.value_pg));
+    const h = document.createElement('h3'); h.className = 'note'; h.style.marginTop = 'var(--cds-gap-md)'; h.textContent = label; parts.push(h);
+    if (!rows.length) { const p = document.createElement('p'); p.className = 'note'; p.textContent = 'No qualifying players.'; parts.push(p); continue; }
+    const tb = document.createElement('table');
+    tb.innerHTML = '<thead><tr><th class="l">Player</th><th class="l">Pos</th><th>Natl rank</th><th class="hide-narrow">G</th><th class="l hide-narrow">Usage</th><th>Value / game</th><th>EPA / play</th><th class="hide-narrow">Share</th>' +
+      extra.map((e) => `<th${e === 'Style' ? ' class="l"' : ''}>${e}</th>`).join('') + '</tr></thead><tbody></tbody>';
+    const body = tb.querySelector('tbody');
+    rows.forEach((r) => {
+      const { tr, cell } = CF.makeRow(r.player_id);
+      cell(r.player, 'l team'); cell(r.pos, 'l'); cell(CF.intOr(n(r.pos_rank))); cell(CF.intOr(n(r.games)), 'hide-narrow'); cell(r.usage, 'l hide-narrow');
+      cell(CF.sgn1(n(r.value_pg)), 'big'); cell(CF.sgnE(n(r.epa_play))); cell(pc(n(r.share)), 'hide-narrow');
+      fx(r).forEach((v) => cell(v, extra[0] === 'Style' ? 'l' : ''));
+      body.append(tr);
+    });
+    const wrap = document.createElement('div'); wrap.className = 'scroll'; wrap.append(tb); parts.push(wrap);
+  }
+  box.replaceChildren(...parts);
 });
 
 // all-teams table
