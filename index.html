@@ -1029,7 +1029,13 @@ dash.draw('bt-chart', (box) => {
 <footer class="site-foot"><div class="in">Projections, not betting advice. Ratings, win probabilities and resume rankings are Pace &amp; Pate Analytics' own model, built from CollegeFootballData.com play-by-play and results. Kalshi prices are public market data (read-only); Vegas-implied numbers come from published betting lines.</div></footer>
 <script>
 fetch('data/meta.json', { cache: 'no-cache' }).then(r => r.json()).then(m => {
-  if (m.updated) document.getElementById('site-asof').textContent = 'Data updated ' + new Date(m.updated).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+  const f = (t) => new Date(t).toLocaleString('en-US', { month: 'short', day: 'numeric', hour: 'numeric', minute: '2-digit', timeZone: 'America/New_York' }) + ' ET';
+  const parts = [];
+  if (m.ratings_at) parts.push('Ratings ' + f(m.ratings_at));
+  if (m.kalshi_at) parts.push('Kalshi prices ' + f(m.kalshi_at));
+  if (m.checked) parts.push('checked ' + f(m.checked));
+  if (!parts.length && m.updated) parts.push('Data updated ' + f(m.updated));
+  if (parts.length) document.getElementById('site-asof').textContent = parts.join(' · ');
   dash._start(m.v);
 }).catch(() => dash._start());
 </script>
