@@ -436,6 +436,25 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     </div>
   </section>
 
+  <section class="card" id="coach-seasons-card" data-tab="coaches" hidden>
+    <h2>Season by season</h2>
+    <p class="note">Every FBS team-season since 2015 with its staff. Pick a season, or search a coach with "All seasons" to see his career one year at a time (try Whittingham or Key). <b>Offense / defense vs talent</b> = EPA per play above (+) or below (−) what the roster's recruiting and transfer talent predicts, so a +0.10 offense gains about a tenth of a point per play more than expected. <b>Coach effect</b> = the two sides combined for the season. <b>Stat-expected wins</b> = what the team's play deserved; <b>beyond</b> = wins minus that. <b>Wins above talent</b> (CEWAE) is shown for finished seasons.</p>
+    <div class="controls">
+      <input type="search" class="q-cseason" placeholder="Search coaches or teams" aria-label="Search coach seasons">
+      <label class="chk">Season <select class="cs-season" aria-label="Season"></select></label>
+    </div>
+    <div class="scroll">
+      <table id="coach-seasons-table">
+        <thead><tr>
+          <th>Season</th><th class="l">Team</th><th class="l">Head coach</th><th>Record</th><th class="hide-narrow">Stat-expected W</th><th>Beyond</th>
+          <th class="hide-narrow">Close</th><th class="hide-narrow">Talent</th><th>Offense vs talent</th><th>Defense vs talent</th><th>Coach effect</th>
+          <th class="hide-narrow">Wins above talent</th><th class="l hide-narrow">OC</th><th class="l hide-narrow">DC</th>
+        </tr></thead>
+        <tbody data-draw="cseason-body" data-source="coach_seasons"></tbody>
+      </table>
+    </div>
+  </section>
+
   <section class="card" id="teams-list" data-tab="teams" hidden>
     <h2>All teams, efficiency by phase</h2>
     <p class="note">EPA per play, opponent-adjusted. Defense columns are EPA allowed: lower is better.</p>
@@ -1006,6 +1025,42 @@ dash.draw('ts-coach', (el) => {
   el.textContent = `Head coach ${r.hc}: ${sg2(n(r.cewae_avg))} wins above talent per season, ${sg2(n(r.beyond_per12), 2)} wins beyond the stats per 12 games (${CF.intOr(n(r.seasons))} seasons). ` +
     side('OC', r.oc, r.oc_is_hc) + ' · ' + side('DC', r.dc, r.dc_is_hc) + '.';
 });
+
+// coach seasons (2026-11-15)
+dash.draw('cseason-body', (tbody) => {
+  const s = dash.data('coach_seasons');
+  if (s.status === 'error') return CF.failRow(tbody, 14);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const n = CF.num;
+  const sel = document.querySelector('.cf .cs-season');
+  if (sel && !sel.options.length) {
+    const yrs = [...new Set(s.data.map((r) => r.season))].sort((a, b) => b - a);
+    sel.innerHTML = '<option value="all">All seasons</option>' + yrs.map((y) => `<option value="${y}">${y}</option>`).join('');
+    sel.value = yrs[0];
+  }
+  const yr = sel ? sel.value : 'all', q = CF.query('.q-cseason');
+  let view = s.data.filter((r) => (yr === 'all' || r.season === yr) && (!q || [r.team, r.hc, r.oc, r.dc].some((x) => String(x || '').toLowerCase().includes(q))));
+  view = view.slice().sort((a, b) => (b.season - a.season) || (n(b.ce_score) - n(a.ce_score)));
+  if (yr === 'all' && !q) view = view.slice(0, 300);
+  const cls = (v, t) => (Number.isNaN(v) ? '' : v >= t ? 'up' : v <= -t ? 'down' : '');
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(r.season); cell(r.team, 'l team'); cell(r.hc, 'l');
+    cell(Number.isNaN(n(r.wins)) ? '—' : `${CF.intOr(n(r.wins))}–${CF.intOr(n(r.losses))}`);
+    cell(Number.isNaN(n(r.stat_wins)) ? '—' : CF.f1(n(r.stat_wins)), 'hide-narrow');
+    cell(sg2(n(r.beyond)), cls(n(r.beyond), 1.5));
+    cell(Number.isNaN(n(r.close_w)) ? '—' : `${CF.intOr(n(r.close_w))}–${CF.intOr(n(r.close_l))}`, 'hide-narrow');
+    cell(sg2(n(r.talent_z), 2), 'hide-narrow');
+    cell(sg2(n(r.off_vs_talent), 2), cls(n(r.off_vs_talent), 0.15));
+    cell(sg2(n(r.def_vs_talent), 2), cls(n(r.def_vs_talent), 0.15));
+    cell(sg2(n(r.ce_score), 2), 'big ' + cls(n(r.ce_score), 0.1));
+    cell(sg2(n(r.cewae)), 'hide-narrow');
+    cell(r.oc || '—', 'l qb hide-narrow'); cell(r.dc || '—', 'l qb hide-narrow');
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .q-cseason').forEach((el) => el.addEventListener('input', () => dash.draw('cseason-body')));
+document.querySelectorAll('.cf .cs-season').forEach((el) => el.addEventListener('change', () => dash.draw('cseason-body')));
 
 // all-teams table
 dash.draw('teams-body', (tbody) => {
