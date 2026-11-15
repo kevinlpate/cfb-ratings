@@ -109,6 +109,7 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     <button type="button" role="tab" data-t="resume" aria-selected="false">Resume</button>
     <button type="button" role="tab" data-t="players" aria-selected="false">Players</button>
     <button type="button" role="tab" data-t="teams" aria-selected="false">Teams</button>
+    <button type="button" role="tab" data-t="coaches" aria-selected="false">Coaches</button>
     <button type="button" role="tab" data-t="preseason" aria-selected="false">Preseason</button>
     <button type="button" role="tab" data-t="method" aria-selected="false">How it's built</button>
   </nav>
@@ -396,6 +397,7 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
 
   <section class="card" id="team-sched" data-tab="teams" hidden>
     <h2>Schedule</h2>
+    <p class="note" data-draw="ts-coach" data-source="coaches teams"></p>
     <p class="note"><span data-draw="ts-summary" data-source="team_games teams">—</span> Win chance for a finished game is what the model said before kickoff (using only earlier games); for an upcoming game it is today's number. Opponent ranks are current power-rating ranks.</p>
     <div class="scroll">
       <table id="team-sched-table">
@@ -409,6 +411,29 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     <h2>Players</h2>
     <p class="note">Offensive skill players with enough snaps to rate, from the Players tab. Value = points per game a player adds over a typical backup at his position (quarterbacks and running backs; receivers are descriptive, from the plays where they were targeted). National rank is among all FBS players at the position. No defensive player data yet.</p>
     <div data-draw="tpl-body" data-source="players teams"></div>
+  </section>
+
+  <section class="card" id="coaches-card" data-tab="coaches" hidden>
+    <h2>Coaches</h2>
+    <p class="note">Every current FBS head coach (service academies and brand-new FBS programs aren't rated), with his current coordinators. Numbers cover head-coaching seasons since 2015. The default order is wins above talent with short careers pulled toward average, so a 3-year coach needs a bigger number to rank as high as an 11-year one.</p>
+    <p class="note"><b>Wins above talent</b> = wins per season above what an average coach would win with the same roster talent (recruiting and transfers) and schedule. <b>Luck-adjusted</b> takes out close-game and turnover luck. <b>Coach WAR</b> = wins per season above a replacement-level coach. <b>Recruiting</b> = how his classes compare with what his schools usually sign.</p>
+    <p class="note"><b>Wins beyond the stats</b> = actual wins minus the wins a team's play deserved (each game's efficiency margin, scoreboard ignored), per 12 games, shrunk toward zero for small samples. It's the "do some coaches win more than the advanced stats say?" question. A little of it is real: a coach's rate in half his seasons predicts the other half (correlation 0.35 for coaches with 6+ seasons), so game management shows up, but most of any one season is noise. Lane Kiffin, for one, wins about what his stats say (+0.4 a year before shrinking, 17–15 in close games); Kirk Ferentz is the standout (+1.8 a year at Iowa).</p>
+    <p class="note">Coordinator numbers (OC and DC, shrunk career values) are descriptive: when a coordinator changes schools, his old numbers barely predict the new team, which tracks the program's past instead. "HC" means the head coach runs that side of the ball.</p>
+    <div class="controls">
+      <input type="search" class="q-coaches" placeholder="Search coaches or teams" aria-label="Search coaches">
+      <label class="chk">Rank by <select class="co-sort" aria-label="Rank coaches by"><option value="cewae">wins above talent (sample-adjusted)</option><option value="cewae_l">luck-adjusted</option><option value="war">Coach WAR</option><option value="beyond">wins beyond the stats</option><option value="recruit">recruiting</option></select></label>
+    </div>
+    <div class="scroll">
+      <table id="coaches-table">
+        <thead><tr>
+          <th>#</th><th class="l">Team</th><th class="l">Head coach</th><th>Seasons</th><th class="hide-narrow">Record</th>
+          <th>Wins above talent</th><th class="hide-narrow">Luck-adjusted</th><th class="hide-narrow">Coach WAR</th>
+          <th>Wins beyond the stats</th><th class="hide-narrow">Close games</th><th class="hide-narrow">Recruiting</th>
+          <th class="l hide-narrow">OC</th><th class="hide-narrow">OC value</th><th class="l hide-narrow">DC</th><th class="hide-narrow">DC value</th>
+        </tr></thead>
+        <tbody data-draw="coaches-body" data-source="coaches"></tbody>
+      </table>
+    </div>
   </section>
 
   <section class="card" id="teams-list" data-tab="teams" hidden>
@@ -879,6 +904,7 @@ dash.draw('tp-chart', (box) => {
 });
 
 
+
 // team schedule + players (2026-11-09)
 const pct0 = (p) => (Number.isNaN(p) ? '—' : p > 0.99 ? '>99%' : p < 0.01 ? '<1%' : Math.round(100 * p) + '%');
 const teamName = () => { const rows = CF.rowsOf('teams'); return rows && rows.length ? pickedTeam(rows).team : null; };
@@ -938,6 +964,47 @@ dash.draw('tpl-body', (box) => {
     const wrap = document.createElement('div'); wrap.className = 'scroll'; wrap.append(tb); parts.push(wrap);
   }
   box.replaceChildren(...parts);
+});
+
+// coaches tab (2026-11-15)
+const sg2 = (v, d = 1) => (Number.isNaN(v) ? '—' : (v > 0 ? '+' : v < 0 ? '−' : '') + Math.abs(v).toFixed(d));
+dash.draw('coaches-body', (tbody) => {
+  const s = dash.data('coaches');
+  if (s.status === 'error') return CF.failRow(tbody, 15);
+  if (s.status !== 'ok') return tbody.replaceChildren();
+  const n = CF.num, q = CF.query('.q-coaches');
+  let sort = 'cewae'; document.querySelectorAll('.cf .co-sort').forEach((el) => { sort = el.value || sort; });
+  const key = { cewae: 'cewae_shrunk', cewae_l: 'cewae_l_avg', war: 'war_avg', beyond: 'beyond_per12', recruit: 'recruiting' }[sort];
+  const val = (r) => { const v = n(r[key]); return Number.isNaN(v) ? -1e9 : v; };
+  const all = s.data.slice().sort((a, b) => val(b) - val(a));
+  const rank = new Map(all.map((r, i) => [r.hc + '|' + r.team, i + 1]));
+  const view = all.filter((r) => !q || [r.team, r.hc, r.oc, r.dc].some((x) => String(x || '').toLowerCase().includes(q)));
+  tbody.replaceChildren(...view.map((r) => {
+    const { tr, cell } = CF.makeRow(null);
+    cell(rank.get(r.hc + '|' + r.team)); cell(r.team, 'l team'); cell(r.hc, 'l');
+    cell(CF.intOr(n(r.seasons)));
+    cell(Number.isNaN(n(r.wins)) ? '—' : `${CF.intOr(n(r.wins))}–${CF.intOr(n(r.losses))}`, 'hide-narrow');
+    cell(sg2(n(r.cewae_avg)), sort === 'cewae' ? 'big' : '');
+    cell(sg2(n(r.cewae_l_avg)), 'hide-narrow' + (sort === 'cewae_l' ? ' big' : ''));
+    cell(sg2(n(r.war_avg)), 'hide-narrow' + (sort === 'war' ? ' big' : ''));
+    cell(sg2(n(r.beyond_per12), 2), sort === 'beyond' ? 'big' : '');
+    cell(Number.isNaN(n(r.close_w)) ? '—' : `${CF.intOr(n(r.close_w))}–${CF.intOr(n(r.close_l))}`, 'hide-narrow');
+    cell(sg2(n(r.recruiting), 2), 'hide-narrow' + (sort === 'recruit' ? ' big' : ''));
+    const side = (name, isHc, v) => { cell(isHc === 'True' ? 'HC' : (name || '—'), 'l hide-narrow'); cell(isHc === 'True' ? '' : sg2(n(v), 2), 'hide-narrow'); };
+    side(r.oc, r.oc_is_hc, r.ocwae); side(r.dc, r.dc_is_hc, r.dcwae);
+    return tr;
+  }));
+});
+document.querySelectorAll('.cf .q-coaches').forEach((el) => el.addEventListener('input', () => dash.draw('coaches-body')));
+document.querySelectorAll('.cf .co-sort').forEach((el) => el.addEventListener('change', () => dash.draw('coaches-body')));
+dash.draw('ts-coach', (el) => {
+  const s = dash.data('coaches'); const t = teamName();
+  if (!s || s.status !== 'ok' || !t) { el.textContent = ''; return; }
+  const r = s.data.find((x) => x.team === t); if (!r) { el.textContent = ''; return; }
+  const n = CF.num;
+  const side = (lab, name, isHc) => `${lab}: ${isHc === 'True' ? r.hc + ' (HC)' : (name || '—')}`;
+  el.textContent = `Head coach ${r.hc}: ${sg2(n(r.cewae_avg))} wins above talent per season, ${sg2(n(r.beyond_per12), 2)} wins beyond the stats per 12 games (${CF.intOr(n(r.seasons))} seasons). ` +
+    side('OC', r.oc, r.oc_is_hc) + ' · ' + side('DC', r.dc, r.dc_is_hc) + '.';
 });
 
 // all-teams table
