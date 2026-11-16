@@ -5,31 +5,31 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 4,Miami,ACC,9,1,25.9,7.8,0.464,0.114,9.0,5.0
 5,Wake Forest,ACC,9,1,24.9,7.8,0.453,0.12,47.0,42.0
 6,LSU,SEC,6,4,24.7,7.9,0.331,-0.177,6.0,0.0
-7,Texas,SEC,8,2,24.5,7.8,0.288,-0.116,3.0,-4.0
+7,Texas,SEC,8,2,24.4,7.8,0.288,-0.116,3.0,-4.0
 8,Tennessee,SEC,8,2,23.4,7.9,0.283,-0.11,14.0,6.0
 9,Ohio State,Big Ten,7,3,22.5,7.9,0.305,-0.108,8.0,-1.0
 10,Indiana,Big Ten,9,1,22.3,8.0,0.292,-0.106,12.0,2.0
 11,Oregon,Big Ten,7,3,20.4,7.7,0.256,-0.065,4.0,-7.0
-12,Ole Miss,SEC,6,3,20.0,8.2,0.42,0.035,32.0,20.0
+12,Ole Miss,SEC,6,4,19.0,7.8,0.42,0.035,32.0,20.0
 13,Utah,Big 12,10,0,18.1,7.7,0.433,0.072,53.0,40.0
 14,Louisville,ACC,7,3,17.0,7.8,0.467,0.161,25.0,11.0
 15,Iowa,Big Ten,8,2,16.6,7.8,0.164,-0.104,28.0,13.0
-16,UCLA,Big Ten,10,0,15.7,7.7,0.125,-0.138,33.0,17.0
-17,Duke,ACC,7,3,15.2,7.7,0.33,0.141,36.0,19.0
-18,Texas Tech,Big 12,9,1,14.8,7.8,0.374,0.15,17.0,-1.0
-19,Oklahoma,SEC,5,4,14.8,8.2,0.149,-0.134,13.0,-6.0
+16,Oklahoma,SEC,6,4,15.8,7.8,0.149,-0.134,13.0,-3.0
+17,UCLA,Big Ten,10,0,15.7,7.7,0.125,-0.138,33.0,16.0
+18,Duke,ACC,7,3,15.2,7.7,0.33,0.141,36.0,18.0
+19,Texas Tech,Big 12,9,1,14.8,7.8,0.374,0.15,17.0,-2.0
 20,BYU,Big 12,8,2,14.7,7.7,0.306,0.039,23.0,3.0
-21,Florida,SEC,6,4,14.1,7.9,0.299,0.047,10.0,-11.0
-22,Auburn,SEC,6,4,13.7,7.8,0.268,-0.009,19.0,-3.0
-23,Missouri,SEC,6,4,13.7,7.9,0.262,0.004,20.0,-3.0
+21,Florida,SEC,6,4,14.2,7.9,0.299,0.047,10.0,-11.0
+22,Auburn,SEC,6,4,13.6,7.8,0.268,-0.009,19.0,-3.0
+23,Missouri,SEC,6,4,13.6,7.9,0.262,0.004,20.0,-3.0
 24,USC,Big Ten,7,3,13.4,8.1,0.267,0.058,11.0,-13.0
 25,Nebraska,Big Ten,6,4,13.1,7.8,0.176,-0.065,37.0,12.0
 26,Texas A&M,SEC,4,6,12.8,7.9,0.157,0.005,2.0,-24.0
-27,South Carolina,SEC,6,4,12.6,7.8,0.295,-0.001,22.0,-5.0
+27,South Carolina,SEC,6,4,12.7,7.8,0.295,-0.001,22.0,-5.0
 28,Penn State,Big Ten,6,4,12.4,7.8,0.174,0.029,16.0,-12.0
 29,Arizona,Big 12,7,3,12.4,7.8,0.387,0.143,43.0,14.0
 30,Northwestern,Big Ten,6,4,10.8,7.7,0.251,0.014,59.0,29.0
-31,Baylor,Big 12,6,4,10.7,7.8,0.224,-0.036,55.0,24.0
+31,Baylor,Big 12,6,4,10.6,7.8,0.224,-0.036,55.0,24.0
 32,Kentucky,SEC,7,3,9.8,7.9,0.27,0.015,45.0,13.0
 33,North Carolina,ACC,5,5,9.6,7.7,0.307,0.116,46.0,13.0
 34,Oklahoma State,Big 12,6,4,9.4,7.7,0.377,0.162,50.0,16.0
@@ -41,7 +41,7 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 40,SMU,ACC,7,3,7.9,7.8,0.345,0.242,27.0,-13.0
 41,Boise State,Mountain West,9,1,7.8,7.9,0.429,0.191,58.0,17.0
 42,TCU,Big 12,5,5,7.3,7.8,0.19,0.081,29.0,-13.0
-43,Arkansas,SEC,4,6,7.3,7.9,0.243,0.067,40.0,-3.0
+43,Arkansas,SEC,4,6,7.2,7.9,0.243,0.067,40.0,-3.0
 44,Kansas,Big 12,4,6,6.9,7.7,0.252,0.084,57.0,13.0
 45,Pittsburgh,ACC,6,4,6.8,8.0,0.19,0.103,38.0,-7.0
 46,Michigan,Big Ten,5,5,6.7,7.8,0.05,-0.124,15.0,-31.0
@@ -53,7 +53,7 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 52,Virginia,ACC,5,5,3.6,8.0,0.22,0.249,44.0,-8.0
 53,Mississippi State,SEC,4,6,3.5,7.8,0.216,0.007,42.0,-11.0
 54,Clemson,ACC,6,4,3.3,7.8,0.153,0.106,18.0,-36.0
-55,New Mexico,Mountain West,8,2,3.2,7.8,-0.011,-0.155,86.0,31.0
+55,New Mexico,Mountain West,8,2,3.3,7.8,-0.011,-0.155,86.0,31.0
 56,Syracuse,ACC,5,5,3.0,7.7,0.224,0.233,49.0,-7.0
 57,Tulsa,American Athletic,6,4,3.0,7.9,0.253,0.107,89.0,32.0
 58,Louisiana Tech,Conference USA,8,2,2.9,7.7,0.141,0.009,94.0,36.0
@@ -67,7 +67,7 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 66,James Madison,Sun Belt,8,3,0.4,7.6,0.227,0.09,129.0,63.0
 67,Georgia Southern,Sun Belt,6,4,0.3,7.9,0.21,0.142,84.0,17.0
 68,Virginia Tech,ACC,6,4,0.2,7.9,0.233,0.21,54.0,-14.0
-69,Maryland,Big Ten,4,6,-0.4,7.8,0.134,0.098,61.0,-8.0
+69,Maryland,Big Ten,4,6,-0.3,7.8,0.134,0.098,61.0,-8.0
 70,Cincinnati,Big 12,5,5,-0.8,7.8,0.38,0.315,73.0,3.0
 71,Navy,American Athletic,3,6,-0.9,8.1,,,,
 72,Colorado,Big 12,4,6,-1.0,7.8,0.231,0.124,63.0,-9.0
@@ -110,7 +110,7 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 109,Coastal Carolina,Sun Belt,4,6,-12.0,7.9,0.133,0.231,95.0,-14.0
 110,Hawai'i,Mountain West,3,7,-12.3,8.0,-0.042,0.093,99.0,-11.0
 111,Buffalo,Mid-American,7,3,-12.4,7.9,-0.031,0.141,100.0,-11.0
-112,Old Dominion,Sun Belt,3,7,-12.8,8.1,-0.03,0.043,79.0,-33.0
+112,Old Dominion,Sun Belt,3,7,-12.9,8.1,-0.03,0.043,79.0,-33.0
 113,Tulane,American Athletic,5,5,-12.9,7.7,0.166,0.274,123.0,10.0
 114,Nevada,Mountain West,4,6,-13.0,7.8,-0.093,-0.049,127.0,13.0
 115,Florida International,Conference USA,4,6,-13.1,7.8,-0.031,0.101,91.0,-24.0
@@ -135,5 +135,5 @@ rank,team,conf,wins,losses,rating,plus_minus,off_epa,def_epa,pre_rank,rank_chang
 134,Kent State,Mid-American,3,7,-21.8,8.0,-0.051,0.179,130.0,-4.0
 135,Sacramento State,Other,2,9,-22.6,7.7,-0.18,0.181,,
 136,Akron,Mid-American,1,9,-23.2,7.9,0.041,0.286,133.0,-3.0
-137,UTEP,Conference USA,1,9,-23.4,7.9,-0.118,0.105,112.0,-25.0
+137,UTEP,Conference USA,1,9,-23.3,7.9,-0.118,0.105,112.0,-25.0
 138,Northern Illinois,Mid-American,0,10,-26.0,7.8,0.013,0.187,131.0,-7.0
