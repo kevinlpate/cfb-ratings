@@ -348,9 +348,11 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
 
   <section class="card" id="players-card" data-tab="players" hidden>
     <h2>Player values</h2>
-    <p class="note">Each position is valued the way it held up best when we tested it on later seasons, in points per game. Every number below is opponent-adjusted unless labeled raw: each play is measured against what that defense allows on that kind of play (pass or run), after correcting the defense for the offenses it faced, so nobody is propped up by a soft schedule. Schedule = how much the defenses he faced allowed per play vs average (+ means a soft schedule inflated his raw numbers, − means a tough one held them down). Quarterbacks: opponent-adjusted expected points added per play (passes, sacks and runs), shrunk toward the league average until he has about 150 plays, minus what a backup-level quarterback produces, times his plays per game. Archetype comes from how he plays (how often he runs, sacks and throwaways, volume), not how well. Running backs: the model's estimate of expected points per carry above an average back after taking out his offensive line and play-calling (the offense's own effect) and the defenses he faced, times carries per game. Receivers: there is no reliable skill number for receivers (their EPA is mostly the quarterback and the offense), so value here is the opponent-adjusted EPA on passes thrown his way per game, a description of production, not a rating. Target share and air yards per target (aDOT) are the steadier signals. YAC = yards after the catch per catch; CPOE = completion percentage over expected on his targets. Qualifying: 100+ QB plays, 50+ carries, 25+ targets. FBS teams only.</p>
+    <p class="note">Each position is valued the way it held up best when we tested it on later seasons, in points per game. Every number below is opponent-adjusted unless labeled raw: each play is measured against what that defense allows on that kind of play (pass or run), after correcting the defense for the offenses it faced, so nobody is propped up by a soft schedule. Schedule = how much the defenses he faced allowed per play vs average (+ means a soft schedule inflated his raw numbers, − means a tough one held them down). Quarterbacks: opponent-adjusted expected points added per play (passes, sacks and runs), shrunk toward the league average until he has about 150 plays, minus what a backup-level quarterback produces, times his plays per game. Archetype comes from how he plays (how often he runs, sacks and throwaways, volume), not how well. Running backs: the model's estimate of expected points per carry above an average back after taking out his offensive line and play-calling (the offense's own effect) and the defenses he faced, times carries per game. Receivers: there is no reliable skill number for receivers (their EPA is mostly the quarterback and the offense), so value here is the opponent-adjusted EPA on passes thrown his way per game, a description of production, not a rating. Target share and air yards per target (aDOT) are the steadier signals. YAC = yards after the catch per catch; CPOE = completion percentage over expected on his targets. Rank is always by value; use Sort by to reorder the table by any column. Qualifying: 100+ QB plays, 50+ carries, 25+ targets. FBS teams only.</p>
     <div class="controls">
       <label class="chk">Position <select class="pl-group" aria-label="Position group"><option value="QB">Quarterbacks</option><option value="RB">Running backs</option><option value="WR/TE">Receivers (WR / TE)</option></select></label>
+      <label class="chk">Sort by <select class="pl-sort" aria-label="Sort players by"><option value="value_pg" data-g="QB RB WR/TE">Value (pts/g)</option><option value="adj" data-g="QB RB WR/TE">Opp-adjusted EPA</option><option value="epa_play" data-g="QB RB WR/TE">Raw EPA per play</option><option value="sos" data-g="QB RB WR/TE">Schedule (+ = soft)</option><option value="share" data-g="QB RB WR/TE">Team share</option><option value="games" data-g="QB RB WR/TE">Games</option><option value="plays" data-g="QB RB WR/TE">Plays / carries / targets</option><option value="ypc" data-g="RB">Yds per carry</option><option value="adot" data-g="WR/TE">aDOT</option><option value="yac" data-g="WR/TE">YAC</option><option value="cpoe" data-g="WR/TE">CPOE</option></select></label>
+      <label class="chk"><select class="pl-dir" aria-label="Sort direction"><option value="desc">High to low</option><option value="asc">Low to high</option></select></label>
       <input type="search" class="q-players" placeholder="Search players, teams or conferences" aria-label="Search players">
     </div>
     <div class="scroll">
@@ -847,6 +849,14 @@ dash.calc('player_tops', {
   })
 });
 const plGroup = () => { let g = 'QB'; document.querySelectorAll('.cf .pl-group').forEach((el) => { g = el.value || g; }); return g; };
+const plSel = (c, d) => { let v = d; document.querySelectorAll('.cf ' + c).forEach((el) => { v = el.value || v; }); return v; };
+const plSortOpts = () => {
+  const g = plGroup();
+  document.querySelectorAll('.cf .pl-sort').forEach((el) => {
+    [...el.options].forEach((o) => { o.hidden = o.disabled = !o.dataset.g.split(' ').includes(g); });
+    if (el.selectedOptions[0] && el.selectedOptions[0].disabled) el.value = 'value_pg';
+  });
+};
 const plCols = () => {
   const g = plGroup();
   document.querySelectorAll('.cf #players-table th.pl-col').forEach((th) => { th.hidden = !th.dataset.cols.split(' ').includes(g); });
@@ -862,7 +872,12 @@ dash.draw('players-body', (tbody) => {
   if (s.status !== 'ok') return tbody.replaceChildren();
   const g = plGroup(); const q = CF.query('.q-players'); const n = CF.num;
   const view = s.data.filter((r) => r.group === g && (!q || [r.player, r.team, r.conf].some((v) => String(v).toLowerCase().includes(q))))
-    .slice().sort((a, b) => n(a.pos_rank) - n(b.pos_rank));
+    .slice();
+  const sf = plSel('.pl-sort', 'value_pg'), dir = plSel('.pl-dir', 'desc') === 'asc' ? 1 : -1;
+  const key = (r) => { if (sf === 'plays') return n(String(r.usage).split(' ')[0]); return n(r[sf]); };
+  view.sort((a, b) => { const x = key(a), y = key(b);
+    if (Number.isNaN(x) !== Number.isNaN(y)) return Number.isNaN(x) ? 1 : -1;      // blanks last either way
+    return (Number.isNaN(x) ? 0 : dir * (x - y)) || n(a.pos_rank) - n(b.pos_rank); });
   const pct = (v) => (Number.isNaN(v) ? '—' : Math.round(100 * v) + '%');
   const dec = (v, k) => (Number.isNaN(v) ? '—' : d3.format('.' + k + 'f')(v));
   tbody.replaceChildren(...view.map((r) => {
@@ -878,7 +893,9 @@ dash.draw('players-body', (tbody) => {
     return tr;
   }));
 });
-document.querySelectorAll('.cf .pl-group').forEach((el) => el.addEventListener('change', () => { plCols(); dash.draw('players-body'); }));
+document.querySelectorAll('.cf .pl-group').forEach((el) => el.addEventListener('change', () => { plCols(); plSortOpts(); dash.draw('players-body'); }));
+document.querySelectorAll('.cf .pl-sort, .cf .pl-dir').forEach((el) => el.addEventListener('change', () => dash.draw('players-body')));
+plSortOpts();
 document.querySelectorAll('.cf .q-players').forEach((el) => el.addEventListener('input', () => dash.draw('players-body')));
 
 // team profile
