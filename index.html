@@ -342,13 +342,13 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     <div class="card tile">
       <div class="label">Most productive receiver</div>
       <div class="big" data-draw="pl-wr" data-source="player_tops" data-field="player" data-where="kind=WR/TE">—</div>
-      <div class="sub"><span data-draw="pl-wr-team" data-source="player_tops" data-field="team" data-where="kind=WR/TE">—</span> · <span data-draw="pl-wr-v" data-source="player_tops" data-field="value_pg" data-where="kind=WR/TE">—</span> EPA per game on his targets</div>
+      <div class="sub"><span data-draw="pl-wr-team" data-source="player_tops" data-field="team" data-where="kind=WR/TE">—</span> · <span data-draw="pl-wr-v" data-source="player_tops" data-field="value_pg" data-where="kind=WR/TE">—</span> opp-adjusted EPA per game on his targets</div>
     </div>
   </section>
 
   <section class="card" id="players-card" data-tab="players" hidden>
     <h2>Player values</h2>
-    <p class="note">Each position is valued the way it held up best when we tested it on later seasons, in points per game. Quarterbacks: expected points added per play (passes, sacks and runs), shrunk toward the league average until he has about 150 plays, minus what a backup-level quarterback produces, times his plays per game. Archetype comes from how he plays (how often he runs, sacks and throwaways, volume), not how well. Running backs: the model's estimate of expected points per carry above an average back after taking out his offensive line and play-calling (the offense's own effect) and the defenses he faced, times carries per game. Receivers: there is no reliable skill number for receivers (their EPA is mostly the quarterback and the offense), so value here is the EPA on passes thrown his way per game, a description of production, not a rating. Target share and air yards per target (aDOT) are the steadier signals. YAC = yards after the catch per catch; CPOE = completion percentage over expected on his targets. Qualifying: 100+ QB plays, 50+ carries, 25+ targets. FBS teams only.</p>
+    <p class="note">Each position is valued the way it held up best when we tested it on later seasons, in points per game. Every number below is opponent-adjusted unless labeled raw: each play is measured against what that defense allows on that kind of play (pass or run), after correcting the defense for the offenses it faced, so nobody is propped up by a soft schedule. Schedule = how much the defenses he faced allowed per play vs average (+ means a soft schedule inflated his raw numbers, − means a tough one held them down). Quarterbacks: opponent-adjusted expected points added per play (passes, sacks and runs), shrunk toward the league average until he has about 150 plays, minus what a backup-level quarterback produces, times his plays per game. Archetype comes from how he plays (how often he runs, sacks and throwaways, volume), not how well. Running backs: the model's estimate of expected points per carry above an average back after taking out his offensive line and play-calling (the offense's own effect) and the defenses he faced, times carries per game. Receivers: there is no reliable skill number for receivers (their EPA is mostly the quarterback and the offense), so value here is the opponent-adjusted EPA on passes thrown his way per game, a description of production, not a rating. Target share and air yards per target (aDOT) are the steadier signals. YAC = yards after the catch per catch; CPOE = completion percentage over expected on his targets. Qualifying: 100+ QB plays, 50+ carries, 25+ targets. FBS teams only.</p>
     <div class="controls">
       <label class="chk">Position <select class="pl-group" aria-label="Position group"><option value="QB">Quarterbacks</option><option value="RB">Running backs</option><option value="WR/TE">Receivers (WR / TE)</option></select></label>
       <input type="search" class="q-players" placeholder="Search players, teams or conferences" aria-label="Search players">
@@ -364,8 +364,9 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
           <th class="hide-narrow" data-field="games">G</th>
           <th class="l hide-narrow" data-field="usage">Usage</th>
           <th data-field="value_pg">Value (pts/g)</th>
-          <th data-field="epa_play">EPA per play</th>
-          <th class="pl-col" data-cols="QB RB" data-field="adj">Adjusted EPA</th>
+          <th data-field="epa_play">Raw EPA per play</th>
+          <th data-field="adj">Opp-adjusted EPA</th>
+          <th data-field="sos">Schedule</th>
           <th data-field="share">Team share</th>
           <th class="l pl-col" data-cols="QB" data-field="archetype">Archetype</th>
           <th class="pl-col" data-cols="RB" data-field="ypc">Yds per carry</th>
@@ -857,7 +858,7 @@ plTop('pl-rb', 'RB', (r) => r.player || '—'); plTop('pl-rb-team', 'RB', (r) =>
 plTop('pl-wr', 'WR/TE', (r) => r.player || '—'); plTop('pl-wr-team', 'WR/TE', (r) => r.team || '—'); plTop('pl-wr-v', 'WR/TE', (r) => CF.sgn1(r.value_pg));
 dash.draw('players-body', (tbody) => {
   const s = dash.data('players');
-  if (s.status === 'error') return CF.failRow(tbody, 16);
+  if (s.status === 'error') return CF.failRow(tbody, 17);
   if (s.status !== 'ok') return tbody.replaceChildren();
   const g = plGroup(); const q = CF.query('.q-players'); const n = CF.num;
   const view = s.data.filter((r) => r.group === g && (!q || [r.player, r.team, r.conf].some((v) => String(v).toLowerCase().includes(q))))
@@ -869,7 +870,7 @@ dash.draw('players-body', (tbody) => {
     cell(CF.intOr(n(r.pos_rank))); cell(r.player, 'l team'); cell(r.pos, 'l'); cell(r.team, 'l'); cell(r.conf, 'l hide-narrow');
     cell(CF.intOr(n(r.games)), 'hide-narrow'); cell(r.usage, 'l hide-narrow');
     cell(CF.sgn1(n(r.value_pg)), 'big'); cell(CF.sgnE(n(r.epa_play)));
-    if (g !== 'WR/TE') cell(CF.sgnE(n(r.adj)));
+    cell(CF.sgnE(n(r.adj)), 'big'); cell(CF.sgnE(n(r.sos)));
     cell(pct(n(r.share)));
     if (g === 'QB') { const p = n(r.archetype_p); cell(r.archetype ? r.archetype + (p < 0.6 ? ' (lean)' : '') : '—', 'l'); }
     if (g === 'RB') cell(dec(n(r.ypc), 1));
@@ -970,13 +971,13 @@ dash.draw('tpl-body', (box) => {
     const h = document.createElement('h3'); h.className = 'note'; h.style.marginTop = 'var(--cds-gap-md)'; h.textContent = label; parts.push(h);
     if (!rows.length) { const p = document.createElement('p'); p.className = 'note'; p.textContent = 'No qualifying players.'; parts.push(p); continue; }
     const tb = document.createElement('table');
-    tb.innerHTML = '<thead><tr><th class="l">Player</th><th class="l">Pos</th><th>Natl rank</th><th class="hide-narrow">G</th><th class="l hide-narrow">Usage</th><th>Value / game</th><th>EPA / play</th><th class="hide-narrow">Share</th>' +
+    tb.innerHTML = '<thead><tr><th class="l">Player</th><th class="l">Pos</th><th>Natl rank</th><th class="hide-narrow">G</th><th class="l hide-narrow">Usage</th><th>Value / game</th><th class="hide-narrow">Raw EPA / play</th><th>Adj EPA / play</th><th class="hide-narrow">Share</th>' +
       extra.map((e) => `<th${e === 'Style' ? ' class="l"' : ''}>${e}</th>`).join('') + '</tr></thead><tbody></tbody>';
     const body = tb.querySelector('tbody');
     rows.forEach((r) => {
       const { tr, cell } = CF.makeRow(r.player_id);
       cell(r.player, 'l team'); cell(r.pos, 'l'); cell(CF.intOr(n(r.pos_rank))); cell(CF.intOr(n(r.games)), 'hide-narrow'); cell(r.usage, 'l hide-narrow');
-      cell(CF.sgn1(n(r.value_pg)), 'big'); cell(CF.sgnE(n(r.epa_play))); cell(pc(n(r.share)), 'hide-narrow');
+      cell(CF.sgn1(n(r.value_pg)), 'big'); cell(CF.sgnE(n(r.epa_play)), 'hide-narrow'); cell(CF.sgnE(n(r.adj))); cell(pc(n(r.share)), 'hide-narrow');
       fx(r).forEach((v) => cell(v, extra[0] === 'Style' ? 'l' : ''));
       body.append(tr);
     });
