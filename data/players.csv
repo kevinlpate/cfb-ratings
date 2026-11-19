@@ -477,7 +477,7 @@ WR/TE,47,Luke Reynolds,TE,Virginia Tech,ACC,10,74 targets,4.69,0.617,0.634,-0.01
 WR/TE,48,Mazeo Bennett,WR,South Carolina,SEC,10,56 targets,4.66,0.692,0.833,-0.141,0.158,,,,8.3,7.6,16.7,descriptive,5079329
 WR/TE,49,Cam'Ron Lacy,WR,Middle Tennessee,Conference USA,10,93 targets,4.64,0.515,0.499,0.016,0.266,,,,8.2,5.7,5.4,descriptive,5091830
 WR/TE,50,Kari Ashley,TE,TCU,Big 12,10,72 targets,4.64,0.686,0.644,0.042,0.194,,,,6.4,7.1,11.0,descriptive,5391236
-WR/TE,51,Chance Morrow,WR,Buffalo,Mid-American,10,104 targets,4.64,0.464,0.446,0.018,0.32,,,,12.4,2.1,-1.5,descriptive,4869601
+WR/TE,51,Chance Morrow,WR,Buffalo,Mid-American,10,104 targets,4.64,0.464,0.446,0.018,0.32,,,,12.4,2.0,-2.2,descriptive,4869601
 WR/TE,52,Kayden McGee,WR,UNLV,Mountain West,9,34 targets,4.56,1.179,1.206,-0.027,0.117,,,,18.1,6.2,21.2,descriptive,5149831
 WR/TE,53,Wyatt Young,WR,Oklahoma State,Big 12,10,69 targets,4.54,0.67,0.658,0.012,0.182,,,,10.9,5.0,13.8,descriptive,5148787
 WR/TE,54,Lotzeir Brooks,WR,Alabama,SEC,9,44 targets,4.49,0.873,0.919,-0.046,0.144,,,,10.7,6.7,16.4,descriptive,5141394
@@ -671,7 +671,7 @@ WR/TE,241,Aaron Gregory,WR,Texas A&M,SEC,8,28 targets,2.12,0.623,0.605,0.019,0.0
 WR/TE,242,Cody Jackson,WR,Iowa State,Big 12,8,27 targets,2.09,0.624,0.621,0.003,0.095,,,,14.4,8.2,5.8,descriptive,4875853
 WR/TE,243,Dyzier Carter,WR,Rutgers,Big Ten,8,28 targets,2.09,0.509,0.596,-0.087,0.098,,,,14.2,1.7,9.1,descriptive,5158988
 WR/TE,244,Jabari Smith,WR,Ball State,Mid-American,7,32 targets,2.08,0.43,0.456,-0.026,0.098,,,,7.2,4.3,-11.2,descriptive,5078533
-WR/TE,245,Ty Harding,WR,Massachusetts,FBS Independents,7,41 targets,2.08,0.55,0.355,0.194,0.149,,,,13.2,2.5,16.4,descriptive,4909541
+WR/TE,245,Ty Harding,WR,Massachusetts,FBS Independents,7,41 targets,2.08,0.55,0.355,0.194,0.149,,,,12.5,2.8,14.8,descriptive,4909541
 WR/TE,246,Marshaun Brown,WR,Nevada,Mountain West,9,35 targets,2.08,0.382,0.534,-0.153,0.125,,,,14.9,3.3,-3.1,descriptive,5103836
 WR/TE,247,Cam Pickett,WR,Kansas,Big 12,8,58 targets,2.07,0.244,0.285,-0.041,0.191,,,,7.8,4.9,3.7,descriptive,4869603
 WR/TE,248,Justus Ross-Simmons,WR,Syracuse,ACC,9,31 targets,2.05,0.582,0.596,-0.013,0.078,,,,12.9,2.6,3.5,descriptive,4910239
@@ -731,7 +731,7 @@ WR/TE,301,Derrick Salley Jr.,WR,Kansas State,Big 12,8,48 targets,1.58,0.358,0.26
 WR/TE,302,Brandon Phelps,WR,Arizona,Big 12,10,32 targets,1.57,0.52,0.491,0.029,0.082,,,,9.2,4.8,13.5,descriptive,5121936
 WR/TE,303,Talyn Shettron,WR,Louisiana Tech,Conference USA,8,32 targets,1.57,0.403,0.392,0.012,0.101,,,,10.1,5.1,9.9,descriptive,4685517
 WR/TE,304,Tristian Gardner,WR,Coastal Carolina,Sun Belt,10,47 targets,1.56,0.371,0.333,0.039,0.146,,,,14.5,2.3,0.8,descriptive,5296438
-WR/TE,305,Jabari Lewis,WR,Massachusetts,FBS Independents,9,42 targets,1.55,0.457,0.332,0.125,0.152,,,,15.0,4.5,3.8,descriptive,5388332
+WR/TE,305,Jabari Lewis,WR,Massachusetts,FBS Independents,9,42 targets,1.55,0.457,0.332,0.125,0.152,,,,15.0,4.3,5.2,descriptive,5388332
 WR/TE,306,Tristen Brown,WR,Vanderbilt,SEC,10,31 targets,1.55,0.46,0.5,-0.039,0.091,,,,11.5,3.6,10.1,descriptive,5149910
 WR/TE,307,Decker DeGraaf,TE,Washington,Big Ten,10,28 targets,1.55,0.521,0.553,-0.031,0.074,,,,8.0,6.8,10.3,descriptive,5079373
 WR/TE,308,Kyan Berry-Johnson,WR,Sam Houston,Conference USA,7,25 targets,1.54,0.436,0.432,0.004,0.071,,,,5.8,4.3,2.0,descriptive,5142319
@@ -756,7 +756,7 @@ WR/TE,326,Kedarius Wade,WR,Louisiana,Sun Belt,10,31 targets,1.33,0.409,0.429,-0.
 WR/TE,327,Ricky Johnson,WR,Utah,Big 12,10,35 targets,1.33,0.407,0.38,0.027,0.113,,,,16.7,3.1,5.3,descriptive,5132652
 WR/TE,328,Braeden Wisloski,WR,James Madison,Sun Belt,11,55 targets,1.32,0.317,0.265,0.052,0.149,,,,8.6,6.1,4.1,descriptive,5078227
 WR/TE,329,Rodney Bullard Jr.,WR,Michigan State,Big Ten,9,37 targets,1.32,0.268,0.322,-0.054,0.118,,,,11.4,2.4,2.4,descriptive,5260691
-WR/TE,330,Miles Burris,WR,Akron,Mid-American,10,42 targets,1.32,0.369,0.314,0.055,0.127,,,,10.3,1.9,5.7,descriptive,5193102
+WR/TE,330,Miles Burris,WR,Akron,Mid-American,10,42 targets,1.32,0.369,0.314,0.055,0.127,,,,11.1,2.5,7.9,descriptive,5193102
 WR/TE,331,Malik Knight,WR,Pittsburgh,ACC,7,38 targets,1.32,0.262,0.243,0.02,0.106,,,,13.9,4.4,-8.9,descriptive,5089549
 WR/TE,332,Dasaahn Brame,TE,Tennessee,SEC,8,28 targets,1.32,0.279,0.376,-0.097,0.107,,,,5.7,7.9,-0.8,descriptive,5141391
 WR/TE,333,Jimmy Calloway,WR,Tulsa,American Athletic,7,50 targets,1.31,0.282,0.184,0.098,0.15,,,,9.8,2.0,9.1,descriptive,4429804
@@ -813,14 +813,14 @@ WR/TE,383,Victor Snow,WR,NC State,ACC,10,35 targets,0.99,0.285,0.284,0.001,0.105
 WR/TE,384,Jediyah Willoughby,WR,UConn,FBS Independents,10,28 targets,0.99,0.416,0.352,0.064,0.091,,,,14.7,5.0,5.2,descriptive,5125750
 WR/TE,385,Parker Fulghum,WR,UL Monroe,Sun Belt,10,31 targets,0.99,0.297,0.318,-0.021,0.095,,,,10.1,1.9,-5.5,descriptive,5218754
 WR/TE,386,Jamarion McDougle,WR,Ball State,Mid-American,10,52 targets,0.98,0.17,0.188,-0.018,0.159,,,,11.5,3.0,-8.1,descriptive,5222761
-WR/TE,387,Jaylen Andrews,WR,Buffalo,Mid-American,9,35 targets,0.97,0.302,0.249,0.053,0.108,,,,8.3,2.8,0.7,descriptive,5387611
-WR/TE,388,Kezion Dia-Johnson,WR,Massachusetts,FBS Independents,8,26 targets,0.95,0.377,0.291,0.086,0.094,,,,14.0,6.3,12.2,descriptive,5146743
+WR/TE,387,Jaylen Andrews,WR,Buffalo,Mid-American,9,35 targets,0.97,0.302,0.249,0.053,0.108,,,,9.4,2.9,1.4,descriptive,5387611
+WR/TE,388,Kezion Dia-Johnson,WR,Massachusetts,FBS Independents,8,26 targets,0.95,0.377,0.291,0.086,0.094,,,,14.8,5.9,9.6,descriptive,5146743
 WR/TE,389,Micah Hudson,WR,Texas Tech,Big 12,10,34 targets,0.94,0.333,0.277,0.056,0.113,,,,14.1,4.4,-3.7,descriptive,5079492
 WR/TE,390,AJ Jones,WR,Middle Tennessee,Conference USA,10,28 targets,0.92,0.325,0.33,-0.005,0.08,,,,10.9,1.0,0.5,descriptive,5086628
 WR/TE,391,Nick Devereaux,WR,Eastern Michigan,Mid-American,6,41 targets,0.92,0.065,0.134,-0.069,0.111,,,,11.3,3.2,-1.5,descriptive,5083205
 WR/TE,392,Davis Bryson,WR,Kennesaw State,Conference USA,9,40 targets,0.91,0.174,0.205,-0.031,0.113,,,,6.4,3.8,2.4,descriptive,5083103
 WR/TE,393,Tastean Reddicks,WR,UNLV,Mountain West,9,39 targets,0.91,0.213,0.209,0.004,0.134,,,,14.7,1.4,5.7,descriptive,4870965
-WR/TE,394,Kyan Mason,WR,Akron,Mid-American,10,57 targets,0.9,0.165,0.158,0.008,0.172,,,,12.0,5.5,-1.7,descriptive,5110019
+WR/TE,394,Kyan Mason,WR,Akron,Mid-American,10,57 targets,0.9,0.165,0.158,0.008,0.172,,,,12.3,5.3,-0.3,descriptive,5110019
 WR/TE,395,Nate Branch,WR,App State,Sun Belt,10,59 targets,0.89,0.201,0.151,0.05,0.172,,,,6.4,6.5,1.8,descriptive,5224355
 WR/TE,396,Chris Corbo,TE,Georgia Tech,ACC,8,30 targets,0.87,0.214,0.232,-0.018,0.086,,,,4.3,5.7,2.9,descriptive,5085509
 WR/TE,397,Anthony Garcia,WR,Utah State,Mountain West,10,51 targets,0.87,0.279,0.17,0.109,0.163,,,,12.2,1.6,6.1,descriptive,5151339
@@ -847,7 +847,7 @@ WR/TE,417,Darrin Fugitt,WR,App State,Sun Belt,8,41 targets,0.6,0.161,0.116,0.045
 WR/TE,418,Aaron Butler,WR,Oregon State,Pac-12,10,39 targets,0.58,0.246,0.148,0.097,0.088,,,,17.6,4.7,-6.6,descriptive,5079357
 WR/TE,419,Joshua Manning,WR,Kansas State,Big 12,10,59 targets,0.58,0.168,0.098,0.07,0.171,,,,9.4,4.6,-2.8,descriptive,4921113
 WR/TE,420,Jojo Phillips,WR,BYU,Big 12,9,25 targets,0.57,0.212,0.206,0.006,0.088,,,,9.6,3.8,2.4,descriptive,5160955
-WR/TE,421,Max Dowling,TE,Massachusetts,FBS Independents,9,28 targets,0.57,0.295,0.184,0.111,0.101,,,,6.7,3.4,-4.1,descriptive,5092954
+WR/TE,421,Max Dowling,TE,Massachusetts,FBS Independents,9,28 targets,0.57,0.295,0.184,0.111,0.101,,,,6.8,3.0,-1.8,descriptive,5092954
 WR/TE,422,Garrett Mmahat,WR,Tulane,American Athletic,9,25 targets,0.56,0.218,0.201,0.017,0.079,,,,9.2,4.3,-16.6,descriptive,5091744
 WR/TE,423,Eric Richardson,WR,Wyoming,Mountain West,9,29 targets,0.53,0.268,0.163,0.105,0.126,,,,10.8,4.5,0.2,descriptive,5296622
 WR/TE,424,Lynel Billups-Williams,WR,Miami (OH),Mid-American,10,42 targets,0.52,0.285,0.124,0.161,0.151,,,,5.5,10.0,-12.5,descriptive,5085354
@@ -856,7 +856,7 @@ WR/TE,426,Linkon Cure,TE,Kansas State,Big 12,10,30 targets,0.5,0.208,0.168,0.04,
 WR/TE,427,Javon Robinson,WR,Utah State,Mountain West,9,45 targets,0.47,0.092,0.094,-0.002,0.144,,,,9.5,7.5,-10.4,descriptive,5158829
 WR/TE,428,Noreel White,WR,Troy,Sun Belt,10,48 targets,0.47,0.059,0.098,-0.038,0.149,,,,12.9,4.0,-5.7,descriptive,5079632
 WR/TE,429,Brett Eskildsen,WR,Penn State,Big Ten,10,43 targets,0.46,0.055,0.106,-0.051,0.137,,,,12.9,4.0,4.0,descriptive,5148535
-WR/TE,430,Dwayne Early Jr.,WR,Buffalo,Mid-American,9,38 targets,0.44,0.16,0.104,0.057,0.117,,,,13.9,1.9,-4.6,descriptive,5295436
+WR/TE,430,Dwayne Early Jr.,WR,Buffalo,Mid-American,9,38 targets,0.44,0.16,0.104,0.057,0.117,,,,13.8,1.8,-3.1,descriptive,5295436
 WR/TE,431,Damien Moun,WR,Nevada,Mountain West,8,52 targets,0.44,-0.047,0.067,-0.114,0.186,,,,4.1,2.9,-3.6,descriptive,5158756
 WR/TE,432,JP Coulter,WR,UL Monroe,Sun Belt,10,36 targets,0.42,0.066,0.117,-0.051,0.111,,,,10.6,4.8,-5.3,descriptive,5295735
 WR/TE,433,Ismael Cisse,WR,Arkansas,SEC,10,25 targets,0.42,0.078,0.168,-0.09,0.071,,,,10.5,2.4,-12.4,descriptive,5120970
@@ -865,8 +865,8 @@ WR/TE,435,Caleb Smith,WR,Arizona,Big 12,9,27 targets,0.4,0.119,0.134,-0.015,0.06
 WR/TE,436,Preston Bowman,WR,Ohio,Mid-American,10,47 targets,0.37,0.212,0.079,0.133,0.176,,,,11.0,6.8,-5.9,descriptive,5211691
 WR/TE,437,Jeremy Scott,WR,TCU,Big 12,9,28 targets,0.37,0.216,0.118,0.098,0.075,,,,13.0,2.2,-1.6,descriptive,5126534
 WR/TE,438,LT Robinson,WR,UL Monroe,Sun Belt,10,26 targets,0.34,0.104,0.13,-0.026,0.08,,,,5.0,7.8,-3.9,descriptive,5382841
-WR/TE,439,Reece Adkins,TE,Massachusetts,FBS Independents,10,32 targets,0.32,0.222,0.1,0.123,0.116,,,,5.8,4.6,6.4,descriptive,4688904
-WR/TE,440,Clint Walker,TE,Buffalo,Mid-American,10,41 targets,0.31,0.072,0.077,-0.005,0.126,,,,6.7,2.4,-12.7,descriptive,5387612
+WR/TE,439,Reece Adkins,TE,Massachusetts,FBS Independents,10,32 targets,0.32,0.222,0.1,0.123,0.116,,,,5.8,4.6,4.7,descriptive,4688904
+WR/TE,440,Clint Walker,TE,Buffalo,Mid-American,10,41 targets,0.31,0.072,0.077,-0.005,0.126,,,,7.4,2.9,-8.3,descriptive,5387612
 WR/TE,441,Jabari Bush,TE,Arkansas State,Sun Belt,8,25 targets,0.31,0.116,0.1,0.016,0.079,,,,11.5,4.2,-6.4,descriptive,5221048
 WR/TE,442,Jace Petty,WR,Troy,Sun Belt,10,40 targets,0.31,0.062,0.077,-0.015,0.124,,,,10.8,4.3,-4.5,descriptive,5150277
 WR/TE,443,Andrew Marsh,WR,Michigan,Big Ten,10,81 targets,0.3,-0.007,0.037,-0.045,0.31,,,,10.1,4.0,-3.6,descriptive,5141572
@@ -878,7 +878,7 @@ WR/TE,448,Jordan Napier,WR,San Diego State,Mountain West,10,32 targets,0.25,0.11
 WR/TE,449,Ardell Banks,WR,Kent State,Mid-American,9,27 targets,0.22,0.138,0.072,0.066,0.082,,,,15.5,5.9,-2.7,descriptive,5027432
 WR/TE,450,Jeremiah Harrison,WR,James Madison,Sun Belt,10,40 targets,0.2,0.074,0.051,0.023,0.109,,,,10.2,2.5,-3.0,descriptive,5301873
 WR/TE,451,Zion Taylor,WR,Western Kentucky,Conference USA,8,26 targets,0.18,0.081,0.056,0.025,0.069,,,,5.6,7.5,-1.6,descriptive,4921322
-WR/TE,452,Braylen Naves,WR,Central Michigan,Mid-American,10,27 targets,0.16,0.075,0.06,0.015,0.116,,,,15.3,2.6,-7.6,descriptive,5216575
+WR/TE,452,Braylen Naves,WR,Central Michigan,Mid-American,10,27 targets,0.16,0.075,0.06,0.015,0.116,,,,14.8,4.5,-7.3,descriptive,5216575
 WR/TE,453,Jack Pedersen,TE,Washington State,Pac-12,9,27 targets,0.13,0.031,0.042,-0.011,0.077,,,,4.4,3.2,-10.2,descriptive,4685492
 WR/TE,454,Jeremiah Scoby,TE,Bowling Green,Mid-American,10,50 targets,0.11,0.154,0.023,0.131,0.183,,,,5.3,6.1,-12.4,descriptive,5207804
 WR/TE,455,Brendyn Smith,WR,Kent State,Mid-American,6,38 targets,0.11,0.062,0.017,0.045,0.115,,,,14.8,2.9,-16.9,descriptive,5291801
@@ -900,7 +900,7 @@ WR/TE,470,Brodrick Malone,WR,New Mexico State,Conference USA,9,32 targets,-0.32,
 WR/TE,471,Tyler Johnson,WR,East Carolina,American Athletic,8,30 targets,-0.36,-0.033,-0.096,0.063,0.09,,,,17.9,0.6,-11.6,descriptive,4869324
 WR/TE,472,Terrence Brown Jr.,WR,Middle Tennessee,Conference USA,8,44 targets,-0.39,-0.056,-0.071,0.015,0.126,,,,1.4,6.0,-8.3,descriptive,5306988
 WR/TE,473,Javonte Vereen,WR,Colorado State,Mountain West,7,31 targets,-0.4,-0.089,-0.09,0.0,0.088,,,,5.8,2.9,-13.1,descriptive,4899418
-WR/TE,474,Justin Ruffin Jr.,WR,Central Michigan,Mid-American,7,30 targets,-0.43,-0.038,-0.101,0.063,0.129,,,,9.1,3.7,-12.1,descriptive,5295488
+WR/TE,474,Justin Ruffin Jr.,WR,Central Michigan,Mid-American,7,30 targets,-0.43,-0.038,-0.101,0.063,0.129,,,,9.4,3.5,-11.1,descriptive,5295488
 WR/TE,475,Terrell Crosby Jr.,WR,Toledo,Mid-American,8,35 targets,-0.46,0.021,-0.105,0.126,0.111,,,,9.3,4.5,4.7,descriptive,4812374
 WR/TE,476,James Resar,TE,Florida International,Conference USA,8,35 targets,-0.58,-0.077,-0.133,0.056,0.101,,,,6.8,4.5,-11.2,descriptive,5079684
 WR/TE,477,Patrick Clacks III,WR,Buffalo,Mid-American,8,29 targets,-0.59,-0.139,-0.162,0.023,0.089,,,,11.7,3.5,-16.0,descriptive,5084704
