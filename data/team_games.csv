@@ -8,8 +8,8 @@ Air Force,7,regular,Sat Oct 17,home,UNLV,91.0,False,final,W,41.0,31.0,0.52,0.8
 Air Force,8,regular,Fri Oct 23,away,Wyoming,108.0,False,final,L,14.0,28.0,0.794,12.5
 Air Force,9,regular,Sat Oct 31,home,UConn,81.0,False,final,W,35.0,26.0,0.532,1.2
 Air Force,10,regular,Sat Nov 7,away,Army,82.0,False,final,W,24.0,21.0,0.368,-5.1
-Air Force,11,regular,Sat Nov 14,home,San José State,122.0,False,final,W,24.0,3.0,0.828,14.3
-Air Force,12,regular,Fri Nov 20,home,UTEP,137.0,False,upcoming,,,,0.942,23.8
+Air Force,11,regular,Sat Nov 14,home,San José State,121.0,False,final,W,24.0,3.0,0.828,14.3
+Air Force,12,regular,Fri Nov 20,home,UTEP,137.0,False,upcoming,,,,0.942,23.7
 Air Force,13,regular,Fri Nov 27,away,New Mexico,55.0,False,upcoming,,,,0.289,-8.4
 Akron,1,regular,Thu Sep 3,away,Wake Forest,5.0,False,final,L,16.0,38.0,0.058,-26.0
 Akron,2,regular,Sat Sep 12,home,Robert Morris,,True,final,W,45.0,10.0,0.894,18.7
@@ -39,14 +39,14 @@ App State,1,regular,Sat Sep 5,home,Maine,,True,final,W,55.0,3.0,0.895,19.2
 App State,2,regular,Sat Sep 12,away,East Carolina,90.0,False,final,W,27.0,24.0,0.296,-8.6
 App State,3,regular,Sat Sep 19,home,Charlotte,133.0,False,final,W,26.0,21.0,0.875,18.2
 App State,4,regular,Sat Sep 26,away,NC State,74.0,False,final,L,31.0,41.0,0.186,-14.0
-App State,6,regular,Sat Oct 10,home,Old Dominion,112.0,False,final,L,3.0,10.0,0.668,6.7
+App State,6,regular,Sat Oct 10,home,Old Dominion,113.0,False,final,L,3.0,10.0,0.668,6.7
 App State,7,regular,Fri Oct 16,away,Coastal Carolina,109.0,False,final,W,35.0,32.0,0.516,0.6
 App State,8,regular,Thu Oct 22,home,James Madison,66.0,False,final,W,34.0,31.0,0.211,-12.3
 App State,9,regular,Sat Oct 31,away,Georgia Southern,67.0,False,final,L,3.0,19.0,0.341,-6.2
 App State,10,regular,Sat Nov 7,home,Georgia State,102.0,False,final,L,23.0,39.0,0.601,3.9
 App State,11,regular,Sat Nov 14,away,Marshall,124.0,False,final,W,20.0,16.0,0.579,3.0
-App State,12,regular,Sat Nov 21,home,UL Monroe,130.0,False,upcoming,,,,0.794,12.4
-App State,13,regular,Fri Nov 27,away,South Alabama,106.0,False,upcoming,,,,0.431,-2.6
+App State,12,regular,Sat Nov 21,home,UL Monroe,130.0,False,upcoming,,,,0.793,12.4
+App State,13,regular,Fri Nov 27,away,South Alabama,106.0,False,upcoming,,,,0.43,-2.7
 Arizona,1,regular,Sat Sep 5,home,Northern Arizona,,True,final,W,35.0,7.0,0.997,42.4
 Arizona,2,regular,Sat Sep 12,away,BYU,20.0,False,final,L,17.0,28.0,0.231,-11.8
 Arizona,3,regular,Sat Sep 19,home,Northern Illinois,138.0,False,final,W,42.0,17.0,0.985,34.3
@@ -74,7 +74,7 @@ Arizona State,13,regular,Sat Nov 28,away,Arizona,29.0,False,upcoming,,,,0.255,-9
 Arkansas,1,regular,Sat Sep 5,home,North Alabama,,True,final,W,31.0,14.0,0.995,39.7
 Arkansas,2,regular,Sat Sep 12,away,Utah,13.0,False,final,L,10.0,43.0,0.19,-14.1
 Arkansas,3,regular,Sat Sep 19,home,Georgia,1.0,False,final,L,17.0,45.0,0.041,-27.6
-Arkansas,4,regular,Sat Sep 26,home,Tulsa,57.0,False,final,W,34.0,6.0,0.644,5.8
+Arkansas,4,regular,Sat Sep 26,home,Tulsa,56.0,False,final,W,34.0,6.0,0.644,5.8
 Arkansas,5,regular,Sat Oct 3,away,Texas A&M,26.0,False,final,L,7.0,34.0,0.106,-19.3
 Arkansas,6,regular,Sat Oct 10,home,Tennessee,8.0,False,final,L,17.0,24.0,0.141,-16.5
 Arkansas,7,regular,Sat Oct 17,away,Vanderbilt,48.0,False,final,W,31.0,21.0,0.334,-6.6
@@ -97,16 +97,16 @@ Arkansas State,12,regular,Sat Nov 21,away,Louisiana Tech,59.0,False,upcoming,,,,
 Arkansas State,13,regular,Sat Nov 28,home,Troy,117.0,False,upcoming,,,,0.597,3.7
 Army,1,regular,Sat Sep 5,home,Bryant,,True,final,W,59.0,3.0,0.988,35.2
 Army,2,regular,Sat Sep 12,home,South Florida,85.0,False,final,L,24.0,28.0,0.672,7.2
-Army,4,regular,Fri Sep 25,away,Temple,120.0,False,final,W,21.0,17.0,0.678,7.3
+Army,4,regular,Fri Sep 25,away,Temple,122.0,False,final,W,21.0,17.0,0.678,7.3
 Army,5,regular,Sat Oct 3,away,Louisiana Tech,59.0,False,final,L,29.0,31.0,0.578,3.1
-Army,6,regular,Sat Oct 10,home,Tulane,113.0,False,final,W,20.0,17.0,0.737,9.9
+Army,6,regular,Sat Oct 10,home,Tulane,112.0,False,final,W,20.0,17.0,0.737,9.9
 Army,7,regular,Sat Oct 17,home,Florida Atlantic,93.0,False,final,W,56.0,24.0,0.682,7.3
-Army,8,regular,Fri Oct 23,away,Tulsa,57.0,False,final,W,38.0,35.0,0.59,3.5
+Army,8,regular,Fri Oct 23,away,Tulsa,56.0,False,final,W,38.0,35.0,0.59,3.5
 Army,9,regular,Sat Oct 31,away,Memphis,49.0,False,final,L,22.0,49.0,0.437,-2.4
 Army,10,regular,Sat Nov 7,home,Air Force,80.0,False,final,L,21.0,24.0,0.632,5.1
-Army,12,regular,Sat Nov 21,home,East Carolina,90.0,False,upcoming,,,,0.653,6.0
-Army,13,regular,Sat Nov 28,away,Rice,121.0,False,upcoming,,,,0.738,9.7
-Army,15,regular,Sat Dec 12,neutral,Navy,71.0,False,upcoming,,,,0.454,-1.8
+Army,12,regular,Sat Nov 21,home,East Carolina,90.0,False,upcoming,,,,0.654,6.0
+Army,13,regular,Sat Nov 28,away,Rice,118.0,False,upcoming,,,,0.723,8.9
+Army,15,regular,Sat Dec 12,neutral,Navy,71.0,False,upcoming,,,,0.455,-1.7
 Auburn,1,regular,Sat Sep 5,neutral,Baylor,31.0,False,final,W,17.0,16.0,0.751,11.2
 Auburn,2,regular,Sat Sep 12,home,Southern Miss,127.0,False,final,W,43.0,8.0,0.941,25.2
 Auburn,3,regular,Sat Sep 19,home,Florida,21.0,False,final,L,39.0,44.0,0.422,-3.1
@@ -176,7 +176,7 @@ Boston College,8,regular,Sat Oct 24,away,Georgia Tech,75.0,False,final,W,49.0,27
 Boston College,9,regular,Sat Oct 31,away,Duke,18.0,False,final,L,2.0,47.0,0.259,-9.9
 Boston College,10,regular,Sat Nov 7,home,Florida State,37.0,False,final,L,24.0,31.0,0.288,-8.5
 Boston College,11,regular,Sat Nov 14,away,Notre Dame,2.0,False,final,L,7.0,41.0,0.012,-34.2
-Boston College,12,regular,Sat Nov 21,home,Syracuse,56.0,False,upcoming,,,,0.395,-4.0
+Boston College,12,regular,Sat Nov 21,home,Syracuse,57.0,False,upcoming,,,,0.395,-4.0
 Boston College,13,regular,Sat Nov 28,away,Miami,4.0,False,upcoming,,,,0.015,-32.5
 Bowling Green,1,regular,Sat Sep 5,home,Tarleton State,,True,final,L,13.0,20.0,0.92,21.8
 Bowling Green,2,regular,Sat Sep 12,away,Nebraska,25.0,False,final,L,7.0,56.0,0.02,-33.1
@@ -203,7 +203,7 @@ Buffalo,11,regular,Wed Nov 11,away,Ball State,131.0,False,final,W,28.0,7.0,0.534
 Buffalo,12,regular,Wed Nov 18,home,Central Michigan,111.0,False,final,W,40.0,21.0,0.532,1.2
 Buffalo,13,regular,Fri Nov 27,away,Akron,134.0,False,upcoming,,,,0.728,9.1
 California,1,regular,Sat Sep 5,home,UCLA,17.0,False,final,L,24.0,45.0,0.393,-4.5
-California,2,regular,Sat Sep 12,away,Syracuse,56.0,False,final,W,21.0,18.0,0.24,-11.4
+California,2,regular,Sat Sep 12,away,Syracuse,57.0,False,final,W,21.0,18.0,0.24,-11.4
 California,3,regular,Sat Sep 19,home,Wagner,,True,final,W,49.0,7.0,0.978,29.9
 California,4,regular,Fri Sep 25,home,Clemson,54.0,False,final,L,10.0,24.0,0.337,-6.6
 California,5,regular,Sat Oct 3,away,UNLV,91.0,False,final,L,31.0,39.0,0.475,-1.0
@@ -232,11 +232,11 @@ Charlotte,3,regular,Sat Sep 19,away,App State,105.0,False,final,L,21.0,26.0,0.12
 Charlotte,4,regular,Sat Sep 26,home,Louisiana,87.0,False,final,L,7.0,34.0,0.247,-10.7
 Charlotte,5,regular,Sat Oct 3,home,Memphis,49.0,False,final,L,8.0,59.0,0.19,-13.6
 Charlotte,6,regular,Sat Oct 10,away,North Texas,61.0,False,final,L,10.0,50.0,0.027,-29.7
-Charlotte,7,regular,Sat Oct 17,away,Temple,120.0,False,final,W,38.0,31.0,0.086,-20.8
-Charlotte,9,regular,Fri Oct 30,home,Tulane,113.0,False,final,L,31.0,38.0,0.195,-13.2
+Charlotte,7,regular,Sat Oct 17,away,Temple,122.0,False,final,W,38.0,31.0,0.086,-20.8
+Charlotte,9,regular,Fri Oct 30,home,Tulane,112.0,False,final,L,31.0,38.0,0.195,-13.2
 Charlotte,10,regular,Sat Nov 7,away,UAB,98.0,False,final,L,12.0,23.0,0.188,-13.5
 Charlotte,11,regular,Sat Nov 14,home,East Carolina,90.0,False,final,L,16.0,17.0,0.152,-15.6
-Charlotte,12,regular,Sat Nov 21,away,Tulsa,57.0,False,upcoming,,,,0.035,-27.4
+Charlotte,12,regular,Sat Nov 21,away,Tulsa,56.0,False,upcoming,,,,0.035,-27.5
 Charlotte,13,regular,Sat Nov 28,home,Navy,71.0,False,upcoming,,,,0.118,-18.0
 Cincinnati,1,regular,Sat Sep 5,home,Boston College,84.0,False,final,W,34.0,15.0,0.608,4.5
 Cincinnati,2,regular,Sat Sep 12,home,Western Carolina,,True,final,W,62.0,10.0,0.992,36.3
@@ -258,7 +258,7 @@ Clemson,5,regular,Sat Oct 3,home,Miami,4.0,False,final,L,13.0,41.0,0.162,-15.3
 Clemson,7,regular,Sat Oct 17,home,Charleston Southern,,True,final,W,37.0,0.0,0.999,44.5
 Clemson,8,regular,Sat Oct 24,home,Virginia Tech,68.0,False,final,L,16.0,20.0,0.623,4.8
 Clemson,9,regular,Sat Oct 31,away,Florida State,37.0,False,final,W,36.0,24.0,0.338,-6.4
-Clemson,10,regular,Sat Nov 7,away,Syracuse,56.0,False,final,W,18.0,13.0,0.527,1.0
+Clemson,10,regular,Sat Nov 7,away,Syracuse,57.0,False,final,W,18.0,13.0,0.527,1.0
 Clemson,11,regular,Sat Nov 14,home,Georgia Tech,75.0,False,final,L,6.0,20.0,0.83,14.4
 Clemson,12,regular,Fri Nov 20,away,Duke,18.0,False,upcoming,,,,0.165,-14.7
 Clemson,13,regular,Sat Nov 28,home,South Carolina,27.0,False,upcoming,,,,0.33,-6.6
@@ -270,7 +270,7 @@ Coastal Carolina,5,regular,Sat Oct 3,home,Georgia Southern,67.0,False,final,L,24
 Coastal Carolina,6,regular,Sat Oct 10,away,Marshall,124.0,False,final,W,27.0,21.0,0.537,1.4
 Coastal Carolina,7,regular,Fri Oct 16,home,App State,105.0,False,final,L,32.0,35.0,0.484,-0.6
 Coastal Carolina,9,regular,Sat Oct 31,away,Georgia State,102.0,False,final,W,31.0,20.0,0.307,-7.7
-Coastal Carolina,10,regular,Sat Nov 7,home,Old Dominion,112.0,False,final,L,8.0,21.0,0.673,6.8
+Coastal Carolina,10,regular,Sat Nov 7,home,Old Dominion,113.0,False,final,L,8.0,21.0,0.673,6.8
 Coastal Carolina,11,regular,Sat Nov 14,home,Arkansas State,116.0,False,final,W,28.0,21.0,0.579,3.0
 Coastal Carolina,12,regular,Sat Nov 21,away,Louisiana,87.0,False,upcoming,,,,0.25,-10.2
 Coastal Carolina,13,regular,Sat Nov 28,away,James Madison,66.0,False,upcoming,,,,0.158,-15.1
@@ -296,20 +296,20 @@ Colorado State,8,regular,Sat Oct 24,home,San Diego State,99.0,False,final,W,56.0
 Colorado State,9,regular,Sat Oct 31,away,Utah State,96.0,False,final,L,14.0,31.0,0.299,-8.1
 Colorado State,10,regular,Sat Nov 7,home,Boise State,41.0,False,final,L,38.0,64.0,0.093,-20.1
 Colorado State,11,regular,Sat Nov 14,away,Washington State,89.0,False,final,L,7.0,73.0,0.33,-6.7
-Colorado State,12,regular,Sat Nov 21,away,Fresno State,77.0,False,upcoming,,,,0.076,-21.5
+Colorado State,12,regular,Sat Nov 21,away,Fresno State,77.0,False,upcoming,,,,0.076,-21.6
 Delaware,1,regular,Thu Sep 3,home,Merrimack,,True,final,W,42.0,7.0,0.859,17.5
 Delaware,2,regular,Sat Sep 12,away,Vanderbilt,48.0,False,final,L,26.0,35.0,0.126,-18.4
 Delaware,3,regular,Sat Sep 19,home,Coastal Carolina,109.0,False,final,W,22.0,14.0,0.721,9.3
 Delaware,4,regular,Sat Sep 26,away,Virginia,52.0,False,final,L,3.0,42.0,0.139,-16.9
 Delaware,5,regular,Fri Oct 2,home,Liberty,60.0,False,final,L,14.0,30.0,0.511,0.4
-Delaware,7,regular,Tue Oct 13,away,Middle Tennessee,118.0,False,final,L,30.0,33.0,0.649,5.9
-Delaware,8,regular,Tue Oct 20,home,Missouri State,119.0,False,final,W,61.0,38.0,0.587,3.4
+Delaware,7,regular,Tue Oct 13,away,Middle Tennessee,119.0,False,final,L,30.0,33.0,0.649,5.9
+Delaware,8,regular,Tue Oct 20,home,Missouri State,120.0,False,final,W,61.0,38.0,0.587,3.4
 Delaware,9,regular,Tue Oct 27,away,Western Kentucky,107.0,False,final,W,35.0,21.0,0.421,-3.1
 Delaware,10,regular,Sat Nov 7,away,Kennesaw State,100.0,False,final,L,40.0,42.0,0.506,0.2
 Delaware,11,regular,Sat Nov 14,home,Florida International,115.0,False,final,W,24.0,16.0,0.698,7.8
 Delaware,12,regular,Sat Nov 21,away,New Mexico State,123.0,False,upcoming,,,,0.642,5.5
 Delaware,13,regular,Sat Nov 28,home,Jacksonville State,92.0,False,upcoming,,,,0.531,1.2
-Duke,1,regular,Sat Sep 5,home,Tulane,113.0,False,final,W,17.0,3.0,0.825,15.5
+Duke,1,regular,Sat Sep 5,home,Tulane,112.0,False,final,W,17.0,3.0,0.825,15.5
 Duke,2,regular,Sat Sep 12,away,Illinois,39.0,False,final,W,31.0,27.0,0.444,-2.3
 Duke,3,regular,Sat Sep 19,home,Stanford,86.0,False,final,W,35.0,7.0,0.805,13.7
 Duke,4,regular,Sat Sep 26,home,William & Mary,,True,final,W,62.0,7.0,0.999,46.4
@@ -323,18 +323,18 @@ Duke,12,regular,Fri Nov 20,home,Clemson,54.0,False,upcoming,,,,0.835,14.7
 Duke,13,regular,Sat Nov 28,away,Wake Forest,5.0,False,upcoming,,,,0.205,-12.5
 East Carolina,1,regular,Sat Sep 5,away,Alabama,3.0,False,final,L,10.0,48.0,0.058,-26.0
 East Carolina,2,regular,Sat Sep 12,home,App State,105.0,False,final,L,24.0,27.0,0.704,8.6
-East Carolina,3,regular,Sat Sep 19,away,Old Dominion,112.0,False,final,W,20.0,17.0,0.472,-1.1
+East Carolina,3,regular,Sat Sep 19,away,Old Dominion,113.0,False,final,W,20.0,17.0,0.472,-1.1
 East Carolina,4,regular,Sat Sep 26,home,North Carolina Central,,True,final,W,42.0,9.0,0.987,32.6
-East Carolina,6,regular,Sat Oct 10,home,Rice,121.0,False,final,W,28.0,12.0,0.815,13.8
+East Carolina,6,regular,Sat Oct 10,home,Rice,118.0,False,final,W,28.0,12.0,0.815,13.8
 East Carolina,7,regular,Thu Oct 15,away,UAB,98.0,False,final,L,17.0,30.0,0.754,10.6
 East Carolina,8,regular,Thu Oct 22,away,Memphis,49.0,False,final,L,34.0,41.0,0.3,-8.0
-East Carolina,9,regular,Sat Oct 31,home,Temple,120.0,False,final,W,17.0,9.0,0.73,9.4
+East Carolina,9,regular,Sat Oct 31,home,Temple,122.0,False,final,W,17.0,9.0,0.73,9.4
 East Carolina,10,regular,Fri Nov 6,home,South Florida,85.0,False,final,W,20.0,17.0,0.507,0.2
 East Carolina,11,regular,Sat Nov 14,away,Charlotte,133.0,False,final,W,17.0,16.0,0.848,15.6
-East Carolina,12,regular,Sat Nov 21,away,Army,82.0,False,upcoming,,,,0.347,-6.0
-East Carolina,13,regular,Sat Nov 28,home,Florida Atlantic,93.0,False,upcoming,,,,0.6,3.8
+East Carolina,12,regular,Sat Nov 21,away,Army,82.0,False,upcoming,,,,0.346,-6.0
+East Carolina,13,regular,Sat Nov 28,home,Florida Atlantic,93.0,False,upcoming,,,,0.597,3.7
 Eastern Michigan,1,regular,Sat Aug 29,home,Sacramento State,136.0,False,final,W,28.0,17.0,0.267,-10.3
-Eastern Michigan,1,regular,Fri Sep 4,home,San José State,122.0,False,final,L,21.0,27.0,0.709,8.8
+Eastern Michigan,1,regular,Fri Sep 4,home,San José State,121.0,False,final,L,21.0,27.0,0.709,8.8
 Eastern Michigan,2,regular,Sat Sep 12,away,Michigan State,64.0,False,final,L,7.0,35.0,0.309,-8.0
 Eastern Michigan,3,regular,Sat Sep 19,away,Wisconsin,38.0,False,final,L,10.0,54.0,0.116,-18.8
 Eastern Michigan,4,regular,Sat Sep 26,home,Lindenwood,,True,final,W,29.0,3.0,0.882,17.4
@@ -363,21 +363,21 @@ Florida Atlantic,3,regular,Sat Sep 19,home,Florida International,115.0,False,fin
 Florida Atlantic,4,regular,Sat Sep 26,away,UL Monroe,130.0,False,final,W,45.0,17.0,0.666,6.7
 Florida Atlantic,5,regular,Sat Oct 3,home,Texas Southern,,True,final,W,66.0,10.0,0.973,28.2
 Florida Atlantic,7,regular,Sat Oct 17,away,Army,82.0,False,final,L,24.0,56.0,0.318,-7.3
-Florida Atlantic,8,regular,Sat Oct 24,home,Rice,121.0,False,final,W,51.0,49.0,0.747,10.2
+Florida Atlantic,8,regular,Sat Oct 24,home,Rice,118.0,False,final,W,51.0,49.0,0.747,10.2
 Florida Atlantic,9,regular,Thu Oct 29,away,North Texas,61.0,False,final,L,41.0,48.0,0.14,-16.5
 Florida Atlantic,10,regular,Thu Nov 5,home,UTSA,76.0,False,final,W,60.0,29.0,0.313,-7.4
-Florida Atlantic,11,regular,Sat Nov 14,away,Tulsa,57.0,False,final,L,21.0,38.0,0.262,-9.6
-Florida Atlantic,12,regular,Sat Nov 21,home,South Florida,85.0,False,upcoming,,,,0.5,0.0
-Florida Atlantic,13,regular,Sat Nov 28,away,East Carolina,90.0,False,upcoming,,,,0.4,-3.8
+Florida Atlantic,11,regular,Sat Nov 14,away,Tulsa,56.0,False,final,L,21.0,38.0,0.262,-9.6
+Florida Atlantic,12,regular,Sat Nov 21,home,South Florida,85.0,False,upcoming,,,,0.503,0.1
+Florida Atlantic,13,regular,Sat Nov 28,away,East Carolina,90.0,False,upcoming,,,,0.403,-3.7
 Florida International,1,regular,Sat Sep 5,away,South Florida,85.0,False,final,L,9.0,19.0,0.21,-13.4
 Florida International,2,regular,Sat Sep 12,home,Buffalo,104.0,False,final,W,33.0,20.0,0.761,11.4
 Florida International,3,regular,Sat Sep 19,away,Florida Atlantic,93.0,False,final,L,10.0,16.0,0.445,-2.2
 Florida International,4,regular,Sat Sep 26,home,Long Island University,,True,final,W,20.0,3.0,0.956,25.2
 Florida International,6,regular,Wed Oct 7,home,New Mexico State,123.0,False,final,W,22.0,3.0,0.604,4.1
 Florida International,7,regular,Tue Oct 13,away,Jacksonville State,92.0,False,final,L,24.0,27.0,0.365,-5.3
-Florida International,8,regular,Tue Oct 20,home,Middle Tennessee,118.0,False,final,L,23.0,26.0,0.815,13.7
+Florida International,8,regular,Tue Oct 20,home,Middle Tennessee,119.0,False,final,L,23.0,26.0,0.815,13.7
 Florida International,9,regular,Sat Oct 31,away,Liberty,60.0,False,final,L,10.0,49.0,0.154,-15.6
-Florida International,10,regular,Sat Nov 7,home,Missouri State,119.0,False,final,W,23.0,20.0,0.551,1.9
+Florida International,10,regular,Sat Nov 7,home,Missouri State,120.0,False,final,W,23.0,20.0,0.551,1.9
 Florida International,11,regular,Sat Nov 14,away,Delaware,95.0,False,final,L,16.0,24.0,0.302,-7.8
 Florida International,12,regular,Sat Nov 21,away,Kennesaw State,100.0,False,upcoming,,,,0.332,-6.5
 Florida International,13,regular,Sat Nov 28,home,Sam Houston,132.0,False,upcoming,,,,0.773,11.3
@@ -395,15 +395,15 @@ Florida State,12,regular,Sat Nov 21,home,NC State,74.0,False,upcoming,,,,0.792,1
 Florida State,13,regular,Fri Nov 27,home,Florida,21.0,False,upcoming,,,,0.425,-2.9
 Fresno State,1,regular,Fri Sep 4,away,USC,24.0,False,final,L,0.0,39.0,0.069,-24.2
 Fresno State,2,regular,Sat Sep 12,home,Sacramento State,136.0,False,final,W,49.0,3.0,0.435,-2.6
-Fresno State,3,regular,Sat Sep 19,away,San José State,122.0,False,final,W,26.0,10.0,0.771,11.6
-Fresno State,4,regular,Sat Sep 26,home,Rice,121.0,False,final,W,38.0,24.0,0.864,17.2
+Fresno State,3,regular,Sat Sep 19,away,San José State,121.0,False,final,W,26.0,10.0,0.771,11.6
+Fresno State,4,regular,Sat Sep 26,home,Rice,118.0,False,final,W,38.0,24.0,0.864,17.2
 Fresno State,5,regular,Sat Oct 3,away,Washington State,89.0,False,final,W,26.0,6.0,0.564,2.5
 Fresno State,6,regular,Sat Oct 10,home,Boise State,41.0,False,final,L,31.0,38.0,0.434,-2.5
 Fresno State,7,regular,Sat Oct 17,away,San Diego State,99.0,False,final,L,23.0,26.0,0.748,10.2
 Fresno State,9,regular,Sat Oct 31,home,Oregon State,62.0,False,final,W,38.0,22.0,0.389,-4.3
 Fresno State,10,regular,Sat Nov 7,away,Utah State,96.0,False,final,L,10.0,17.0,0.612,4.3
 Fresno State,11,regular,Sat Nov 14,away,Texas State,51.0,False,final,L,35.0,37.0,0.284,-8.6
-Fresno State,12,regular,Sat Nov 21,home,Colorado State,129.0,False,upcoming,,,,0.924,21.5
+Fresno State,12,regular,Sat Nov 21,home,Colorado State,129.0,False,upcoming,,,,0.924,21.6
 Georgia,1,regular,Sat Sep 5,home,Tennessee State,,True,final,W,63.0,3.0,1.0,65.9
 Georgia,2,regular,Sat Sep 12,home,Western Kentucky,107.0,False,final,W,70.0,20.0,0.998,46.5
 Georgia,3,regular,Sat Sep 19,away,Arkansas,43.0,False,final,W,45.0,17.0,0.959,27.6
@@ -422,7 +422,7 @@ Georgia Southern,3,regular,Sat Sep 19,away,Jacksonville State,92.0,False,final,L
 Georgia Southern,4,regular,Sat Sep 26,home,Houston,36.0,False,final,L,28.0,42.0,0.192,-13.6
 Georgia Southern,5,regular,Sat Oct 3,away,Coastal Carolina,109.0,False,final,W,31.0,24.0,0.621,4.8
 Georgia Southern,6,regular,Sat Oct 10,home,James Madison,66.0,False,final,L,24.0,27.0,0.319,-7.2
-Georgia Southern,7,regular,Thu Oct 15,away,Old Dominion,112.0,False,final,W,23.0,15.0,0.555,2.1
+Georgia Southern,7,regular,Thu Oct 15,away,Old Dominion,113.0,False,final,W,23.0,15.0,0.555,2.1
 Georgia Southern,9,regular,Sat Oct 31,home,App State,105.0,False,final,W,19.0,3.0,0.659,6.2
 Georgia Southern,10,regular,Sat Nov 7,home,Marshall,124.0,False,final,W,49.0,13.0,0.827,14.3
 Georgia Southern,11,regular,Sat Nov 14,away,Georgia State,102.0,False,final,W,34.0,17.0,0.609,4.2
@@ -432,14 +432,14 @@ Georgia State,1,regular,Fri Sep 4,home,North Carolina A&T,,True,final,W,59.0,10.
 Georgia State,2,regular,Sat Sep 12,away,Kennesaw State,100.0,False,final,W,31.0,17.0,0.227,-12.0
 Georgia State,3,regular,Sat Sep 19,away,UCF,63.0,False,final,L,30.0,44.0,0.182,-14.4
 Georgia State,4,regular,Sat Sep 26,home,Northern Illinois,138.0,False,final,W,35.0,14.0,0.878,18.2
-Georgia State,5,regular,Sat Oct 3,home,Old Dominion,112.0,False,final,W,42.0,10.0,0.535,1.4
+Georgia State,5,regular,Sat Oct 3,home,Old Dominion,113.0,False,final,W,42.0,10.0,0.535,1.4
 Georgia State,7,regular,Sat Oct 17,away,James Madison,66.0,False,final,L,22.0,49.0,0.249,-10.4
 Georgia State,8,regular,Sat Oct 24,away,Arkansas State,116.0,False,final,L,32.0,38.0,0.539,1.5
 Georgia State,9,regular,Sat Oct 31,home,Coastal Carolina,109.0,False,final,L,20.0,31.0,0.693,7.7
 Georgia State,10,regular,Sat Nov 7,away,App State,105.0,False,final,W,39.0,23.0,0.399,-3.9
 Georgia State,11,regular,Sat Nov 14,home,Georgia Southern,67.0,False,final,L,17.0,34.0,0.391,-4.2
 Georgia State,12,regular,Sat Nov 21,away,Marshall,124.0,False,upcoming,,,,0.616,4.5
-Georgia State,13,regular,Sat Nov 28,home,Louisiana,87.0,False,upcoming,,,,0.436,-2.5
+Georgia State,13,regular,Sat Nov 28,home,Louisiana,87.0,False,upcoming,,,,0.436,-2.4
 Georgia Tech,1,regular,Thu Sep 3,home,Colorado,72.0,False,final,L,13.0,14.0,0.881,19.6
 Georgia Tech,2,regular,Sat Sep 12,home,Tennessee,8.0,False,final,L,24.0,45.0,0.345,-6.4
 Georgia Tech,3,regular,Sat Sep 19,home,Mercer,,True,final,W,44.0,11.0,0.997,41.1
@@ -456,7 +456,7 @@ Hawai'i,1,regular,Sat Aug 29,away,Stanford,86.0,False,final,L,27.0,37.0,0.213,-1
 Hawai'i,1,regular,Sat Sep 5,home,UNLV,91.0,False,final,L,6.0,21.0,0.44,-2.4
 Hawai'i,2,regular,Sat Sep 12,home,New Mexico State,123.0,False,final,W,29.0,19.0,0.598,3.9
 Hawai'i,4,regular,Sat Sep 26,away,Wyoming,108.0,False,final,L,10.0,27.0,0.699,8.2
-Hawai'i,5,regular,Sat Oct 3,home,San José State,122.0,False,final,L,16.0,20.0,0.577,3.0
+Hawai'i,5,regular,Sat Oct 3,home,San José State,121.0,False,final,L,16.0,20.0,0.577,3.0
 Hawai'i,6,regular,Sat Oct 10,away,Arizona State,47.0,False,final,L,12.0,30.0,0.091,-20.7
 Hawai'i,7,regular,Sat Oct 17,home,New Mexico,55.0,False,final,L,10.0,21.0,0.118,-18.2
 Hawai'i,8,regular,Sat Oct 24,away,Northern Illinois,138.0,False,final,W,56.0,21.0,0.67,6.7
@@ -528,18 +528,18 @@ Jacksonville State,1,regular,Sat Aug 29,away,North Dakota State,65.0,False,final
 Jacksonville State,1,regular,Sat Sep 5,home,Eastern Kentucky,,True,final,W,49.0,7.0,0.921,21.1
 Jacksonville State,2,regular,Sat Sep 12,away,Ohio,101.0,False,final,L,27.0,29.0,0.517,0.7
 Jacksonville State,3,regular,Sat Sep 19,home,Georgia Southern,67.0,False,final,W,31.0,27.0,0.532,1.2
-Jacksonville State,4,regular,Sat Sep 26,home,Middle Tennessee,118.0,False,final,W,23.0,13.0,0.807,13.5
+Jacksonville State,4,regular,Sat Sep 26,home,Middle Tennessee,119.0,False,final,W,23.0,13.0,0.807,13.5
 Jacksonville State,6,regular,Wed Oct 7,away,Kennesaw State,100.0,False,final,W,27.0,26.0,0.452,-1.9
 Jacksonville State,7,regular,Tue Oct 13,home,Florida International,115.0,False,final,W,27.0,24.0,0.635,5.3
 Jacksonville State,9,regular,Wed Oct 28,away,New Mexico State,123.0,False,final,W,24.0,0.0,0.58,3.1
 Jacksonville State,10,regular,Sat Nov 7,home,Sam Houston,132.0,False,final,W,47.0,14.0,0.869,17.0
 Jacksonville State,11,regular,Sat Nov 14,away,Western Kentucky,107.0,False,final,L,24.0,34.0,0.684,7.2
-Jacksonville State,12,regular,Sat Nov 21,home,Missouri State,119.0,False,upcoming,,,,0.782,11.7
+Jacksonville State,12,regular,Sat Nov 21,home,Missouri State,120.0,False,upcoming,,,,0.782,11.7
 Jacksonville State,13,regular,Sat Nov 28,away,Delaware,95.0,False,upcoming,,,,0.469,-1.2
 James Madison,1,regular,Sat Sep 5,home,Liberty,60.0,False,final,W,20.0,13.0,0.711,9.2
 James Madison,2,regular,Sat Sep 12,home,Wagner,,True,final,W,87.0,3.0,0.979,30.5
 James Madison,3,regular,Sat Sep 19,away,San Diego State,99.0,False,final,W,26.0,13.0,0.571,2.8
-James Madison,4,regular,Sat Sep 26,away,Old Dominion,112.0,False,final,W,46.0,20.0,0.571,2.8
+James Madison,4,regular,Sat Sep 26,away,Old Dominion,113.0,False,final,W,46.0,20.0,0.571,2.8
 James Madison,5,regular,Sat Oct 3,home,Marshall,124.0,False,final,W,45.0,17.0,0.945,24.7
 James Madison,6,regular,Sat Oct 10,away,Georgia Southern,67.0,False,final,W,27.0,24.0,0.681,7.2
 James Madison,7,regular,Sat Oct 17,home,Georgia State,102.0,False,final,W,49.0,22.0,0.751,10.4
@@ -551,7 +551,7 @@ James Madison,13,regular,Sat Nov 28,home,Coastal Carolina,109.0,False,upcoming,,
 Kansas,1,regular,Fri Sep 4,home,Long Island University,,True,final,W,51.0,6.0,0.99,36.2
 Kansas,2,regular,Fri Sep 11,home,Missouri,23.0,False,final,L,21.0,38.0,0.454,-1.9
 Kansas,3,regular,Sat Sep 19,neutral,Arizona State,47.0,False,final,L,17.0,24.0,0.321,-7.4
-Kansas,5,regular,Sat Oct 3,home,Middle Tennessee,118.0,False,final,W,55.0,0.0,0.924,22.4
+Kansas,5,regular,Sat Oct 3,home,Middle Tennessee,119.0,False,final,W,55.0,0.0,0.924,22.4
 Kansas,6,regular,Sat Oct 10,away,Utah,13.0,False,final,L,24.0,41.0,0.215,-12.3
 Kansas,7,regular,Sat Oct 17,away,Kansas State,78.0,False,final,L,24.0,35.0,0.49,-0.4
 Kansas,8,regular,Sat Oct 24,home,Baylor,31.0,False,final,W,25.0,24.0,0.475,-0.9
@@ -562,7 +562,7 @@ Kansas,12,regular,Sat Nov 21,home,BYU,20.0,False,upcoming,,,,0.367,-5.1
 Kansas,13,regular,Sat Nov 28,away,Oklahoma State,34.0,False,upcoming,,,,0.362,-5.3
 Kansas State,1,regular,Sat Sep 5,home,Nicholls,,True,final,W,71.0,3.0,0.992,36.5
 Kansas State,2,regular,Sat Sep 12,home,Washington State,89.0,False,final,W,34.0,7.0,0.823,14.9
-Kansas State,3,regular,Sat Sep 19,home,Tulane,113.0,False,final,W,31.0,20.0,0.874,18.1
+Kansas State,3,regular,Sat Sep 19,home,Tulane,112.0,False,final,W,31.0,20.0,0.874,18.1
 Kansas State,4,regular,Sat Sep 26,away,Cincinnati,70.0,False,final,L,26.0,31.0,0.635,5.4
 Kansas State,6,regular,Sat Oct 10,home,Houston,36.0,False,final,L,16.0,35.0,0.485,-0.6
 Kansas State,7,regular,Sat Oct 17,home,Kansas,44.0,False,final,W,35.0,24.0,0.51,0.4
@@ -577,9 +577,9 @@ Kennesaw State,2,regular,Sat Sep 12,home,Georgia State,102.0,False,final,L,17.0,
 Kennesaw State,3,regular,Sat Sep 19,away,Tennessee,8.0,False,final,L,9.0,42.0,0.029,-30.0
 Kennesaw State,4,regular,Sat Sep 26,away,Arkansas State,116.0,False,final,L,14.0,17.0,0.542,1.6
 Kennesaw State,6,regular,Wed Oct 7,home,Jacksonville State,92.0,False,final,L,26.0,27.0,0.548,1.9
-Kennesaw State,7,regular,Wed Oct 14,away,Missouri State,119.0,False,final,L,21.0,24.0,0.546,1.8
+Kennesaw State,7,regular,Wed Oct 14,away,Missouri State,120.0,False,final,L,21.0,24.0,0.546,1.8
 Kennesaw State,8,regular,Thu Oct 22,home,Liberty,60.0,False,final,L,6.0,34.0,0.361,-5.5
-Kennesaw State,9,regular,Wed Oct 28,away,Middle Tennessee,118.0,False,final,W,44.0,28.0,0.533,1.2
+Kennesaw State,9,regular,Wed Oct 28,away,Middle Tennessee,119.0,False,final,W,44.0,28.0,0.533,1.2
 Kennesaw State,10,regular,Sat Nov 7,home,Delaware,95.0,False,final,W,42.0,40.0,0.494,-0.2
 Kennesaw State,11,regular,Sat Nov 14,away,Sam Houston,132.0,False,final,W,26.0,7.0,0.692,7.6
 Kennesaw State,12,regular,Sat Nov 21,home,Florida International,115.0,False,upcoming,,,,0.668,6.5
@@ -629,9 +629,9 @@ Liberty,6,regular,Thu Oct 8,home,Sam Houston,132.0,False,final,W,35.0,3.0,0.73,9
 Liberty,8,regular,Thu Oct 22,away,Kennesaw State,100.0,False,final,W,34.0,6.0,0.639,5.5
 Liberty,9,regular,Sat Oct 31,home,Florida International,115.0,False,final,W,49.0,10.0,0.846,15.6
 Liberty,10,regular,Sat Nov 7,away,New Mexico State,123.0,False,final,W,30.0,14.0,0.884,18.2
-Liberty,11,regular,Sat Nov 14,home,Middle Tennessee,118.0,False,final,W,28.0,23.0,0.945,24.1
+Liberty,11,regular,Sat Nov 14,home,Middle Tennessee,119.0,False,final,W,28.0,23.0,0.945,24.1
 Liberty,12,regular,Sat Nov 21,home,Western Kentucky,107.0,False,upcoming,,,,0.861,16.4
-Liberty,13,regular,Sat Nov 28,away,Missouri State,119.0,False,upcoming,,,,0.837,14.8
+Liberty,13,regular,Sat Nov 28,away,Missouri State,120.0,False,upcoming,,,,0.837,14.8
 Louisiana,1,regular,Sat Sep 5,home,Lamar,,True,final,W,38.0,7.0,0.94,23.6
 Louisiana,2,regular,Sat Sep 12,away,USC,24.0,False,final,L,30.0,49.0,0.027,-30.7
 Louisiana,3,regular,Sat Sep 19,home,UAB,98.0,False,final,W,21.0,14.0,0.742,10.3
@@ -643,14 +643,14 @@ Louisiana,8,regular,Sat Oct 24,away,Southern Miss,127.0,False,final,L,31.0,35.0,
 Louisiana,10,regular,Sat Nov 7,home,South Alabama,106.0,False,final,W,28.0,26.0,0.751,10.3
 Louisiana,11,regular,Thu Nov 12,away,UL Monroe,130.0,False,final,W,42.0,21.0,0.771,11.2
 Louisiana,12,regular,Sat Nov 21,home,Coastal Carolina,109.0,False,upcoming,,,,0.75,10.2
-Louisiana,13,regular,Sat Nov 28,away,Georgia State,102.0,False,upcoming,,,,0.564,2.5
+Louisiana,13,regular,Sat Nov 28,away,Georgia State,102.0,False,upcoming,,,,0.564,2.4
 Louisiana Tech,1,regular,Sat Sep 5,home,Northwestern State,,True,final,W,80.0,6.0,0.939,23.6
 Louisiana Tech,2,regular,Sat Sep 12,away,LSU,6.0,False,final,L,14.0,45.0,0.022,-32.5
 Louisiana Tech,3,regular,Sat Sep 19,away,Baylor,31.0,False,final,L,19.0,36.0,0.206,-13.0
 Louisiana Tech,5,regular,Sat Oct 3,home,Army,82.0,False,final,W,31.0,29.0,0.422,-3.1
 Louisiana Tech,6,regular,Sat Oct 10,home,Louisiana,87.0,False,final,W,32.0,31.0,0.614,4.5
 Louisiana Tech,7,regular,Sat Oct 17,away,UL Monroe,130.0,False,final,W,24.0,0.0,0.851,16.1
-Louisiana Tech,8,regular,Sat Oct 24,home,Old Dominion,112.0,False,final,W,26.0,0.0,0.769,11.3
+Louisiana Tech,8,regular,Sat Oct 24,home,Old Dominion,113.0,False,final,W,26.0,0.0,0.769,11.3
 Louisiana Tech,9,regular,Sat Oct 31,away,South Alabama,106.0,False,final,W,35.0,20.0,0.715,8.6
 Louisiana Tech,10,regular,Sat Nov 7,away,Troy,117.0,False,final,W,41.0,17.0,0.722,8.9
 Louisiana Tech,11,regular,Sat Nov 14,home,Southern Miss,127.0,False,final,W,63.0,31.0,0.936,23.0
@@ -662,20 +662,20 @@ Louisville,3,regular,Sat Sep 19,home,SMU,40.0,False,final,W,41.0,31.0,0.499,-0.0
 Louisville,4,regular,Sat Sep 26,home,Wake Forest,5.0,False,final,L,27.0,30.0,0.734,9.8
 Louisville,5,regular,Sat Oct 3,away,NC State,74.0,False,final,L,28.0,31.0,0.614,4.5
 Louisville,6,regular,Fri Oct 9,home,Florida State,37.0,False,final,W,44.0,20.0,0.56,2.3
-Louisville,7,regular,Sat Oct 17,away,Syracuse,56.0,False,final,W,34.0,26.0,0.733,9.6
+Louisville,7,regular,Sat Oct 17,away,Syracuse,57.0,False,final,W,34.0,26.0,0.733,9.6
 Louisville,9,regular,Sat Oct 31,home,Stanford,86.0,False,final,W,52.0,24.0,0.946,24.5
 Louisville,10,regular,Sat Nov 7,away,Georgia Tech,75.0,False,final,W,44.0,17.0,0.835,14.8
 Louisville,11,regular,Sat Nov 14,away,North Carolina,33.0,False,final,W,16.0,14.0,0.628,4.9
 Louisville,12,regular,Sat Nov 21,home,Pittsburgh,45.0,False,upcoming,,,,0.803,12.9
 Louisville,13,regular,Sat Nov 28,away,Kentucky,32.0,False,upcoming,,,,0.613,4.4
 Marshall,1,regular,Sat Sep 5,away,Penn State,28.0,False,final,L,0.0,45.0,0.035,-30.0
-Marshall,2,regular,Sat Sep 12,home,Middle Tennessee,118.0,False,final,W,28.0,26.0,0.666,6.9
-Marshall,3,regular,Sat Sep 19,away,Missouri State,119.0,False,final,W,30.0,24.0,0.269,-9.8
+Marshall,2,regular,Sat Sep 12,home,Middle Tennessee,119.0,False,final,W,28.0,26.0,0.666,6.9
+Marshall,3,regular,Sat Sep 19,away,Missouri State,120.0,False,final,W,30.0,24.0,0.269,-9.8
 Marshall,4,regular,Sat Sep 26,home,Gardner-Webb,,True,final,W,36.0,35.0,0.934,22.2
 Marshall,5,regular,Sat Oct 3,away,James Madison,66.0,False,final,L,17.0,45.0,0.055,-24.7
 Marshall,6,regular,Sat Oct 10,home,Coastal Carolina,109.0,False,final,L,21.0,27.0,0.463,-1.4
 Marshall,8,regular,Tue Oct 20,home,South Alabama,106.0,False,final,W,20.0,13.0,0.373,-5.0
-Marshall,9,regular,Sat Oct 31,away,Old Dominion,112.0,False,final,W,36.0,23.0,0.323,-7.0
+Marshall,9,regular,Sat Oct 31,away,Old Dominion,113.0,False,final,W,36.0,23.0,0.323,-7.0
 Marshall,10,regular,Sat Nov 7,away,Georgia Southern,67.0,False,final,L,13.0,49.0,0.173,-14.3
 Marshall,11,regular,Sat Nov 14,home,App State,105.0,False,final,L,16.0,20.0,0.421,-3.0
 Marshall,12,regular,Sat Nov 21,home,Georgia State,102.0,False,upcoming,,,,0.384,-4.5
@@ -691,7 +691,7 @@ Maryland,9,regular,Sat Oct 31,home,Illinois,39.0,False,final,L,17.0,20.0,0.368,-
 Maryland,10,regular,Sat Nov 7,away,Purdue,73.0,False,final,W,34.0,29.0,0.342,-6.2
 Maryland,11,regular,Sat Nov 14,home,Wisconsin,38.0,False,final,W,24.0,21.0,0.273,-9.2
 Maryland,12,regular,Sat Nov 21,away,USC,24.0,False,upcoming,,,,0.139,-16.5
-Maryland,13,regular,Sat Nov 28,home,Penn State,28.0,False,upcoming,,,,0.253,-10.0
+Maryland,13,regular,Sat Nov 28,home,Penn State,28.0,False,upcoming,,,,0.254,-10.0
 Massachusetts,1,regular,Thu Sep 3,away,Rutgers,94.0,False,final,W,37.0,21.0,0.081,-23.2
 Massachusetts,2,regular,Sat Sep 12,home,Sacred Heart,,True,final,W,37.0,10.0,0.949,24.6
 Massachusetts,3,regular,Sat Sep 19,home,Stonehill,,True,final,W,36.0,14.0,0.948,24.0
@@ -710,12 +710,12 @@ Memphis,2,regular,Sat Sep 12,away,Boise State,41.0,False,final,L,20.0,38.0,0.257
 Memphis,3,regular,Sat Sep 19,home,UT Martin,,True,final,W,45.0,21.0,0.983,31.0
 Memphis,5,regular,Sat Oct 3,away,Charlotte,133.0,False,final,W,59.0,8.0,0.81,13.6
 Memphis,6,regular,Sat Oct 10,home,UAB,98.0,False,final,W,38.0,13.0,0.843,15.5
-Memphis,7,regular,Fri Oct 16,away,Tulane,113.0,False,final,L,17.0,31.0,0.651,6.0
+Memphis,7,regular,Fri Oct 16,away,Tulane,112.0,False,final,L,17.0,31.0,0.651,6.0
 Memphis,8,regular,Thu Oct 22,home,East Carolina,90.0,False,final,W,41.0,34.0,0.7,8.0
 Memphis,9,regular,Sat Oct 31,home,Army,82.0,False,final,W,49.0,22.0,0.563,2.4
 Memphis,11,regular,Thu Nov 12,away,South Florida,85.0,False,final,W,52.0,41.0,0.569,2.6
-Memphis,12,regular,Sat Nov 21,away,Navy,71.0,False,upcoming,,,,0.55,1.9
-Memphis,13,regular,Fri Nov 27,home,Temple,120.0,False,upcoming,,,,0.924,21.6
+Memphis,12,regular,Sat Nov 21,away,Navy,71.0,False,upcoming,,,,0.551,2.0
+Memphis,13,regular,Fri Nov 27,home,Temple,122.0,False,upcoming,,,,0.931,22.4
 Miami,1,regular,Fri Sep 4,away,Stanford,86.0,False,final,W,45.0,6.0,0.926,23.6
 Miami,2,regular,Thu Sep 10,home,Florida A&M,,True,final,W,77.0,7.0,1.0,64.5
 Miami,3,regular,Fri Sep 18,away,Wake Forest,5.0,False,final,W,33.0,20.0,0.891,19.5
@@ -833,21 +833,21 @@ NC State,6,regular,Sat Oct 10,home,Wake Forest,5.0,False,final,L,14.0,38.0,0.361
 NC State,8,regular,Fri Oct 23,away,Stanford,86.0,False,final,L,28.0,31.0,0.693,7.7
 NC State,9,regular,Sat Oct 31,home,California,103.0,False,final,W,31.0,10.0,0.754,10.4
 NC State,10,regular,Sat Nov 7,home,Duke,18.0,False,final,L,3.0,41.0,0.335,-6.5
-NC State,11,regular,Sat Nov 14,home,Syracuse,56.0,False,final,L,31.0,34.0,0.451,-1.9
+NC State,11,regular,Sat Nov 14,home,Syracuse,57.0,False,final,L,31.0,34.0,0.451,-1.9
 NC State,12,regular,Sat Nov 21,away,Florida State,37.0,False,upcoming,,,,0.208,-12.3
 NC State,13,regular,Sat Nov 28,away,North Carolina,33.0,False,upcoming,,,,0.189,-13.3
 Navy,1,regular,Sat Sep 5,home,Towson,,True,final,W,42.0,15.0,0.99,35.5
 Navy,2,regular,Sat Sep 12,away,Florida Atlantic,93.0,False,final,L,30.0,38.0,0.749,10.8
 Navy,4,regular,Fri Sep 25,away,UAB,98.0,False,final,L,20.0,24.0,0.714,8.9
 Navy,5,regular,Sat Oct 3,away,Air Force,80.0,False,final,L,9.0,14.0,0.454,-1.8
-Navy,6,regular,Sat Oct 10,home,Tulsa,57.0,False,final,W,34.0,26.0,0.653,6.1
+Navy,6,regular,Sat Oct 10,home,Tulsa,56.0,False,final,W,34.0,26.0,0.653,6.1
 Navy,7,regular,Sat Oct 17,away,UTSA,76.0,False,final,L,34.0,38.0,0.4,-3.9
 Navy,8,regular,Sat Oct 24,home,North Texas,61.0,False,final,L,39.0,49.0,0.435,-2.5
 Navy,9,regular,Sat Oct 31,neutral,Notre Dame,2.0,False,final,L,13.0,35.0,0.022,-30.9
-Navy,10,regular,Sat Nov 7,home,Temple,120.0,False,final,W,42.0,35.0,0.821,14.0
-Navy,12,regular,Sat Nov 21,home,Memphis,49.0,False,upcoming,,,,0.45,-1.9
+Navy,10,regular,Sat Nov 7,home,Temple,122.0,False,final,W,42.0,35.0,0.821,14.0
+Navy,12,regular,Sat Nov 21,home,Memphis,49.0,False,upcoming,,,,0.449,-2.0
 Navy,13,regular,Sat Nov 28,away,Charlotte,133.0,False,upcoming,,,,0.882,18.0
-Navy,15,regular,Sat Dec 12,neutral,Army,82.0,False,upcoming,,,,0.546,1.8
+Navy,15,regular,Sat Dec 12,neutral,Army,82.0,False,upcoming,,,,0.545,1.7
 Nebraska,1,regular,Sat Sep 5,home,Ohio,101.0,False,final,W,49.0,21.0,0.876,19.1
 Nebraska,2,regular,Sat Sep 12,home,Bowling Green,128.0,False,final,W,56.0,7.0,0.98,33.1
 Nebraska,3,regular,Sat Sep 19,home,North Dakota,,True,final,W,34.0,7.0,0.999,46.5
@@ -862,11 +862,11 @@ Nebraska,12,regular,Sat Nov 21,home,Ohio State,9.0,False,upcoming,,,,0.328,-6.7
 Nebraska,13,regular,Fri Nov 27,away,Iowa,15.0,False,upcoming,,,,0.336,-6.4
 Nevada,1,regular,Sat Sep 5,home,Western Kentucky,107.0,False,final,W,49.0,14.0,0.352,-6.3
 Nevada,2,regular,Sat Sep 12,home,Montana State,,True,final,L,7.0,20.0,0.957,25.7
-Nevada,3,regular,Sat Sep 19,away,Middle Tennessee,118.0,False,final,L,20.0,27.0,0.43,-2.8
+Nevada,3,regular,Sat Sep 19,away,Middle Tennessee,119.0,False,final,L,20.0,27.0,0.43,-2.8
 Nevada,4,regular,Sat Sep 26,home,Air Force,80.0,False,final,L,33.0,36.0,0.227,-11.8
 Nevada,6,regular,Sat Oct 10,away,UTEP,137.0,False,final,W,30.0,13.0,0.488,-0.5
 Nevada,7,regular,Sat Oct 17,away,North Dakota State,65.0,False,final,L,17.0,31.0,0.089,-20.7
-Nevada,8,regular,Sat Oct 24,home,San José State,122.0,False,final,W,28.0,13.0,0.564,2.5
+Nevada,8,regular,Sat Oct 24,home,San José State,121.0,False,final,W,28.0,13.0,0.564,2.5
 Nevada,9,regular,Sat Oct 31,away,UCLA,17.0,False,final,L,0.0,27.0,0.02,-31.4
 Nevada,10,regular,Fri Nov 6,home,New Mexico,55.0,False,final,L,3.0,31.0,0.185,-13.6
 Nevada,11,regular,Sat Nov 14,away,Northern Illinois,138.0,False,final,W,28.0,7.0,0.705,8.2
@@ -879,7 +879,7 @@ New Mexico,4,regular,Sat Sep 26,away,New Mexico State,123.0,False,final,W,42.0,1
 New Mexico,5,regular,Sat Oct 3,home,UTEP,137.0,False,final,W,61.0,7.0,0.951,25.6
 New Mexico,7,regular,Sat Oct 17,away,Hawai'i,110.0,False,final,W,21.0,10.0,0.882,18.2
 New Mexico,8,regular,Sat Oct 24,home,North Dakota State,65.0,False,final,W,21.0,16.0,0.656,6.1
-New Mexico,9,regular,Sat Oct 31,away,San José State,122.0,False,final,W,21.0,16.0,0.876,17.6
+New Mexico,9,regular,Sat Oct 31,away,San José State,121.0,False,final,W,21.0,16.0,0.876,17.6
 New Mexico,10,regular,Fri Nov 6,away,Nevada,114.0,False,final,W,31.0,3.0,0.815,13.6
 New Mexico,11,regular,Sat Nov 14,home,UNLV,91.0,False,final,L,17.0,21.0,0.857,16.1
 New Mexico,12,regular,Fri Nov 20,away,Wyoming,108.0,False,upcoming,,,,0.792,12.3
@@ -893,20 +893,20 @@ New Mexico State,6,regular,Wed Oct 7,away,Florida International,115.0,False,fina
 New Mexico State,8,regular,Wed Oct 21,away,Sam Houston,132.0,False,final,W,30.0,24.0,0.486,-0.5
 New Mexico State,9,regular,Wed Oct 28,home,Jacksonville State,92.0,False,final,L,0.0,24.0,0.42,-3.1
 New Mexico State,10,regular,Sat Nov 7,home,Liberty,60.0,False,final,L,14.0,30.0,0.116,-18.2
-New Mexico State,11,regular,Sat Nov 14,away,Missouri State,119.0,False,final,L,21.0,27.0,0.38,-4.6
+New Mexico State,11,regular,Sat Nov 14,away,Missouri State,120.0,False,final,L,21.0,27.0,0.38,-4.6
 New Mexico State,12,regular,Sat Nov 21,home,Delaware,95.0,False,upcoming,,,,0.358,-5.5
-New Mexico State,13,regular,Sat Nov 28,away,Middle Tennessee,118.0,False,upcoming,,,,0.394,-4.0
+New Mexico State,13,regular,Sat Nov 28,away,Middle Tennessee,119.0,False,upcoming,,,,0.394,-4.0
 North Carolina,1,regular,Sat Aug 29,neutral,TCU,42.0,False,final,W,15.0,10.0,0.237,-11.9
 North Carolina,2,regular,Sat Sep 12,home,East Tennessee State,,True,final,W,35.0,3.0,0.993,37.3
 North Carolina,3,regular,Sat Sep 19,away,Clemson,54.0,False,final,L,20.0,28.0,0.289,-8.8
 North Carolina,5,regular,Sat Oct 3,home,Notre Dame,2.0,False,final,L,26.0,37.0,0.047,-26.2
 North Carolina,6,regular,Sat Oct 10,away,Pittsburgh,45.0,False,final,W,21.0,17.0,0.231,-11.3
 North Carolina,7,regular,Sat Oct 17,away,Duke,18.0,False,final,W,24.0,20.0,0.326,-7.0
-North Carolina,8,regular,Sat Oct 24,home,Syracuse,56.0,False,final,L,30.0,31.0,0.713,8.6
+North Carolina,8,regular,Sat Oct 24,home,Syracuse,57.0,False,final,L,30.0,31.0,0.713,8.6
 North Carolina,9,regular,Sat Oct 31,home,Miami,4.0,False,final,L,35.0,38.0,0.1,-19.5
 North Carolina,10,regular,Sat Nov 7,away,UConn,81.0,False,final,W,38.0,21.0,0.743,9.9
 North Carolina,11,regular,Sat Nov 14,home,Louisville,14.0,False,final,L,14.0,16.0,0.372,-4.9
-North Carolina,12,regular,Sat Nov 21,away,Virginia,52.0,False,upcoming,,,,0.584,3.2
+North Carolina,12,regular,Sat Nov 21,away,Virginia,52.0,False,upcoming,,,,0.583,3.2
 North Carolina,13,regular,Sat Nov 28,home,NC State,74.0,False,upcoming,,,,0.811,13.3
 North Dakota State,1,regular,Sat Aug 29,home,Jacksonville State,92.0,False,final,W,33.0,7.0,0.736,10.5
 North Dakota State,1,regular,Sat Sep 5,home,Fordham,,True,final,W,38.0,0.0,0.991,35.6
@@ -919,19 +919,19 @@ North Dakota State,8,regular,Sat Oct 24,away,New Mexico,55.0,False,final,L,16.0,
 North Dakota State,9,regular,Sat Oct 31,home,UTEP,137.0,False,final,W,31.0,7.0,0.965,27.6
 North Dakota State,11,regular,Sat Nov 14,away,Hawai'i,110.0,False,final,W,21.0,13.0,0.743,9.9
 North Dakota State,12,regular,Sat Nov 21,home,Northern Illinois,138.0,False,upcoming,,,,0.974,29.3
-North Dakota State,13,regular,Fri Nov 27,away,San José State,122.0,False,upcoming,,,,0.814,13.5
+North Dakota State,13,regular,Fri Nov 27,away,San José State,121.0,False,upcoming,,,,0.814,13.5
 North Texas,1,regular,Sat Sep 5,away,Indiana,10.0,False,final,L,16.0,52.0,0.009,-39.0
 North Texas,2,regular,Sat Sep 12,home,UNLV,91.0,False,final,W,44.0,6.0,0.523,0.9
 North Texas,3,regular,Sat Sep 19,away,Texas State,51.0,False,final,L,35.0,49.0,0.629,5.2
 North Texas,4,regular,Sat Sep 26,home,Houston Christian,,True,final,W,63.0,14.0,0.99,34.2
-North Texas,5,regular,Thu Oct 1,away,Tulsa,57.0,False,final,W,45.0,44.0,0.643,5.7
+North Texas,5,regular,Thu Oct 1,away,Tulsa,56.0,False,final,W,45.0,44.0,0.643,5.7
 North Texas,6,regular,Sat Oct 10,home,Charlotte,133.0,False,final,W,50.0,10.0,0.973,29.7
 North Texas,8,regular,Sat Oct 24,away,Navy,71.0,False,final,W,49.0,39.0,0.565,2.5
 North Texas,9,regular,Thu Oct 29,home,Florida Atlantic,93.0,False,final,W,48.0,41.0,0.86,16.5
-North Texas,10,regular,Sat Nov 7,home,Rice,121.0,False,final,W,52.0,23.0,0.908,20.2
+North Texas,10,regular,Sat Nov 7,home,Rice,118.0,False,final,W,52.0,23.0,0.908,20.2
 North Texas,11,regular,Sat Nov 14,away,UTSA,76.0,False,final,L,16.0,35.0,0.639,5.4
-North Texas,12,regular,Sat Nov 21,away,Tulane,113.0,False,upcoming,,,,0.785,11.9
-North Texas,13,regular,Sat Nov 28,home,UAB,98.0,False,upcoming,,,,0.813,13.5
+North Texas,12,regular,Sat Nov 21,away,Tulane,112.0,False,upcoming,,,,0.785,11.9
+North Texas,13,regular,Sat Nov 28,home,UAB,98.0,False,upcoming,,,,0.816,13.6
 Northern Illinois,1,regular,Sat Sep 5,away,Iowa,15.0,False,final,L,0.0,40.0,0.011,-37.7
 Northern Illinois,2,regular,Sat Sep 12,home,Illinois State,,True,final,L,24.0,28.0,0.828,14.2
 Northern Illinois,3,regular,Sat Sep 19,away,Arizona,29.0,False,final,L,17.0,42.0,0.015,-34.3
@@ -940,7 +940,7 @@ Northern Illinois,6,regular,Sat Oct 10,home,Air Force,80.0,False,final,L,7.0,28.
 Northern Illinois,7,regular,Sat Oct 17,away,Wyoming,108.0,False,final,L,23.0,41.0,0.307,-7.8
 Northern Illinois,8,regular,Sat Oct 24,home,Hawai'i,110.0,False,final,L,21.0,56.0,0.33,-6.7
 Northern Illinois,9,regular,Sat Oct 31,away,UNLV,91.0,False,final,L,24.0,31.0,0.038,-27.1
-Northern Illinois,10,regular,Sat Nov 7,away,San José State,122.0,False,final,L,19.0,30.0,0.185,-13.5
+Northern Illinois,10,regular,Sat Nov 7,away,San José State,121.0,False,final,L,19.0,30.0,0.185,-13.5
 Northern Illinois,11,regular,Sat Nov 14,home,Nevada,114.0,False,final,L,7.0,28.0,0.295,-8.2
 Northern Illinois,12,regular,Sat Nov 21,away,North Dakota State,65.0,False,upcoming,,,,0.026,-29.3
 Northern Illinois,13,regular,Sat Nov 28,home,UTEP,137.0,False,upcoming,,,,0.502,0.1
@@ -957,7 +957,7 @@ Northwestern,11,regular,Sat Nov 14,away,Ohio State,9.0,False,final,L,19.0,28.0,0
 Northwestern,12,regular,Sat Nov 21,away,Minnesota,58.0,False,upcoming,,,,0.633,5.1
 Northwestern,13,regular,Sat Nov 28,home,Illinois,39.0,False,upcoming,,,,0.648,5.7
 Notre Dame,1,regular,Sun Sep 6,neutral,Wisconsin,38.0,False,final,W,41.0,13.0,0.967,30.5
-Notre Dame,2,regular,Sat Sep 12,home,Rice,121.0,False,final,W,52.0,0.0,0.999,51.0
+Notre Dame,2,regular,Sat Sep 12,home,Rice,118.0,False,final,W,52.0,0.0,0.999,51.0
 Notre Dame,3,regular,Sat Sep 19,home,Michigan State,64.0,False,final,W,27.0,10.0,0.991,37.3
 Notre Dame,4,regular,Sat Sep 26,away,Purdue,73.0,False,final,W,49.0,10.0,0.968,28.9
 Notre Dame,5,regular,Sat Oct 3,away,North Carolina,33.0,False,final,W,37.0,26.0,0.953,26.2
@@ -967,7 +967,7 @@ Notre Dame,9,regular,Sat Oct 31,neutral,Navy,71.0,False,final,W,35.0,13.0,0.978,
 Notre Dame,10,regular,Sat Nov 7,home,Miami,4.0,False,final,W,31.0,24.0,0.596,3.7
 Notre Dame,11,regular,Sat Nov 14,home,Boston College,84.0,False,final,W,41.0,7.0,0.988,34.2
 Notre Dame,12,regular,Sat Nov 21,home,SMU,40.0,False,upcoming,,,,0.94,23.5
-Notre Dame,13,regular,Sat Nov 28,away,Syracuse,56.0,False,upcoming,,,,0.935,22.8
+Notre Dame,13,regular,Sat Nov 28,away,Syracuse,57.0,False,upcoming,,,,0.935,22.9
 Ohio,1,regular,Sat Sep 5,away,Nebraska,25.0,False,final,L,21.0,49.0,0.124,-19.1
 Ohio,2,regular,Sat Sep 12,home,Jacksonville State,92.0,False,final,W,29.0,27.0,0.483,-0.7
 Ohio,3,regular,Sat Sep 19,away,South Alabama,106.0,False,final,L,36.0,41.0,0.448,-2.1
@@ -1004,7 +1004,7 @@ Oklahoma,10,regular,Sat Nov 7,away,Florida,21.0,False,final,W,23.0,7.0,0.346,-6.
 Oklahoma,11,regular,Sun Nov 15,home,Ole Miss,12.0,False,final,W,24.0,17.0,0.436,-2.4
 Oklahoma,12,regular,Sat Nov 21,home,Texas A&M,26.0,False,upcoming,,,,0.648,5.8
 Oklahoma,13,regular,Sat Nov 28,away,Missouri,23.0,False,upcoming,,,,0.484,-0.6
-Oklahoma State,1,regular,Sat Sep 5,away,Tulsa,57.0,False,final,L,10.0,24.0,0.554,2.3
+Oklahoma State,1,regular,Sat Sep 5,away,Tulsa,56.0,False,final,L,10.0,24.0,0.554,2.3
 Oklahoma State,2,regular,Sat Sep 12,home,Oregon,11.0,False,final,W,39.0,31.0,0.023,-32.4
 Oklahoma State,3,regular,Sat Sep 19,home,Murray State,,True,final,W,59.0,0.0,0.984,31.8
 Oklahoma State,4,regular,Sat Sep 26,away,West Virginia,79.0,False,final,W,41.0,24.0,0.432,-2.7
@@ -1026,7 +1026,7 @@ Old Dominion,7,regular,Thu Oct 15,home,Georgia Southern,67.0,False,final,L,15.0,
 Old Dominion,8,regular,Sat Oct 24,away,Louisiana Tech,59.0,False,final,L,0.0,26.0,0.231,-11.3
 Old Dominion,9,regular,Sat Oct 31,home,Marshall,124.0,False,final,L,23.0,36.0,0.677,7.0
 Old Dominion,10,regular,Sat Nov 7,away,Coastal Carolina,109.0,False,final,W,21.0,8.0,0.327,-6.8
-Old Dominion,12,regular,Sat Nov 21,away,UConn,81.0,False,upcoming,,,,0.192,-13.2
+Old Dominion,12,regular,Sat Nov 21,away,UConn,81.0,False,upcoming,,,,0.193,-13.2
 Old Dominion,13,regular,Sat Nov 28,home,Southern Miss,127.0,False,upcoming,,,,0.71,8.4
 Ole Miss,1,regular,Sun Sep 6,neutral,Louisville,14.0,False,final,W,41.0,38.0,0.632,5.6
 Ole Miss,2,regular,Sat Sep 12,home,Charlotte,133.0,False,final,W,41.0,9.0,0.996,42.3
@@ -1064,7 +1064,7 @@ Oregon State,10,regular,Sat Nov 7,home,Texas State,51.0,False,final,L,21.0,42.0,
 Oregon State,11,regular,Sat Nov 14,away,Boise State,41.0,False,final,L,41.0,46.0,0.198,-12.8
 Oregon State,12,regular,Sat Nov 21,home,Utah State,96.0,False,upcoming,,,,0.786,11.9
 Penn State,1,regular,Sat Sep 5,home,Marshall,124.0,False,final,W,45.0,0.0,0.965,30.0
-Penn State,2,regular,Sat Sep 12,away,Temple,120.0,False,final,W,27.0,9.0,0.954,27.1
+Penn State,2,regular,Sat Sep 12,away,Temple,122.0,False,final,W,27.0,9.0,0.954,27.1
 Penn State,3,regular,Sat Sep 19,home,Buffalo,104.0,False,final,W,55.0,13.0,0.991,37.6
 Penn State,4,regular,Sat Sep 26,home,Wisconsin,38.0,False,final,L,20.0,24.0,0.831,15.0
 Penn State,5,regular,Fri Oct 2,away,Northwestern,30.0,False,final,L,13.0,34.0,0.561,2.4
@@ -1073,11 +1073,11 @@ Penn State,7,regular,Sat Oct 17,away,Michigan,46.0,False,final,L,18.0,21.0,0.426
 Penn State,9,regular,Sat Oct 31,home,Purdue,73.0,False,final,W,31.0,17.0,0.767,11.2
 Penn State,10,regular,Sat Nov 7,away,Washington,35.0,False,final,W,28.0,25.0,0.472,-1.1
 Penn State,11,regular,Sat Nov 14,home,Minnesota,58.0,False,final,W,42.0,14.0,0.725,9.1
-Penn State,12,regular,Sat Nov 21,home,Rutgers,94.0,False,upcoming,,,,0.935,22.8
-Penn State,13,regular,Sat Nov 28,away,Maryland,69.0,False,upcoming,,,,0.747,10.0
+Penn State,12,regular,Sat Nov 21,home,Rutgers,94.0,False,upcoming,,,,0.934,22.8
+Penn State,13,regular,Sat Nov 28,away,Maryland,69.0,False,upcoming,,,,0.746,10.0
 Pittsburgh,1,regular,Sat Sep 5,home,Miami (OH),97.0,False,final,W,59.0,14.0,0.871,18.7
 Pittsburgh,2,regular,Sat Sep 12,home,UCF,63.0,False,final,W,12.0,7.0,0.829,15.3
-Pittsburgh,3,regular,Thu Sep 17,home,Syracuse,56.0,False,final,W,27.0,13.0,0.819,14.5
+Pittsburgh,3,regular,Thu Sep 17,home,Syracuse,57.0,False,final,W,27.0,13.0,0.819,14.5
 Pittsburgh,4,regular,Sat Sep 26,home,Bucknell,,True,final,W,59.0,0.0,0.999,47.7
 Pittsburgh,5,regular,Fri Oct 2,away,Virginia Tech,68.0,False,final,W,35.0,33.0,0.601,4.0
 Pittsburgh,6,regular,Sat Oct 10,home,North Carolina,33.0,False,final,L,17.0,21.0,0.769,11.3
@@ -1105,12 +1105,12 @@ Rice,3,regular,Sat Sep 19,home,Western Michigan,88.0,False,final,L,21.0,28.0,0.2
 Rice,4,regular,Sat Sep 26,away,Fresno State,77.0,False,final,L,24.0,38.0,0.136,-17.2
 Rice,5,regular,Sat Oct 3,home,UTSA,76.0,False,final,L,14.0,16.0,0.221,-11.9
 Rice,6,regular,Sat Oct 10,away,East Carolina,90.0,False,final,L,12.0,28.0,0.185,-13.8
-Rice,7,regular,Sat Oct 17,home,Tulsa,57.0,False,final,L,17.0,38.0,0.402,-3.8
+Rice,7,regular,Sat Oct 17,home,Tulsa,56.0,False,final,L,17.0,38.0,0.402,-3.8
 Rice,8,regular,Sat Oct 24,away,Florida Atlantic,93.0,False,final,L,49.0,51.0,0.253,-10.2
 Rice,10,regular,Sat Nov 7,away,North Texas,61.0,False,final,L,23.0,52.0,0.092,-20.2
-Rice,11,regular,Sat Nov 14,home,Tulane,113.0,False,final,L,17.0,20.0,0.577,3.0
-Rice,12,regular,Thu Nov 19,away,Temple,120.0,False,upcoming,,,,0.427,-2.8
-Rice,13,regular,Sat Nov 28,home,Army,82.0,False,upcoming,,,,0.262,-9.7
+Rice,11,regular,Sat Nov 14,home,Tulane,112.0,False,final,L,17.0,20.0,0.577,3.0
+Rice,12,regular,Thu Nov 19,away,Temple,122.0,False,final,W,31.0,27.0,0.427,-2.8
+Rice,13,regular,Sat Nov 28,home,Army,82.0,False,upcoming,,,,0.277,-8.9
 Rutgers,1,regular,Thu Sep 3,home,Massachusetts,125.0,False,final,L,21.0,37.0,0.919,23.2
 Rutgers,2,regular,Fri Sep 11,away,Boston College,84.0,False,final,L,21.0,28.0,0.403,-4.0
 Rutgers,3,regular,Sat Sep 19,home,USC,24.0,False,final,L,35.0,42.0,0.084,-21.8
@@ -1121,16 +1121,16 @@ Rutgers,8,regular,Sat Oct 24,away,Northwestern,30.0,False,final,L,14.0,42.0,0.16
 Rutgers,9,regular,Sat Oct 31,home,Michigan,46.0,False,final,L,21.0,28.0,0.218,-11.9
 Rutgers,10,regular,Sat Nov 7,away,Wisconsin,38.0,False,final,L,10.0,31.0,0.144,-16.1
 Rutgers,11,regular,Sat Nov 14,home,Nebraska,25.0,False,final,L,0.0,31.0,0.192,-13.2
-Rutgers,12,regular,Sat Nov 21,away,Penn State,28.0,False,upcoming,,,,0.065,-22.8
+Rutgers,12,regular,Sat Nov 21,away,Penn State,28.0,False,upcoming,,,,0.066,-22.8
 Rutgers,13,regular,Sat Nov 28,home,Michigan State,64.0,False,upcoming,,,,0.361,-5.4
 SMU,1,regular,Mon Sep 7,away,Florida State,37.0,False,final,W,27.0,24.0,0.591,3.8
 SMU,2,regular,Sat Sep 12,home,UC Davis,,True,final,W,56.0,10.0,1.0,50.4
 SMU,3,regular,Sat Sep 19,away,Louisville,14.0,False,final,L,31.0,41.0,0.501,0.0
-SMU,4,regular,Sat Sep 26,home,Missouri State,119.0,False,final,W,34.0,24.0,0.954,26.3
+SMU,4,regular,Sat Sep 26,home,Missouri State,120.0,False,final,W,34.0,24.0,0.954,26.3
 SMU,5,regular,Sat Oct 3,home,Boston College,84.0,False,final,W,25.0,16.0,0.911,20.8
 SMU,7,regular,Sat Oct 17,home,Virginia,52.0,False,final,W,23.0,13.0,0.675,7.0
 SMU,8,regular,Sat Oct 24,home,California,103.0,False,final,W,59.0,20.0,0.869,17.2
-SMU,9,regular,Sat Oct 31,away,Syracuse,56.0,False,final,L,27.0,30.0,0.687,7.4
+SMU,9,regular,Sat Oct 31,away,Syracuse,57.0,False,final,L,27.0,30.0,0.687,7.4
 SMU,10,regular,Fri Nov 6,home,Virginia Tech,68.0,False,final,W,51.0,28.0,0.697,7.9
 SMU,11,regular,Sat Nov 14,home,Wake Forest,5.0,False,final,L,7.0,49.0,0.358,-5.5
 SMU,12,regular,Sat Nov 21,away,Notre Dame,2.0,False,upcoming,,,,0.06,-23.5
@@ -1148,16 +1148,16 @@ Sacramento State,10,regular,Wed Nov 4,home,Toledo,83.0,False,final,L,17.0,20.0,0
 Sacramento State,11,regular,Wed Nov 11,away,Central Michigan,111.0,False,final,L,7.0,28.0,0.213,-12.1
 Sacramento State,13,regular,Sat Nov 28,away,Hawai'i,110.0,False,upcoming,,,,0.191,-13.3
 Sam Houston,1,regular,Sat Sep 5,away,Troy,117.0,False,final,L,21.0,24.0,0.204,-13.7
-Sam Houston,2,regular,Sat Sep 12,home,Tulsa,57.0,False,final,L,17.0,23.0,0.286,-9.1
+Sam Houston,2,regular,Sat Sep 12,home,Tulsa,56.0,False,final,L,17.0,23.0,0.286,-9.1
 Sam Houston,3,regular,Sat Sep 19,home,Nicholls,,True,final,W,59.0,0.0,0.889,18.1
 Sam Houston,4,regular,Sat Sep 26,away,Texas Tech,19.0,False,final,L,14.0,49.0,0.045,-26.6
 Sam Houston,6,regular,Thu Oct 8,away,Liberty,60.0,False,final,L,3.0,35.0,0.27,-9.5
 Sam Houston,7,regular,Wed Oct 14,home,Western Kentucky,107.0,False,final,L,3.0,16.0,0.481,-0.7
 Sam Houston,8,regular,Wed Oct 21,home,New Mexico State,123.0,False,final,L,24.0,30.0,0.514,0.5
-Sam Houston,9,regular,Tue Oct 27,away,Missouri State,119.0,False,final,L,3.0,24.0,0.361,-5.4
+Sam Houston,9,regular,Tue Oct 27,away,Missouri State,120.0,False,final,L,3.0,24.0,0.361,-5.4
 Sam Houston,10,regular,Sat Nov 7,away,Jacksonville State,92.0,False,final,L,14.0,47.0,0.131,-17.0
 Sam Houston,11,regular,Sat Nov 14,home,Kennesaw State,100.0,False,final,L,7.0,26.0,0.308,-7.6
-Sam Houston,12,regular,Sat Nov 21,home,Middle Tennessee,118.0,False,upcoming,,,,0.391,-4.2
+Sam Houston,12,regular,Sat Nov 21,home,Middle Tennessee,119.0,False,upcoming,,,,0.391,-4.2
 Sam Houston,13,regular,Sat Nov 28,away,Florida International,115.0,False,upcoming,,,,0.227,-11.3
 San Diego State,1,regular,Sat Sep 5,home,Portland State,,True,final,W,53.0,20.0,0.972,29.0
 San Diego State,2,regular,Sat Sep 12,away,UCLA,17.0,False,final,L,10.0,28.0,0.162,-15.9
@@ -1184,7 +1184,7 @@ San José State,11,regular,Sat Nov 14,away,Air Force,80.0,False,final,L,3.0,24.0
 San José State,12,regular,Sat Nov 21,home,UNLV,91.0,False,upcoming,,,,0.32,-7.0
 San José State,13,regular,Fri Nov 27,home,North Dakota State,65.0,False,upcoming,,,,0.186,-13.5
 South Alabama,1,regular,Sat Sep 5,home,SE Louisiana,,True,final,W,39.0,14.0,0.887,18.4
-South Alabama,2,regular,Sat Sep 12,away,Tulane,113.0,False,final,L,24.0,28.0,0.223,-12.3
+South Alabama,2,regular,Sat Sep 12,away,Tulane,112.0,False,final,L,24.0,28.0,0.223,-12.3
 South Alabama,3,regular,Sat Sep 19,home,Ohio,101.0,False,final,W,41.0,36.0,0.552,2.1
 South Alabama,4,regular,Sat Sep 26,away,Kentucky,32.0,False,final,L,21.0,45.0,0.082,-21.7
 South Alabama,5,regular,Sat Oct 3,home,UL Monroe,130.0,False,final,W,52.0,35.0,0.786,12.2
@@ -1194,7 +1194,7 @@ South Alabama,9,regular,Sat Oct 31,home,Louisiana Tech,59.0,False,final,L,20.0,3
 South Alabama,10,regular,Sat Nov 7,away,Louisiana,87.0,False,final,L,26.0,28.0,0.249,-10.3
 South Alabama,11,regular,Sat Nov 14,home,Troy,117.0,False,final,W,27.0,14.0,0.607,4.1
 South Alabama,12,regular,Sat Nov 21,away,Southern Miss,127.0,False,upcoming,,,,0.625,4.8
-South Alabama,13,regular,Fri Nov 27,home,App State,105.0,False,upcoming,,,,0.569,2.6
+South Alabama,13,regular,Fri Nov 27,home,App State,105.0,False,upcoming,,,,0.57,2.7
 South Carolina,1,regular,Sat Sep 5,home,Kent State,135.0,False,final,W,57.0,0.0,0.982,34.9
 South Carolina,2,regular,Sat Sep 12,home,Towson,,True,final,W,45.0,9.0,1.0,50.9
 South Carolina,3,regular,Sat Sep 19,home,Mississippi State,53.0,False,final,L,34.0,41.0,0.475,-1.0
@@ -1211,18 +1211,18 @@ South Florida,1,regular,Sat Sep 5,home,Florida International,115.0,False,final,W
 South Florida,2,regular,Sat Sep 12,away,Army,82.0,False,final,W,28.0,24.0,0.328,-7.2
 South Florida,3,regular,Sat Sep 19,home,Delaware State,,True,final,W,59.0,17.0,0.992,35.6
 South Florida,4,regular,Sat Sep 26,away,Bowling Green,128.0,False,final,W,14.0,6.0,0.948,25.4
-South Florida,5,regular,Sat Oct 3,home,Temple,120.0,False,final,L,13.0,17.0,0.777,11.8
+South Florida,5,regular,Sat Oct 3,home,Temple,122.0,False,final,L,13.0,17.0,0.777,11.8
 South Florida,6,regular,Thu Oct 8,away,UTSA,76.0,False,final,L,24.0,31.0,0.404,-3.7
 South Florida,7,regular,Sat Oct 17,home,Kent State,135.0,False,final,W,29.0,2.0,0.913,20.7
 South Florida,9,regular,Sat Oct 31,home,UAB,98.0,False,final,W,30.0,10.0,0.797,12.7
 South Florida,10,regular,Fri Nov 6,away,East Carolina,90.0,False,final,L,17.0,20.0,0.493,-0.2
 South Florida,11,regular,Thu Nov 12,home,Memphis,49.0,False,final,L,41.0,52.0,0.431,-2.6
-South Florida,12,regular,Sat Nov 21,away,Florida Atlantic,93.0,False,upcoming,,,,0.5,-0.0
-South Florida,13,regular,Sat Nov 28,home,Tulane,113.0,False,upcoming,,,,0.777,11.5
+South Florida,12,regular,Sat Nov 21,away,Florida Atlantic,93.0,False,upcoming,,,,0.497,-0.1
+South Florida,13,regular,Sat Nov 28,home,Tulane,112.0,False,upcoming,,,,0.775,11.4
 Southern Miss,1,regular,Sat Sep 5,home,Alcorn State,,True,final,W,49.0,3.0,0.857,16.3
 Southern Miss,2,regular,Sat Sep 12,away,Auburn,22.0,False,final,L,8.0,43.0,0.059,-25.2
 Southern Miss,3,regular,Sat Sep 19,home,UConn,81.0,False,final,L,20.0,48.0,0.447,-2.1
-Southern Miss,4,regular,Sat Sep 26,away,Tulane,113.0,False,final,L,21.0,24.0,0.173,-14.7
+Southern Miss,4,regular,Sat Sep 26,away,Tulane,112.0,False,final,L,21.0,24.0,0.173,-14.7
 Southern Miss,6,regular,Tue Oct 6,away,Troy,117.0,False,final,L,34.0,55.0,0.288,-8.7
 Southern Miss,7,regular,Sat Oct 17,home,Arkansas State,116.0,False,final,L,13.0,23.0,0.431,-2.7
 Southern Miss,8,regular,Sat Oct 24,home,Louisiana,87.0,False,final,W,35.0,31.0,0.216,-12.0
@@ -1230,7 +1230,7 @@ Southern Miss,9,regular,Sat Oct 31,away,UL Monroe,130.0,False,final,W,35.0,21.0,
 Southern Miss,10,regular,Thu Nov 5,home,James Madison,66.0,False,final,L,23.0,54.0,0.168,-14.6
 Southern Miss,11,regular,Sat Nov 14,away,Louisiana Tech,59.0,False,final,L,31.0,63.0,0.064,-23.0
 Southern Miss,12,regular,Sat Nov 21,home,South Alabama,106.0,False,upcoming,,,,0.375,-4.8
-Southern Miss,13,regular,Sat Nov 28,away,Old Dominion,112.0,False,upcoming,,,,0.29,-8.4
+Southern Miss,13,regular,Sat Nov 28,away,Old Dominion,113.0,False,upcoming,,,,0.29,-8.4
 Stanford,1,regular,Sat Aug 29,home,Hawai'i,110.0,False,final,W,37.0,27.0,0.787,13.2
 Stanford,1,regular,Fri Sep 4,home,Miami,4.0,False,final,L,6.0,45.0,0.074,-23.6
 Stanford,3,regular,Sat Sep 19,away,Duke,18.0,False,final,L,7.0,35.0,0.195,-13.7
@@ -1254,7 +1254,7 @@ Syracuse,9,regular,Sat Oct 31,home,SMU,40.0,False,final,W,30.0,27.0,0.313,-7.4
 Syracuse,10,regular,Sat Nov 7,home,Clemson,54.0,False,final,L,13.0,18.0,0.473,-1.0
 Syracuse,11,regular,Sat Nov 14,away,NC State,74.0,False,final,W,34.0,31.0,0.549,1.9
 Syracuse,12,regular,Sat Nov 21,away,Boston College,84.0,False,upcoming,,,,0.605,4.0
-Syracuse,13,regular,Sat Nov 28,home,Notre Dame,2.0,False,upcoming,,,,0.065,-22.8
+Syracuse,13,regular,Sat Nov 28,home,Notre Dame,2.0,False,upcoming,,,,0.065,-22.9
 TCU,1,regular,Sat Aug 29,neutral,North Carolina,33.0,False,final,L,10.0,15.0,0.763,11.9
 TCU,2,regular,Sat Sep 12,home,Grambling,,True,final,W,63.0,7.0,0.998,43.0
 TCU,3,regular,Sat Sep 19,home,Arkansas State,116.0,False,final,W,31.0,7.0,0.928,23.0
@@ -1265,7 +1265,7 @@ TCU,8,regular,Sat Oct 24,home,West Virginia,79.0,False,final,L,20.0,24.0,0.853,1
 TCU,9,regular,Sat Oct 31,home,Kansas,44.0,False,final,W,22.0,16.0,0.631,5.1
 TCU,10,regular,Fri Nov 6,away,Arizona,29.0,False,final,L,28.0,29.0,0.317,-7.2
 TCU,11,regular,Sat Nov 14,home,Kansas State,78.0,False,final,W,20.0,10.0,0.809,13.2
-TCU,12,regular,Sat Nov 21,home,Utah,13.0,False,upcoming,,,,0.298,-8.0
+TCU,12,regular,Sat Nov 21,home,Utah,13.0,False,upcoming,,,,0.297,-8.0
 TCU,13,regular,Thu Nov 26,away,Texas Tech,19.0,False,upcoming,,,,0.248,-10.3
 Temple,1,regular,Sat Sep 5,home,Rhode Island,,True,final,W,38.0,14.0,0.943,24.4
 Temple,2,regular,Sat Sep 12,home,Penn State,28.0,False,final,L,9.0,27.0,0.046,-27.1
@@ -1277,8 +1277,8 @@ Temple,7,regular,Sat Oct 17,home,Charlotte,133.0,False,final,L,31.0,38.0,0.914,2
 Temple,9,regular,Sat Oct 31,away,East Carolina,90.0,False,final,L,9.0,17.0,0.27,-9.4
 Temple,10,regular,Sat Nov 7,away,Navy,71.0,False,final,L,35.0,42.0,0.179,-14.0
 Temple,11,regular,Sat Nov 14,home,UAB,98.0,False,final,L,10.0,36.0,0.589,3.4
-Temple,12,regular,Thu Nov 19,home,Rice,121.0,False,upcoming,,,,0.573,2.8
-Temple,13,regular,Fri Nov 27,away,Memphis,49.0,False,upcoming,,,,0.076,-21.6
+Temple,12,regular,Thu Nov 19,home,Rice,118.0,False,final,L,27.0,31.0,0.573,2.8
+Temple,13,regular,Fri Nov 27,away,Memphis,49.0,False,upcoming,,,,0.069,-22.4
 Tennessee,1,regular,Sat Sep 5,home,Furman,,True,final,W,56.0,9.0,1.0,51.5
 Tennessee,2,regular,Sat Sep 12,away,Georgia Tech,75.0,False,final,W,45.0,24.0,0.655,6.4
 Tennessee,3,regular,Sat Sep 19,home,Kennesaw State,100.0,False,final,W,42.0,9.0,0.971,30.0
@@ -1303,7 +1303,7 @@ Texas,10,regular,Sat Nov 7,away,Missouri,23.0,False,final,W,34.0,20.0,0.667,6.6
 Texas,11,regular,Sat Nov 14,away,LSU,6.0,False,final,W,22.0,21.0,0.451,-1.9
 Texas,12,regular,Sat Nov 21,home,Arkansas,43.0,False,upcoming,,,,0.907,20.0
 Texas,13,regular,Fri Nov 27,away,Texas A&M,26.0,False,upcoming,,,,0.722,8.9
-Texas A&M,1,regular,Sat Sep 5,home,Missouri State,119.0,False,final,W,50.0,0.0,0.983,35.1
+Texas A&M,1,regular,Sat Sep 5,home,Missouri State,120.0,False,final,W,50.0,0.0,0.983,35.1
 Texas A&M,2,regular,Sat Sep 12,home,Arizona State,47.0,False,final,W,48.0,20.0,0.909,21.5
 Texas A&M,3,regular,Sat Sep 19,home,Kentucky,32.0,False,final,L,21.0,31.0,0.972,30.3
 Texas A&M,4,regular,Sat Sep 26,away,LSU,6.0,False,final,L,6.0,35.0,0.394,-4.2
@@ -1340,7 +1340,7 @@ Texas Tech,12,regular,Sat Nov 21,away,Baylor,31.0,False,upcoming,,,,0.536,1.4
 Texas Tech,13,regular,Thu Nov 26,home,TCU,42.0,False,upcoming,,,,0.752,10.3
 Toledo,1,regular,Fri Sep 4,away,Michigan State,64.0,False,final,L,20.0,30.0,0.455,-1.9
 Toledo,2,regular,Sat Sep 12,home,Central Connecticut,,True,final,W,63.0,10.0,0.975,29.3
-Toledo,3,regular,Sat Sep 19,home,Temple,120.0,False,final,W,49.0,48.0,0.732,9.8
+Toledo,3,regular,Sat Sep 19,home,Temple,122.0,False,final,W,49.0,48.0,0.732,9.8
 Toledo,4,regular,Sat Sep 26,home,San Diego State,99.0,False,final,W,41.0,16.0,0.667,6.7
 Toledo,5,regular,Sat Oct 3,away,Ball State,131.0,False,final,W,39.0,24.0,0.899,19.7
 Toledo,6,regular,Sat Oct 10,home,Buffalo,104.0,False,final,L,8.0,23.0,0.916,21.2
@@ -1370,21 +1370,21 @@ Tulane,6,regular,Sat Oct 10,away,Army,82.0,False,final,L,17.0,20.0,0.263,-9.9
 Tulane,7,regular,Fri Oct 16,home,Memphis,49.0,False,final,W,31.0,17.0,0.349,-6.0
 Tulane,8,regular,Sat Oct 24,home,UTSA,76.0,False,final,L,19.0,42.0,0.478,-0.8
 Tulane,9,regular,Fri Oct 30,away,Charlotte,133.0,False,final,W,38.0,31.0,0.805,13.2
-Tulane,10,regular,Sat Nov 7,home,Tulsa,57.0,False,final,L,10.0,60.0,0.472,-1.1
-Tulane,11,regular,Sat Nov 14,away,Rice,121.0,False,final,W,20.0,17.0,0.423,-3.0
+Tulane,10,regular,Sat Nov 7,home,Tulsa,56.0,False,final,L,10.0,60.0,0.472,-1.1
+Tulane,11,regular,Sat Nov 14,away,Rice,118.0,False,final,W,20.0,17.0,0.423,-3.0
 Tulane,12,regular,Sat Nov 21,home,North Texas,61.0,False,upcoming,,,,0.215,-11.9
-Tulane,13,regular,Sat Nov 28,away,South Florida,85.0,False,upcoming,,,,0.223,-11.5
+Tulane,13,regular,Sat Nov 28,away,South Florida,85.0,False,upcoming,,,,0.225,-11.4
 Tulsa,1,regular,Sat Sep 5,home,Oklahoma State,34.0,False,final,W,24.0,10.0,0.446,-2.3
 Tulsa,2,regular,Sat Sep 12,away,Sam Houston,132.0,False,final,W,23.0,17.0,0.714,9.1
 Tulsa,3,regular,Sat Sep 19,home,East Texas A&M,,True,final,W,42.0,0.0,0.973,28.6
 Tulsa,4,regular,Sat Sep 26,away,Arkansas,43.0,False,final,L,6.0,34.0,0.356,-5.8
 Tulsa,5,regular,Thu Oct 1,home,North Texas,61.0,False,final,L,44.0,45.0,0.357,-5.7
 Tulsa,6,regular,Sat Oct 10,away,Navy,71.0,False,final,L,26.0,34.0,0.347,-6.1
-Tulsa,7,regular,Sat Oct 17,away,Rice,121.0,False,final,W,38.0,17.0,0.598,3.8
+Tulsa,7,regular,Sat Oct 17,away,Rice,118.0,False,final,W,38.0,17.0,0.598,3.8
 Tulsa,8,regular,Fri Oct 23,home,Army,82.0,False,final,L,35.0,38.0,0.41,-3.5
-Tulsa,10,regular,Sat Nov 7,away,Tulane,113.0,False,final,W,60.0,10.0,0.528,1.1
+Tulsa,10,regular,Sat Nov 7,away,Tulane,112.0,False,final,W,60.0,10.0,0.528,1.1
 Tulsa,11,regular,Sat Nov 14,home,Florida Atlantic,93.0,False,final,W,38.0,21.0,0.738,9.6
-Tulsa,12,regular,Sat Nov 21,home,Charlotte,133.0,False,upcoming,,,,0.965,27.4
+Tulsa,12,regular,Sat Nov 21,home,Charlotte,133.0,False,upcoming,,,,0.965,27.5
 Tulsa,13,regular,Fri Nov 27,away,UTSA,76.0,False,upcoming,,,,0.534,1.3
 UAB,1,regular,Thu Sep 3,away,Illinois,39.0,False,final,L,23.0,42.0,0.04,-28.9
 UAB,2,regular,Sat Sep 12,home,UL Monroe,130.0,False,final,W,26.0,20.0,0.579,3.2
@@ -1395,9 +1395,9 @@ UAB,6,regular,Sat Oct 10,away,Memphis,49.0,False,final,L,13.0,38.0,0.157,-15.5
 UAB,7,regular,Thu Oct 15,home,East Carolina,90.0,False,final,W,30.0,17.0,0.246,-10.6
 UAB,9,regular,Sat Oct 31,away,South Florida,85.0,False,final,L,10.0,30.0,0.203,-12.7
 UAB,10,regular,Sat Nov 7,home,Charlotte,133.0,False,final,W,23.0,12.0,0.812,13.5
-UAB,11,regular,Sat Nov 14,away,Temple,120.0,False,final,W,36.0,10.0,0.411,-3.4
-UAB,12,regular,Sat Nov 21,home,UTSA,76.0,False,upcoming,,,,0.369,-5.1
-UAB,13,regular,Sat Nov 28,away,North Texas,61.0,False,upcoming,,,,0.187,-13.5
+UAB,11,regular,Sat Nov 14,away,Temple,122.0,False,final,W,36.0,10.0,0.411,-3.4
+UAB,12,regular,Sat Nov 21,home,UTSA,76.0,False,upcoming,,,,0.366,-5.2
+UAB,13,regular,Sat Nov 28,away,North Texas,61.0,False,upcoming,,,,0.184,-13.6
 UCF,1,regular,Thu Sep 3,home,Bethune-Cookman,,True,final,W,73.0,6.0,0.854,17.5
 UCF,2,regular,Sat Sep 12,away,Pittsburgh,45.0,False,final,L,7.0,12.0,0.171,-15.3
 UCF,3,regular,Sat Sep 19,home,Georgia State,102.0,False,final,W,44.0,30.0,0.818,14.4
@@ -1426,14 +1426,14 @@ UConn,1,regular,Sat Sep 5,home,Lafayette,,True,final,W,56.0,7.0,0.932,23.1
 UConn,2,regular,Sat Sep 12,home,Maryland,69.0,False,final,L,14.0,38.0,0.319,-7.6
 UConn,3,regular,Sat Sep 19,away,Southern Miss,127.0,False,final,W,48.0,20.0,0.553,2.1
 UConn,4,regular,Sat Sep 26,away,Miami (OH),97.0,False,final,L,21.0,24.0,0.481,-0.7
-UConn,5,regular,Sat Oct 3,home,Syracuse,56.0,False,final,L,41.0,42.0,0.411,-3.5
-UConn,6,regular,Sat Oct 10,away,Temple,120.0,False,final,W,34.0,20.0,0.468,-1.2
+UConn,5,regular,Sat Oct 3,home,Syracuse,57.0,False,final,L,41.0,42.0,0.411,-3.5
+UConn,6,regular,Sat Oct 10,away,Temple,122.0,False,final,W,34.0,20.0,0.468,-1.2
 UConn,8,regular,Fri Oct 23,home,Massachusetts,125.0,False,final,W,35.0,16.0,0.78,11.8
 UConn,9,regular,Sat Oct 31,away,Air Force,80.0,False,final,L,26.0,35.0,0.468,-1.2
 UConn,10,regular,Sat Nov 7,home,North Carolina,33.0,False,final,L,21.0,38.0,0.257,-9.9
 UConn,11,regular,Sat Nov 14,home,James Madison,66.0,False,final,W,46.0,22.0,0.342,-6.1
-UConn,12,regular,Sat Nov 21,home,Old Dominion,112.0,False,upcoming,,,,0.808,13.2
-UConn,13,regular,Sat Nov 28,away,Wyoming,108.0,False,upcoming,,,,0.669,6.6
+UConn,12,regular,Sat Nov 21,home,Old Dominion,113.0,False,upcoming,,,,0.807,13.2
+UConn,13,regular,Sat Nov 28,away,Wyoming,108.0,False,upcoming,,,,0.668,6.6
 UL Monroe,1,regular,Sat Sep 5,away,Mississippi State,53.0,False,final,L,13.0,62.0,0.152,-17.0
 UL Monroe,2,regular,Sat Sep 12,away,UAB,98.0,False,final,L,20.0,26.0,0.421,-3.2
 UL Monroe,3,regular,Sat Sep 19,home,SE Louisiana,,True,final,L,35.0,38.0,0.906,19.5
@@ -1444,7 +1444,7 @@ UL Monroe,8,regular,Sat Oct 24,away,Troy,117.0,False,final,W,21.0,14.0,0.156,-15
 UL Monroe,9,regular,Sat Oct 31,home,Southern Miss,127.0,False,final,L,21.0,35.0,0.471,-1.1
 UL Monroe,10,regular,Sat Nov 7,away,Arkansas State,116.0,False,final,W,19.0,17.0,0.179,-14.0
 UL Monroe,11,regular,Thu Nov 12,home,Louisiana,87.0,False,final,L,21.0,42.0,0.229,-11.2
-UL Monroe,12,regular,Sat Nov 21,away,App State,105.0,False,upcoming,,,,0.206,-12.4
+UL Monroe,12,regular,Sat Nov 21,away,App State,105.0,False,upcoming,,,,0.207,-12.4
 UL Monroe,13,regular,Sat Nov 28,home,Marshall,124.0,False,upcoming,,,,0.483,-0.6
 UNLV,1,regular,Sat Aug 29,home,Memphis,49.0,False,final,L,21.0,27.0,0.695,8.4
 UNLV,1,regular,Sat Sep 5,away,Hawai'i,110.0,False,final,W,21.0,6.0,0.56,2.4
@@ -1456,9 +1456,9 @@ UNLV,7,regular,Sat Oct 17,away,Air Force,80.0,False,final,L,31.0,41.0,0.48,-0.8
 UNLV,9,regular,Sat Oct 31,home,Northern Illinois,138.0,False,final,W,31.0,24.0,0.962,27.1
 UNLV,10,regular,Sat Nov 7,home,Wyoming,108.0,False,final,L,35.0,41.0,0.792,12.4
 UNLV,11,regular,Sat Nov 14,away,New Mexico,55.0,False,final,W,21.0,17.0,0.143,-16.1
-UNLV,12,regular,Sat Nov 21,away,San José State,122.0,False,upcoming,,,,0.68,7.0
+UNLV,12,regular,Sat Nov 21,away,San José State,121.0,False,upcoming,,,,0.68,7.0
 UNLV,13,regular,Sat Nov 28,home,Nevada,114.0,False,upcoming,,,,0.742,9.8
-USC,1,regular,Sat Aug 29,home,San José State,122.0,False,final,W,42.0,26.0,0.995,43.0
+USC,1,regular,Sat Aug 29,home,San José State,121.0,False,final,W,42.0,26.0,0.995,43.0
 USC,1,regular,Fri Sep 4,home,Fresno State,77.0,False,final,W,39.0,0.0,0.931,24.2
 USC,2,regular,Sat Sep 12,home,Louisiana,87.0,False,final,W,49.0,30.0,0.973,30.7
 USC,3,regular,Sat Sep 19,away,Rutgers,94.0,False,final,W,42.0,35.0,0.916,21.8
@@ -1476,24 +1476,24 @@ UTEP,3,regular,Sat Sep 19,away,Michigan,46.0,False,final,L,17.0,52.0,0.025,-30.9
 UTEP,4,regular,Sat Sep 26,home,Oregon State,62.0,False,final,L,7.0,33.0,0.319,-7.3
 UTEP,5,regular,Sat Oct 3,away,New Mexico,55.0,False,final,L,7.0,61.0,0.049,-25.6
 UTEP,6,regular,Sat Oct 10,home,Nevada,114.0,False,final,L,13.0,30.0,0.512,0.5
-UTEP,7,regular,Sat Oct 17,home,San José State,122.0,False,final,L,11.0,24.0,0.384,-4.5
+UTEP,7,regular,Sat Oct 17,home,San José State,121.0,False,final,L,11.0,24.0,0.384,-4.5
 UTEP,9,regular,Sat Oct 31,away,North Dakota State,65.0,False,final,L,7.0,31.0,0.035,-27.6
 UTEP,10,regular,Sat Nov 7,home,Hawai'i,110.0,False,final,L,14.0,17.0,0.306,-7.7
 UTEP,11,regular,Sat Nov 14,home,Wyoming,108.0,False,final,L,15.0,27.0,0.308,-7.6
-UTEP,12,regular,Fri Nov 20,away,Air Force,80.0,False,upcoming,,,,0.058,-23.8
+UTEP,12,regular,Fri Nov 20,away,Air Force,80.0,False,upcoming,,,,0.058,-23.7
 UTEP,13,regular,Sat Nov 28,away,Northern Illinois,138.0,False,upcoming,,,,0.498,-0.1
 UTSA,1,regular,Sat Sep 5,home,UT Rio Grande Valley,,True,final,W,45.0,16.0,0.982,32.3
 UTSA,2,regular,Sat Sep 12,away,Texas State,51.0,False,final,W,31.0,26.0,0.529,1.2
 UTSA,3,regular,Sat Sep 19,away,Texas,7.0,False,final,L,6.0,30.0,0.019,-32.6
 UTSA,4,regular,Sat Sep 26,home,Colorado State,129.0,False,final,W,59.0,45.0,0.742,10.1
-UTSA,5,regular,Sat Oct 3,away,Rice,121.0,False,final,W,16.0,14.0,0.779,11.9
+UTSA,5,regular,Sat Oct 3,away,Rice,118.0,False,final,W,16.0,14.0,0.779,11.9
 UTSA,6,regular,Thu Oct 8,home,South Florida,85.0,False,final,W,31.0,24.0,0.596,3.7
 UTSA,7,regular,Sat Oct 17,home,Navy,71.0,False,final,W,38.0,34.0,0.6,3.9
-UTSA,8,regular,Sat Oct 24,away,Tulane,113.0,False,final,W,42.0,19.0,0.522,0.8
+UTSA,8,regular,Sat Oct 24,away,Tulane,112.0,False,final,W,42.0,19.0,0.522,0.8
 UTSA,10,regular,Thu Nov 5,away,Florida Atlantic,93.0,False,final,L,29.0,60.0,0.687,7.4
 UTSA,11,regular,Sat Nov 14,home,North Texas,61.0,False,final,W,35.0,16.0,0.361,-5.4
-UTSA,12,regular,Sat Nov 21,away,UAB,98.0,False,upcoming,,,,0.631,5.1
-UTSA,13,regular,Fri Nov 27,home,Tulsa,57.0,False,upcoming,,,,0.466,-1.3
+UTSA,12,regular,Sat Nov 21,away,UAB,98.0,False,upcoming,,,,0.634,5.2
+UTSA,13,regular,Fri Nov 27,home,Tulsa,56.0,False,upcoming,,,,0.466,-1.3
 Utah,1,regular,Thu Sep 3,home,Idaho,,True,final,W,66.0,14.0,0.996,41.8
 Utah,2,regular,Sat Sep 12,home,Arkansas,43.0,False,final,W,43.0,10.0,0.81,14.1
 Utah,3,regular,Sat Sep 19,home,Utah State,96.0,False,final,W,33.0,0.0,0.962,28.1
@@ -1504,7 +1504,7 @@ Utah,8,regular,Sat Oct 24,home,Houston,36.0,False,final,W,21.0,13.0,0.616,4.5
 Utah,9,regular,Sat Oct 31,away,Cincinnati,70.0,False,final,W,49.0,25.0,0.752,10.4
 Utah,10,regular,Sat Nov 7,home,BYU,20.0,False,final,W,28.0,20.0,0.665,6.5
 Utah,11,regular,Sat Nov 14,away,Arizona,29.0,False,final,W,40.0,39.0,0.564,2.4
-Utah,12,regular,Sat Nov 21,away,TCU,42.0,False,upcoming,,,,0.702,8.0
+Utah,12,regular,Sat Nov 21,away,TCU,42.0,False,upcoming,,,,0.703,8.0
 Utah,13,regular,Fri Nov 27,home,West Virginia,79.0,False,upcoming,,,,0.935,22.8
 Utah State,1,regular,Sat Sep 5,home,Idaho State,,True,final,L,17.0,29.0,0.961,27.0
 Utah State,2,regular,Sat Sep 12,away,Washington,35.0,False,final,L,14.0,16.0,0.024,-31.8
@@ -1534,15 +1534,15 @@ Virginia,2,regular,Fri Sep 11,home,Norfolk State,,True,final,W,59.0,3.0,0.999,46
 Virginia,3,regular,Sat Sep 19,neutral,West Virginia,79.0,False,final,L,27.0,38.0,0.846,16.1
 Virginia,4,regular,Sat Sep 26,home,Delaware,95.0,False,final,W,42.0,3.0,0.861,16.9
 Virginia,5,regular,Sat Oct 3,away,Florida State,37.0,False,final,L,7.0,38.0,0.582,3.2
-Virginia,6,regular,Sat Oct 10,home,Syracuse,56.0,False,final,W,28.0,25.0,0.692,7.7
+Virginia,6,regular,Sat Oct 10,home,Syracuse,57.0,False,final,W,28.0,25.0,0.692,7.7
 Virginia,7,regular,Sat Oct 17,away,SMU,40.0,False,final,L,13.0,23.0,0.325,-7.0
 Virginia,8,regular,Fri Oct 23,home,Duke,18.0,False,final,L,16.0,19.0,0.489,-0.4
 Virginia,9,regular,Sat Oct 31,away,Wake Forest,5.0,False,final,L,7.0,51.0,0.174,-14.3
 Virginia,11,regular,Sat Nov 14,home,California,103.0,False,final,W,36.0,7.0,0.827,14.3
-Virginia,12,regular,Sat Nov 21,home,North Carolina,33.0,False,upcoming,,,,0.416,-3.2
+Virginia,12,regular,Sat Nov 21,home,North Carolina,33.0,False,upcoming,,,,0.417,-3.2
 Virginia,13,regular,Sat Nov 28,away,Virginia Tech,68.0,False,upcoming,,,,0.516,0.6
 Virginia Tech,1,regular,Sat Sep 5,home,VMI,,True,final,W,73.0,3.0,0.99,35.3
-Virginia Tech,2,regular,Sat Sep 12,home,Old Dominion,112.0,False,final,W,44.0,21.0,0.754,11.1
+Virginia Tech,2,regular,Sat Sep 12,home,Old Dominion,113.0,False,final,W,44.0,21.0,0.754,11.1
 Virginia Tech,3,regular,Sat Sep 19,away,Maryland,69.0,False,final,W,35.0,26.0,0.403,-3.9
 Virginia Tech,4,regular,Sat Sep 26,away,Boston College,84.0,False,final,W,21.0,14.0,0.835,15.2
 Virginia Tech,5,regular,Fri Oct 2,home,Pittsburgh,45.0,False,final,L,33.0,35.0,0.399,-4.0
@@ -1605,16 +1605,16 @@ Western Kentucky,2,regular,Sat Sep 12,away,Georgia,1.0,False,final,L,20.0,70.0,0
 Western Kentucky,3,regular,Sat Sep 19,away,Indiana,10.0,False,final,L,0.0,38.0,0.001,-47.1
 Western Kentucky,4,regular,Sat Sep 26,home,Mercyhurst,,True,final,W,52.0,7.0,0.891,18.1
 Western Kentucky,5,regular,Thu Oct 1,away,New Mexico State,123.0,False,final,L,13.0,34.0,0.52,0.8
-Western Kentucky,6,regular,Thu Oct 8,home,Missouri State,119.0,False,final,W,34.0,13.0,0.473,-1.1
+Western Kentucky,6,regular,Thu Oct 8,home,Missouri State,120.0,False,final,W,34.0,13.0,0.473,-1.1
 Western Kentucky,7,regular,Wed Oct 14,away,Sam Houston,132.0,False,final,W,16.0,3.0,0.519,0.7
 Western Kentucky,9,regular,Tue Oct 27,home,Delaware,95.0,False,final,L,21.0,35.0,0.579,3.1
-Western Kentucky,10,regular,Sat Nov 7,away,Middle Tennessee,118.0,False,final,L,42.0,51.0,0.578,3.0
+Western Kentucky,10,regular,Sat Nov 7,away,Middle Tennessee,119.0,False,final,L,42.0,51.0,0.578,3.0
 Western Kentucky,11,regular,Sat Nov 14,home,Jacksonville State,92.0,False,final,W,34.0,24.0,0.316,-7.2
 Western Kentucky,12,regular,Sat Nov 21,away,Liberty,60.0,False,upcoming,,,,0.139,-16.4
 Western Kentucky,13,regular,Sat Nov 28,home,Kennesaw State,100.0,False,upcoming,,,,0.527,1.0
 Western Michigan,1,regular,Sat Sep 5,away,Michigan,46.0,False,final,L,12.0,13.0,0.076,-23.7
 Western Michigan,2,regular,Sat Sep 12,home,Monmouth,,True,final,W,49.0,14.0,0.984,32.2
-Western Michigan,3,regular,Sat Sep 19,away,Rice,121.0,False,final,W,28.0,21.0,0.726,9.5
+Western Michigan,3,regular,Sat Sep 19,away,Rice,118.0,False,final,W,28.0,21.0,0.726,9.5
 Western Michigan,4,regular,Sat Sep 26,home,Boise State,41.0,False,final,L,7.0,32.0,0.45,-2.0
 Western Michigan,5,regular,Sat Oct 3,away,Buffalo,104.0,False,final,W,20.0,17.0,0.794,12.7
 Western Michigan,6,regular,Sat Oct 10,home,Kent State,135.0,False,final,W,38.0,7.0,0.821,14.1
@@ -1641,10 +1641,10 @@ Wyoming,2,regular,Sat Sep 12,home,Northern Colorado,,True,final,W,21.0,13.0,0.86
 Wyoming,3,regular,Sat Sep 19,away,Central Michigan,111.0,False,final,L,10.0,24.0,0.412,-3.5
 Wyoming,4,regular,Sat Sep 26,home,Hawai'i,110.0,False,final,W,27.0,10.0,0.301,-8.2
 Wyoming,5,regular,Sat Oct 3,away,North Dakota State,65.0,False,final,L,0.0,28.0,0.057,-24.5
-Wyoming,6,regular,Fri Oct 9,away,San José State,122.0,False,final,W,16.0,13.0,0.297,-8.2
+Wyoming,6,regular,Fri Oct 9,away,San José State,121.0,False,final,W,16.0,13.0,0.297,-8.2
 Wyoming,7,regular,Sat Oct 17,home,Northern Illinois,138.0,False,final,W,41.0,23.0,0.693,7.8
 Wyoming,8,regular,Fri Oct 23,home,Air Force,80.0,False,final,W,28.0,14.0,0.206,-12.5
 Wyoming,10,regular,Sat Nov 7,away,UNLV,91.0,False,final,W,41.0,35.0,0.208,-12.4
 Wyoming,11,regular,Sat Nov 14,away,UTEP,137.0,False,final,W,27.0,15.0,0.692,7.6
 Wyoming,12,regular,Fri Nov 20,home,New Mexico,55.0,False,upcoming,,,,0.208,-12.3
-Wyoming,13,regular,Sat Nov 28,home,UConn,81.0,False,upcoming,,,,0.331,-6.6
+Wyoming,13,regular,Sat Nov 28,home,UConn,81.0,False,upcoming,,,,0.332,-6.6
