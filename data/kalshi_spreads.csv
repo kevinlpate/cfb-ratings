@@ -1,80 +1,59 @@
 game_id,day,time_et,game,qb_flag,vegas_line,our_line,bet,price,fair_vegas,gap_vs_vegas,our_cover,volume,state,asof_utc
-401858303,Fri Nov 20,7:30 PM,Clemson @ Duke,Clemson: Christopher Vizzina led last game (usual Tait Reynolds),Duke -11.5,Duke -14.7,Clemson -4.5,0.11,0.13,0.01,0.089,180.61,live,2026-11-20T23:48:25+00:00
-401866468,Fri Nov 20,7:30 PM,Bowling Green @ Toledo,Bowling Green: Austin Novosad led last game (usual Jay Kastantin),Toledo -16.5,Toledo -18.0,Bowling Green -5.5,0.06,0.065,-0.005,0.053,10.59,live,2026-11-20T23:48:25+00:00
-401858529,Fri Nov 20,8:00 PM,Oregon @ Michigan State,Michigan State: Cam Fancher led last game (usual Alessio Milivojevic),Oregon -17.5,Oregon -17.0,Michigan State +3.5,0.16,0.174,0.004,0.183,288.57,live,2026-11-20T23:48:25+00:00
-401864545,Fri Nov 20,8:00 PM,UTEP @ Air Force,Air Force: Evan Medders led last game (usual Liam Szarka); UTEP: Raymond Moore III led last game (usual EJ Colson),Air Force -22.5,Air Force -23.7,Air Force -13.5,0.73,0.748,-0.002,0.774,1135.34,live,2026-11-20T23:48:25+00:00
-401864542,Fri Nov 20,9:00 PM,New Mexico @ Wyoming,Wyoming: Landon Sims led last game (usual Tyler Hughes),New Mexico -10.0,New Mexico -12.3,Wyoming +3.5,0.31,0.338,0.008,0.282,308.37,live,2026-11-20T23:48:25+00:00
-401856866,Sat Nov 21,12:00 PM,BYU @ Kansas,,BYU -5.5,BYU -5.1,Kansas +2.5,0.36,0.396,0.016,0.407,707.5,live,2026-11-20T23:48:25+00:00
-401858310,Sat Nov 21,12:00 PM,Wake Forest @ Georgia Tech,,Wake Forest -20.5,Wake Forest -23.2,Wake Forest -17.5,0.55,0.582,0.012,0.653,16172.1,live,2026-11-20T23:48:25+00:00
-401858531,Sat Nov 21,12:00 PM,Ohio State @ Nebraska,Ohio State: Luke Fahey led last game (usual Julian Sayin); Julian Sayin (throwing shoulder) expected out for the season; true freshman Luke Fahey starting,Ohio State -3.5,Ohio State -6.7,Nebraska +2.5,0.43,0.451,0.001,0.365,20438.52,live,2026-11-20T23:48:25+00:00
-401856748,Sat Nov 21,12:00 PM,Vanderbilt @ Florida,,Florida -13.5,Florida -12.7,Florida -10.5,0.55,0.57,-0.0,0.548,8.52,live,2026-11-20T23:48:25+00:00
-401856749,Sat Nov 21,12:00 PM,Wofford @ Ole Miss,Wofford: Ethan Drumm led last game (usual JT Fayard),Ole Miss -49.5,Ole Miss -53.3,Wofford +63.5,0.83,0.898,0.058,0.859,0,live,2026-11-20T23:48:25+00:00
-401856867,Sat Nov 21,12:00 PM,Colorado @ Cincinnati,,Cincinnati -3.0,Cincinnati -3.0,Cincinnati -9.5,0.29,0.327,0.017,0.327,46.12,live,2026-11-20T23:48:25+00:00
-401858309,Sat Nov 21,12:00 PM,Syracuse @ Boston College,,Syracuse -3.0,Syracuse -4.0,Syracuse -3.5,0.45,0.474,0.004,0.501,14997.4,live,2026-11-20T23:48:25+00:00
-401858530,Sat Nov 21,12:00 PM,Northwestern @ Minnesota,Northwestern: Nicco Marchiol led last game (usual Aidan Chiles),Northwestern -2.5,Northwestern -5.1,Northwestern -9.5,0.27,0.314,0.024,0.381,0,live,2026-11-20T23:48:25+00:00
-401858533,Sat Nov 21,12:00 PM,Wisconsin @ Purdue,Wisconsin: Ryan Hopkins led last game (usual Colton Joseph),Wisconsin -6.0,Wisconsin -6.5,Purdue -7.5,0.14,0.159,0.009,0.151,0,live,2026-11-20T23:48:25+00:00
-401862831,Sat Nov 21,12:00 PM,East Carolina @ Army,East Carolina: Emory Williams led last game (usual Mitch Griffis),Army -6.0,Army -6.0,East Carolina +3.5,0.42,0.444,0.004,0.444,6619.04,live,2026-11-20T23:48:25+00:00
-401862834,Sat Nov 21,12:00 PM,Memphis @ Navy,,Memphis -2.5,Memphis -2.0,Memphis -9.5,0.29,0.314,0.004,0.302,201.51,live,2026-11-20T23:48:25+00:00
-401862835,Sat Nov 21,12:00 PM,North Texas @ Tulane,Tulane: Trace Johnson led last game (usual Kadin Semonza),North Texas -6.5,North Texas -11.9,Tulane +24.5,0.88,0.899,0.009,0.816,0,live,2026-11-20T23:48:25+00:00
-401858305,Sat Nov 21,12:30 PM,North Carolina @ Virginia,,Virginia -1.5,North Carolina -3.2,Virginia +1.5,0.53,0.569,0.019,0.439,35.12,live,2026-11-20T23:48:25+00:00
-401856868,Sat Nov 21,1:00 PM,Houston @ West Virginia,,Houston -7.5,Houston -7.8,West Virginia +17.5,0.72,0.757,0.017,0.75,124.01,live,2026-11-20T23:48:25+00:00
-401856750,Sat Nov 21,1:00 PM,Tennessee Tech @ Mississippi State,Mississippi State: Parker Puckett led last game (usual Kamario Taylor); Starter Kamario Taylor out for the season (turf toe); AJ Swann left the Texas game hurt and is uncertain,Mississippi State -33.5,Mississippi State -37.8,Mississippi State -20.5,0.78,0.822,0.022,0.888,869.38,live,2026-11-20T23:48:25+00:00
-401871080,Sat Nov 21,1:00 PM,Western Kentucky @ Liberty,Western Kentucky: Rodney Tisdale Jr. led last game (usual Brock Glenn),Liberty -17.5,Liberty -16.4,Liberty -21.5,0.36,0.379,-0.001,0.35,0,live,2026-11-20T23:48:25+00:00
-401856746,Sat Nov 21,2:00 PM,Chattanooga @ Alabama,Chattanooga: Matthew Clemmer led last game (usual Battle Alberson),Alabama -48.5,Alabama -62.4,Chattanooga +63.5,0.87,0.907,0.027,0.741,0.01,live,2026-11-20T23:48:25+00:00
-401862832,Sat Nov 21,2:00 PM,Charlotte @ Tulsa,Charlotte: Conner Harrell led last game (usual Cole Gonzales),Tulsa -22.5,Tulsa -27.5,Tulsa -9.5,0.8,0.819,-0.001,0.896,0,live,2026-11-20T23:48:25+00:00
-401871079,Sat Nov 21,2:00 PM,Missouri State @ Jacksonville State,Missouri State: Henry Belin IV led last game (usual Skyler Locklear),Jacksonville State -10.5,Jacksonville State -11.7,Missouri State +21.5,0.76,0.786,0.006,0.761,0,live,2026-11-20T23:48:25+00:00
-401871081,Sat Nov 21,2:00 PM,Middle Tennessee @ Sam Houston,,Middle Tennessee -6.0,Middle Tennessee -4.2,Sam Houston -5.5,0.2,0.215,-0.005,0.253,0,live,2026-11-20T23:48:25+00:00
-401858527,Sat Nov 21,2:30 PM,Iowa @ Illinois,,Iowa -8.5,Iowa -6.0,Illinois +7.5,0.45,0.497,0.027,0.566,11812.7,live,2026-11-20T23:48:25+00:00
-401862833,Sat Nov 21,2:30 PM,South Florida @ Florida Atlantic,South Florida: Luke Kromenhoek led last game (usual Michael Van Buren Jr.),South Florida -1.5,Florida Atlantic -0.1,South Florida -7.5,0.29,0.316,0.006,0.278,0,live,2026-11-20T23:48:25+00:00
-401869929,Sat Nov 21,2:30 PM,UL Monroe @ App State,,App State -14.0,App State -12.4,UL Monroe +30.5,0.87,0.872,-0.008,0.894,0,live,2026-11-20T23:48:25+00:00
-401869946,Sat Nov 21,3:00 PM,Coastal Carolina @ Louisiana,,Louisiana -10.5,Louisiana -10.2,Coastal Carolina +24.5,0.83,0.841,0.001,0.846,0,live,2026-11-20T23:48:25+00:00
-401871077,Sat Nov 21,3:00 PM,Delaware @ New Mexico State,New Mexico State: Trey Hedden led last game (usual Adam Damante),Delaware -3.0,Delaware -5.5,Delaware -5.5,0.42,0.435,-0.005,0.503,286.0,live,2026-11-20T23:48:25+00:00
-401871078,Sat Nov 21,3:00 PM,Florida International @ Kennesaw State,Kennesaw State: Landon Varnes led last game (usual Rickie Collins),Kennesaw State -2.5,Kennesaw State -6.5,Kennesaw State -10.5,0.24,0.277,0.017,0.377,0,live,2026-11-20T23:48:25+00:00
-401858528,Sat Nov 21,3:30 PM,UCLA @ Michigan,Michigan: Tommy Carr led last game (usual Bryce Underwood); UCLA: Ty Dieffenbach led last game (usual Nico Iamaleava),UCLA -3.5,UCLA -6.2,Michigan -9.5,0.16,0.184,0.014,0.138,14.07,live,2026-11-20T23:48:25+00:00
-401856755,Sat Nov 21,3:30 PM,Arkansas @ Texas,,Texas -20.5,Texas -20.0,Texas -17.5,0.55,0.582,0.012,0.569,671.9,live,2026-11-20T23:48:25+00:00
-401858535,Sat Nov 21,3:30 PM,Indiana @ Washington,Indiana: Grant Wilson led last game (usual Josh Hoover),Indiana -7.5,Indiana -10.9,Washington +24.5,0.86,0.886,0.016,0.834,0,live,2026-11-20T23:48:25+00:00
-401856754,Sat Nov 21,3:30 PM,LSU @ Tennessee,,LSU -1.5,Tennessee -1.5,LSU -6.5,0.33,0.372,0.022,0.296,482.03,live,2026-11-20T23:48:25+00:00
-401856871,Sat Nov 21,3:30 PM,Texas Tech @ Baylor,Texas Tech: Thomas Castellanos led last game (usual Will Hammond),Texas Tech -4.5,Texas Tech -1.4,Baylor +20.5,0.84,0.862,0.012,0.904,834.55,live,2026-11-20T23:48:25+00:00
-401856747,Sat Nov 21,3:30 PM,Samford @ Auburn,Samford: Will Shields led last game (usual Gabarri Johnson),Auburn -48.5,Auburn -47.9,Samford +69.5,0.95,0.99,0.03,0.991,0,live,2026-11-20T23:48:25+00:00
-401858304,Sat Nov 21,3:30 PM,NC State @ Florida State,,Florida State -10.5,Florida State -12.3,NC State +27.5,0.86,0.878,0.008,0.851,0,live,2026-11-20T23:48:25+00:00
-401858532,Sat Nov 21,3:30 PM,Rutgers @ Penn State,,Penn State -26.5,Penn State -22.8,Penn State -9.5,0.86,0.883,0.013,0.824,0.02,live,2026-11-20T23:48:25+00:00
-401861968,Sat Nov 21,3:30 PM,Old Dominion @ UConn,Old Dominion: Jaxon Potter led last game (usual Quinn Henicle),UConn -13.5,UConn -13.2,Old Dominion -9.5,0.05,0.055,-0.005,0.058,0,live,2026-11-20T23:48:25+00:00
-401856752,Sat Nov 21,3:45 PM,Texas A&M @ Oklahoma,,Oklahoma -7.0,Oklahoma -5.8,Texas A&M +1.5,0.3,0.338,0.018,0.369,0,live,2026-11-20T23:48:25+00:00
-401864543,Sat Nov 21,4:00 PM,Northern Illinois @ North Dakota State,,North Dakota State -25.5,North Dakota State -29.3,North Dakota State -6.5,0.9,0.909,-0.001,0.945,321.11,live,2026-11-20T23:48:25+00:00
-401869953,Sat Nov 21,4:00 PM,Georgia Southern @ Troy,,Georgia Southern -9.5,Georgia Southern -11.7,Troy +23.5,0.8,0.831,0.011,0.789,0,live,2026-11-20T23:48:25+00:00
-401869958,Sat Nov 21,4:00 PM,Georgia State @ Marshall,Georgia State: Ayden Pereira led last game (usual Cameran Brown),Marshall -2.5,Georgia State -4.5,Marshall -6.5,0.38,0.398,-0.002,0.229,393.05,live,2026-11-20T23:48:25+00:00
-401871101,Sat Nov 21,4:00 PM,South Alabama @ Southern Miss,Southern Miss: John White led last game (usual Landy Lyddy); South Alabama: Bishop Davenport led last game (usual Jared Hollins),South Alabama -4.5,South Alabama -4.8,Southern Miss +20.5,0.84,0.862,0.012,0.857,0,live,2026-11-20T23:48:25+00:00
-401860920,Sat Nov 21,6:00 PM,Washington State @ Texas State,Washington State: Owen Eshelman led last game (usual Caden Pinnick),Texas State -13.5,Texas State -12.1,Washington State +24.5,0.76,0.785,0.005,0.812,0,live,2026-11-20T23:48:25+00:00
-401858534,Sat Nov 21,6:15 PM,Maryland @ USC,Maryland: Cardell Williams led last game (usual Malik Washington),USC -17.5,USC -16.5,Maryland +21.5,0.59,0.621,0.011,0.647,4063.58,live,2026-11-20T23:48:25+00:00
-401858302,Sat Nov 21,7:00 PM,Virginia Tech @ Miami,Miami: WR Malachi Toney (ankle surgery) out until the playoff; 40% of Miami offensive EPA on his touches in 2026 (12/game),Miami -20.5,Miami -28.4,Miami -14.5,0.63,0.655,0.005,0.828,71.79,live,2026-11-20T23:48:25+00:00
-401856865,Sat Nov 21,7:00 PM,Arizona @ Kansas State,Kansas State: Dillon Duff led last game (usual Avery Johnson),Arizona -7.5,Arizona -11.4,Kansas State +11.5,0.58,0.619,0.019,0.512,21.86,live,2026-11-20T23:48:25+00:00
-401864544,Sat Nov 21,7:00 PM,UNLV @ San José State,,UNLV -6.5,UNLV -7.0,San José State +6.5,0.48,0.492,-0.008,0.479,5139.89,live,2026-11-20T23:48:25+00:00
-401869938,Sat Nov 21,7:00 PM,Arkansas State @ Louisiana Tech,,Louisiana Tech -14.5,Louisiana Tech -18.9,Arkansas State +17.5,0.55,0.583,0.013,0.461,1141.03,live,2026-11-20T23:48:25+00:00
-401856753,Sat Nov 21,7:30 PM,Georgia @ South Carolina,South Carolina: Cutter Woods led last game (usual Lanorris Sellers),Georgia -14.5,Georgia -17.0,South Carolina +23.5,0.7,0.729,0.009,0.669,3068.91,live,2026-11-20T23:48:25+00:00
-401858307,Sat Nov 21,7:30 PM,SMU @ Notre Dame,,Notre Dame -20.5,Notre Dame -23.5,Notre Dame -13.5,0.66,0.702,0.022,0.77,2733.26,live,2026-11-20T23:48:25+00:00
-401856751,Sat Nov 21,7:30 PM,Kentucky @ Missouri,,Missouri -4.5,Missouri -6.5,Kentucky +2.5,0.39,0.423,0.013,0.37,147.58,live,2026-11-20T23:48:25+00:00
-401858306,Sat Nov 21,7:30 PM,Pittsburgh @ Louisville,Pittsburgh: Corey Dailey led last game (usual Mason Heintschel),Louisville -13.5,Louisville -12.9,Pittsburgh -9.5,0.05,0.055,-0.005,0.06,0,live,2026-11-20T23:48:25+00:00
-401858308,Sat Nov 21,7:30 PM,Stanford @ California,,Stanford -2.5,Stanford -3.1,Stanford -6.5,0.37,0.398,0.008,0.414,1489.65,live,2026-11-20T23:48:25+00:00
-401860918,Sat Nov 21,7:30 PM,Colorado State @ Fresno State,,Fresno State -20.5,Fresno State -21.6,Fresno State -16.5,0.59,0.62,0.01,0.649,11.18,live,2026-11-20T23:48:25+00:00
-401862836,Sat Nov 21,8:00 PM,UTSA @ UAB,,UTSA -6.5,UTSA -5.2,UTSA -7.5,0.41,0.448,0.018,0.413,250.76,live,2026-11-20T23:48:25+00:00
-401856872,Sat Nov 21,9:00 PM,Utah @ TCU,,Utah -7.5,Utah -8.0,TCU +2.5,0.32,0.344,0.004,0.331,113.43,live,2026-11-20T23:48:25+00:00
-401860925,Sat Nov 21,9:30 PM,San Diego State @ Boise State,San Diego State: Stone Saunders led last game (usual Jayden Denegal),Boise State -17.5,Boise State -19.7,San Diego State +35.5,0.88,0.903,0.013,0.875,1062.25,live,2026-11-20T23:48:25+00:00
-401856870,Sat Nov 21,10:15 PM,Oklahoma State @ Arizona State,Arizona State: Jake Fette led last game (usual Cutter Boley); True freshman Jake Fette starting (one career start),Oklahoma State -2.5,Oklahoma State -1.4,Oklahoma State -5.5,0.4,0.421,0.001,0.391,7708.36,live,2026-11-20T23:48:25+00:00
-401860919,Sat Nov 21,10:30 PM,Utah State @ Oregon State,Oregon State: Maalik Murphy led last game (usual Braden Atkinson); Utah State: McCae Hillstead led last game (usual Grady Brosterhous),Oregon State -8.5,Oregon State -11.9,Utah State +24.5,0.86,0.872,0.002,0.816,0,live,2026-11-20T23:48:25+00:00
-401864541,Sat Nov 21,10:30 PM,Hawai'i @ Nevada,,Nevada -5.5,Nevada -2.0,Hawai'i -9.5,0.14,0.149,-0.001,0.213,0,live,2026-11-20T23:48:25+00:00
-401866470,Tue Nov 24,7:00 PM,Kent State @ Eastern Michigan,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401866471,Tue Nov 24,7:00 PM,Miami (OH) @ Western Michigan,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401856879,Thu Nov 26,8:00 PM,TCU @ Texas Tech,,Texas Tech -10.5,,Texas Tech -10.5,0.52,0.486,-0.054,,1.85,live,2026-11-20T23:48:25+00:00
-401858536,Fri Nov 27,12:00 PM,Nebraska @ Iowa,,Iowa -6.5,,Iowa -6.5,0.49,0.508,-0.002,,18.35,live,2026-11-20T23:48:25+00:00
-401856762,Fri Nov 27,12:00 PM,Mississippi State @ Ole Miss,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401862840,Fri Nov 27,12:00 PM,Tulsa @ UTSA,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401866472,Fri Nov 27,12:00 PM,Buffalo @ Akron,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401866473,Fri Nov 27,12:00 PM,Toledo @ Ohio,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401869930,Fri Nov 27,3:00 PM,App State @ South Alabama,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401856759,Fri Nov 27,3:30 PM,Florida @ Florida State,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401862838,Fri Nov 27,3:30 PM,Temple @ Memphis,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401864549,Fri Nov 27,3:30 PM,North Dakota State @ San José State,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401864546,Fri Nov 27,4:30 PM,Air Force @ New Mexico,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401856756,Fri Nov 27,7:30 PM,Texas @ Texas A&M,,Texas -7.5,,,,,,,,no live market,2026-11-20T23:48:25+00:00
-401858544,Fri Nov 27,7:30 PM,Minnesota @ Wisconsin,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
-401856880,Fri Nov 27,9:00 PM,West Virginia @ Utah,,,,,,,,,,no Vegas line,2026-11-20T23:48:25+00:00
+401856866,Sat Nov 21,12:00 PM,BYU @ Kansas,,BYU -5.5,BYU -4.9,Kansas +1.5,0.35,0.377,0.007,0.393,1211.06,live,2026-11-21T14:07:10+00:00
+401856867,Sat Nov 21,12:00 PM,Colorado @ Cincinnati,,Cincinnati -3.0,Cincinnati -2.5,Cincinnati -9.5,0.3,0.327,0.007,0.314,89.11,live,2026-11-21T14:07:10+00:00
+401862831,Sat Nov 21,12:00 PM,East Carolina @ Army,East Carolina: Emory Williams led last game (usual Mitch Griffis),Army -6.0,Army -6.2,East Carolina -13.5,0.08,0.094,0.004,0.091,0.0,live,2026-11-21T14:07:10+00:00
+401862834,Sat Nov 21,12:00 PM,Memphis @ Navy,,Memphis -2.5,Memphis -1.9,Memphis -9.5,0.28,0.314,0.014,0.3,585.93,live,2026-11-21T14:07:10+00:00
+401862835,Sat Nov 21,12:00 PM,North Texas @ Tulane,Tulane: Trace Johnson led last game (usual Kadin Semonza),North Texas -6.5,North Texas -11.9,Tulane +2.5,0.34,0.37,0.01,0.24,323.6,live,2026-11-21T14:07:10+00:00
+401858530,Sat Nov 21,12:00 PM,Northwestern @ Minnesota,Northwestern: Nicco Marchiol led last game (usual Aidan Chiles),Northwestern -2.5,Northwestern -5.2,Northwestern -6.5,0.35,0.398,0.028,0.472,5276.6,live,2026-11-21T14:07:10+00:00
+401858531,Sat Nov 21,12:00 PM,Ohio State @ Nebraska,Ohio State: Luke Fahey led last game (usual Julian Sayin); Julian Sayin (throwing shoulder) expected out for the season; true freshman Luke Fahey starting,Ohio State -3.0,Ohio State -6.9,Nebraska -9.5,0.16,0.193,0.023,0.128,131.33,live,2026-11-21T14:07:10+00:00
+401858309,Sat Nov 21,12:00 PM,Syracuse @ Boston College,,Syracuse -3.0,Syracuse -4.4,Syracuse -6.5,0.39,0.412,0.002,0.45,2858.66,live,2026-11-21T14:07:10+00:00
+401856748,Sat Nov 21,12:00 PM,Vanderbilt @ Florida,,Florida -13.5,Florida -12.7,Florida +1.5,0.83,0.843,0.003,0.83,0.0,live,2026-11-21T14:07:10+00:00
+401858310,Sat Nov 21,12:00 PM,Wake Forest @ Georgia Tech,,Wake Forest -21.0,Wake Forest -23.0,Georgia Tech +38.5,0.88,0.895,0.005,0.868,3159.81,live,2026-11-21T14:07:10+00:00
+401858533,Sat Nov 21,12:00 PM,Wisconsin @ Purdue,Wisconsin: Ryan Hopkins led last game (usual Colton Joseph),Wisconsin -6.0,Wisconsin -6.5,Purdue -9.5,0.13,0.141,0.001,0.134,0.0,live,2026-11-21T14:07:10+00:00
+401856749,Sat Nov 21,12:00 PM,Wofford @ Ole Miss,Wofford: Ethan Drumm led last game (usual JT Fayard),,Ole Miss -53.2,,,,,,,no Vegas line,2026-11-21T14:07:10+00:00
+401858305,Sat Nov 21,12:30 PM,North Carolina @ Virginia,,North Carolina +1.5,North Carolina -3.3,Virginia -6.5,0.33,0.372,0.022,0.255,25.24,live,2026-11-21T14:07:10+00:00
+401856868,Sat Nov 21,1:00 PM,Houston @ West Virginia,,Houston -7.0,Houston -8.0,West Virginia +24.5,0.85,0.892,0.032,0.879,0.0,live,2026-11-21T14:07:10+00:00
+401856750,Sat Nov 21,1:00 PM,Tennessee Tech @ Mississippi State,Mississippi State: Parker Puckett led last game (usual Kamario Taylor); Starter Kamario Taylor out for the season (turf toe); AJ Swann left the Texas game hurt and is uncertain,,Mississippi State -37.8,,,,,,,no Vegas line,2026-11-21T14:07:10+00:00
+401871080,Sat Nov 21,1:00 PM,Western Kentucky @ Liberty,Western Kentucky: Rodney Tisdale Jr. led last game (usual Brock Glenn),Liberty -17.5,Liberty -16.4,Liberty +2.5,0.9,0.909,-0.001,0.896,0.0,live,2026-11-21T14:07:10+00:00
+401862832,Sat Nov 21,2:00 PM,Charlotte @ Tulsa,Charlotte: Conner Harrell led last game (usual Cole Gonzales),Tulsa -22.5,Tulsa -27.5,Tulsa -5.5,0.87,0.883,0.003,0.938,0.0,live,2026-11-21T14:07:10+00:00
+401856746,Sat Nov 21,2:00 PM,Chattanooga @ Alabama,Chattanooga: Matthew Clemmer led last game (usual Battle Alberson),,Alabama -62.3,,,,,,,no Vegas line,2026-11-21T14:07:10+00:00
+401871081,Sat Nov 21,2:00 PM,Middle Tennessee @ Sam Houston,,Middle Tennessee -6.5,Middle Tennessee -4.2,Middle Tennessee -7.5,0.42,0.448,0.008,0.386,69.5,live,2026-11-21T14:07:10+00:00
+401871079,Sat Nov 21,2:00 PM,Missouri State @ Jacksonville State,Missouri State: Henry Belin IV led last game (usual Skyler Locklear),Jacksonville State -10.5,Jacksonville State -11.7,Missouri State +27.5,0.86,0.878,0.008,0.86,0.0,live,2026-11-21T14:07:10+00:00
+401858527,Sat Nov 21,2:30 PM,Iowa @ Illinois,,Iowa -8.5,Iowa -5.9,Illinois -7.5,0.09,0.121,0.021,0.161,0.0,live,2026-11-21T14:07:10+00:00
+401862833,Sat Nov 21,2:30 PM,South Florida @ Florida Atlantic,South Florida: Luke Kromenhoek led last game (usual Michael Van Buren Jr.),Florida Atlantic +1.5,Florida Atlantic -0.1,South Florida +14.5,0.84,0.871,0.021,0.847,0.0,live,2026-11-21T14:07:10+00:00
+401869929,Sat Nov 21,2:30 PM,UL Monroe @ App State,,App State -14.0,App State -12.4,UL Monroe +30.5,0.86,0.872,0.002,0.894,0.0,live,2026-11-21T14:07:10+00:00
+401869946,Sat Nov 21,3:00 PM,Coastal Carolina @ Louisiana,,Louisiana -10.5,Louisiana -10.2,Coastal Carolina +27.5,0.87,0.878,-0.002,0.882,0.0,live,2026-11-21T14:07:10+00:00
+401871077,Sat Nov 21,3:00 PM,Delaware @ New Mexico State,New Mexico State: Trey Hedden led last game (usual Adam Damante),Delaware -3.0,Delaware -5.5,Delaware -6.5,0.39,0.412,0.002,0.48,106.38,live,2026-11-21T14:07:10+00:00
+401871078,Sat Nov 21,3:00 PM,Florida International @ Kennesaw State,Kennesaw State: Landon Varnes led last game (usual Rickie Collins),Kennesaw State -2.5,Kennesaw State -6.5,Kennesaw State -9.5,0.28,0.314,0.014,0.419,0.0,live,2026-11-21T14:07:10+00:00
+401856755,Sat Nov 21,3:30 PM,Arkansas @ Texas,,Texas -20.5,Texas -20.0,Texas -13.5,0.67,0.702,0.012,0.69,2405.67,live,2026-11-21T14:07:10+00:00
+401858535,Sat Nov 21,3:30 PM,Indiana @ Washington,Indiana: Grant Wilson led last game (usual Josh Hoover),Indiana -7.5,Indiana -11.1,Washington +2.5,0.3,0.344,0.024,0.257,628.46,live,2026-11-21T14:07:10+00:00
+401856754,Sat Nov 21,3:30 PM,LSU @ Tennessee,,Tennessee +1.5,Tennessee -1.5,LSU -6.5,0.33,0.372,0.022,0.296,1859.03,live,2026-11-21T14:07:10+00:00
+401858304,Sat Nov 21,3:30 PM,NC State @ Florida State,,Florida State -10.5,Florida State -12.7,NC State +27.5,0.86,0.878,0.008,0.844,0.0,live,2026-11-21T14:07:10+00:00
+401861968,Sat Nov 21,3:30 PM,Old Dominion @ UConn,Old Dominion: Jaxon Potter led last game (usual Quinn Henicle),UConn -13.5,UConn -13.3,Old Dominion +33.5,0.91,0.917,-0.003,0.919,6.0,live,2026-11-21T14:07:10+00:00
+401858532,Sat Nov 21,3:30 PM,Rutgers @ Penn State,Rutgers: AJ Surace led last game (usual Dylan Lonergan),Penn State -26.5,Penn State -22.8,Penn State -9.5,0.86,0.883,0.013,0.824,10.38,live,2026-11-21T14:07:10+00:00
+401856747,Sat Nov 21,3:30 PM,Samford @ Auburn,Samford: Will Shields led last game (usual Gabarri Johnson),,Auburn -47.9,,,,,,,no Vegas line,2026-11-21T14:07:10+00:00
+401856871,Sat Nov 21,3:30 PM,Texas Tech @ Baylor,Texas Tech: Thomas Castellanos led last game (usual Will Hammond),Texas Tech -4.5,Texas Tech -1.3,Baylor +20.5,0.84,0.862,0.012,0.905,1227.03,live,2026-11-21T14:07:10+00:00
+401858528,Sat Nov 21,3:30 PM,UCLA @ Michigan,Michigan: Tommy Carr led last game (usual Bryce Underwood); UCLA: Ty Dieffenbach led last game (usual Nico Iamaleava),UCLA -3.5,UCLA -6.2,Michigan -9.5,0.16,0.184,0.014,0.138,14.07,live,2026-11-21T14:07:10+00:00
+401856752,Sat Nov 21,3:45 PM,Texas A&M @ Oklahoma,,Oklahoma -7.0,Oklahoma -5.6,Texas A&M +1.5,0.3,0.338,0.018,0.375,20.77,live,2026-11-21T14:07:10+00:00
+401869953,Sat Nov 21,4:00 PM,Georgia Southern @ Troy,,Georgia Southern -9.5,Georgia Southern -11.8,Troy -4.5,0.15,0.162,0.002,0.126,0.0,live,2026-11-21T14:07:10+00:00
+401869958,Sat Nov 21,4:00 PM,Georgia State @ Marshall,Georgia State: Ayden Pereira led last game (usual Cameran Brown),Georgia State +2.5,Georgia State -4.6,Marshall -9.5,0.29,0.314,0.004,0.164,16.66,live,2026-11-21T14:07:10+00:00
+401864543,Sat Nov 21,4:00 PM,Northern Illinois @ North Dakota State,,North Dakota State -25.5,North Dakota State -28.9,North Dakota State -6.5,0.9,0.909,-0.001,0.942,321.11,live,2026-11-21T14:07:10+00:00
+401871101,Sat Nov 21,4:00 PM,South Alabama @ Southern Miss,Southern Miss: John White led last game (usual Landy Lyddy); South Alabama: Bishop Davenport led last game (usual Jared Hollins),South Alabama -4.5,South Alabama -4.8,Southern Miss +20.5,0.83,0.862,0.022,0.857,0.0,live,2026-11-21T14:07:10+00:00
+401860920,Sat Nov 21,6:00 PM,Washington State @ Texas State,Washington State: Owen Eshelman led last game (usual Caden Pinnick),Texas State -13.5,Texas State -12.1,Washington State +30.5,0.86,0.879,0.009,0.898,0.0,live,2026-11-21T14:07:10+00:00
+401858534,Sat Nov 21,6:15 PM,Maryland @ USC,Maryland: Cardell Williams led last game (usual Malik Washington),USC -17.5,USC -16.5,Maryland +33.5,0.84,0.866,0.016,0.88,1520.21,live,2026-11-21T14:07:10+00:00
+401856865,Sat Nov 21,7:00 PM,Arizona @ Kansas State,Kansas State: Dillon Duff led last game (usual Avery Johnson),Arizona -7.5,Arizona -11.1,Kansas State +4.5,0.38,0.424,0.024,0.33,40.08,live,2026-11-21T14:07:10+00:00
+401869938,Sat Nov 21,7:00 PM,Arkansas State @ Louisiana Tech,,Louisiana Tech -14.5,Louisiana Tech -18.9,Arkansas State +30.5,0.85,0.865,0.005,0.787,0.0,live,2026-11-21T14:07:10+00:00
+401864544,Sat Nov 21,7:00 PM,UNLV @ San José State,,UNLV -6.5,UNLV -7.0,San José State -13.5,0.08,0.088,-0.002,0.082,0.0,live,2026-11-21T14:07:10+00:00
+401858302,Sat Nov 21,7:00 PM,Virginia Tech @ Miami,Miami: WR Malachi Toney (ankle surgery) out until the playoff; 40% of Miami offensive EPA on his touches in 2026 (12/game),Miami -20.5,Miami -28.1,Virginia Tech +41.5,0.91,0.927,0.007,0.823,2626.14,live,2026-11-21T14:07:10+00:00
+401860918,Sat Nov 21,7:30 PM,Colorado State @ Fresno State,,Fresno State -20.5,Fresno State -21.6,Fresno State -16.5,0.59,0.62,0.01,0.649,93.56,live,2026-11-21T14:07:10+00:00
+401856753,Sat Nov 21,7:30 PM,Georgia @ South Carolina,South Carolina: Cutter Woods led last game (usual Lanorris Sellers),Georgia -14.5,Georgia -17.0,South Carolina +24.5,0.73,0.764,0.014,0.707,1296.76,live,2026-11-21T14:07:10+00:00
+401856751,Sat Nov 21,7:30 PM,Kentucky @ Missouri,,Missouri -4.5,Missouri -6.5,Kentucky -7.5,0.16,0.186,0.016,0.151,0.0,live,2026-11-21T14:07:10+00:00
+401858306,Sat Nov 21,7:30 PM,Pittsburgh @ Louisville,Pittsburgh: Corey Dailey led last game (usual Mason Heintschel),Louisville -13.5,Louisville -12.8,Louisville -13.5,0.5,0.517,-0.003,0.497,23658.64,live,2026-11-21T14:07:10+00:00
+401858307,Sat Nov 21,7:30 PM,SMU @ Notre Dame,,Notre Dame -20.5,Notre Dame -23.3,Notre Dame -13.5,0.67,0.702,0.012,0.766,4024.51,live,2026-11-21T14:07:10+00:00
+401858308,Sat Nov 21,7:30 PM,Stanford @ California,,Stanford -2.5,Stanford -2.9,Stanford -10.5,0.25,0.277,0.007,0.286,117.08,live,2026-11-21T14:07:10+00:00
+401862836,Sat Nov 21,8:00 PM,UTSA @ UAB,,UTSA -6.0,UTSA -5.2,UTSA -7.5,0.41,0.434,0.004,0.413,1085.7,live,2026-11-21T14:07:10+00:00
+401856872,Sat Nov 21,9:00 PM,Utah @ TCU,,Utah -8.5,Utah -7.8,TCU +23.5,0.83,0.847,0.007,0.859,1.0,live,2026-11-21T14:07:10+00:00
+401860925,Sat Nov 21,9:30 PM,San Diego State @ Boise State,San Diego State: Stone Saunders led last game (usual Jayden Denegal),Boise State -17.5,Boise State -19.7,San Diego State +33.5,0.85,0.866,0.006,0.83,1289.15,live,2026-11-21T14:07:10+00:00
+401856870,Sat Nov 21,10:15 PM,Oklahoma State @ Arizona State,Arizona State: Jake Fette led last game (usual Cutter Boley); True freshman Jake Fette starting (one career start),Oklahoma State -2.5,Oklahoma State -1.0,Oklahoma State -9.5,0.28,0.314,0.014,0.278,566.65,live,2026-11-21T14:07:10+00:00
+401864541,Sat Nov 21,10:30 PM,Hawai'i @ Nevada,,Nevada -6.0,Nevada -2.2,Hawai'i -10.5,0.1,0.118,0.008,0.179,0.0,live,2026-11-21T14:07:10+00:00
+401860919,Sat Nov 21,10:30 PM,Utah State @ Oregon State,Oregon State: Maalik Murphy led last game (usual Braden Atkinson); Utah State: McCae Hillstead led last game (usual Grady Brosterhous),Oregon State -8.5,Oregon State -11.9,Utah State -10.5,0.07,0.087,0.007,0.055,0.0,live,2026-11-21T14:07:10+00:00
