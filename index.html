@@ -293,15 +293,21 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
     <p class="note">What each team has done, not how good it is. Built for a top-25 ballot: the power rating on the Ratings tab answers "who would win?", this answers "who has earned it?"</p>
     <p class="note"><b>PnP Resume</b> is our top 25. It blends wins above a playoff team (70%) with Colley (30%), using only actual wins and losses, then respects head-to-head: when two teams are comparable (the winner has no more losses, the two are close on the blend, and the move is 6 spots or fewer), the winner ranks directly above the team it beat, unless that would put it above a team that beat it. "Elite team matches" is the chance a top-4 team would match the record against the same schedule; lower is harder. The other columns are the pieces, so you can check every spot.</p>
     <p class="note">Wins above a playoff team = actual wins minus the wins a playoff-caliber team (our No. <b data-draw="rs-bench">—</b>) would expect against the same schedule, at the same sites. Opponent strength comes from our ratings; the team's own rating plays no part, and margin doesn't matter, only wins and losses. "Playoff team matches" is the chance that team would do as well or better: lower is a harder record to earn. Colley is the classic computer ranking from wins and losses alone, adjusted for schedule, with no margin, site or preseason opinion. Schedule rank = how many losses a playoff team would expect against it (No. 1 is the hardest). Rating vs resume = power-rating rank minus resume rank: positive means the resume is better than the team. FCS opponents count, as one pooled FCS team. Ranks of best wins and losses are power-rating ranks.</p>
+    <p class="note">PnP score = the value behind the PnP Resume: 0.7 × wins above a playoff team + 0.3 × Colley, each in standard deviations across FBS (0 = an average FBS resume, +2 = about the best). Head-to-head can then move a team up past one it beat (see the Head-to-head column), so the order can differ slightly from the score. Colley rating = the Colley value itself (0.5 = an average team). CFP Projection = where we expect the selection committee to rank each team in its next release, from a model fit on every committee ranking 2015–2025: its last ranking, Saturday's results, wins above a playoff team, Colley, our rating, conference and, from Sunday afternoon, the AP poll; teams that won keep their order among themselves. Tested on seasons it hadn't seen, it misses a team’s rank by about 1 to 1.3 spots on average (vs 1.5 for the AP poll) and gets 11.5 of the 12 playoff teams. Once the committee has ranked every game played, it shows the committee's actual ranking. Proj. seed = the bracket if the season ended with that ranking under the 2026 rules: ACC, Big Ten, Big 12 and SEC champions (highest-ranked team in each, for now), the highest-ranked team from the American, CUSA, MAC, Mountain West, Pac-12 or Sun Belt, then the next highest-ranked teams; seeds go straight by rank and the top four get byes. CFP (last) = the committee's most recent actual ranking.</p>
+    <p class="note" data-draw="rs-field"></p>
     <p class="note">Deserved versions take the luck out. Deserved wins = for each game, the chance a team wins when it plays the way it did (its play-by-play efficiency margin, with garbage time removed; the scoreboard and site play no part), added up over the season. Luck = actual wins minus deserved wins: +2 means about two more wins than the play earned. Deserved resume and deserved Colley rebuild both rankings from those deserved results. Composite = the average of all four ranks. Some of what looks like luck is real: since 2015, teams that won more than their play earned kept beating expectations a little, from things efficiency misses such as special teams and finishing drives. So read luck as "this record flatters them", not as a prediction.</p>
     <div class="controls">
       <input type="search" class="q-resume" placeholder="Search teams or conferences" aria-label="Search resume rankings">
-      <label class="chk">Rank by <select class="rs-sort" aria-label="Rank resume table by"><option value="pnp">PnP Resume</option><option value="wab">wins above a playoff team</option><option value="dwab">deserved resume</option><option value="colley">Colley</option><option value="dcolley">deserved Colley</option><option value="composite">composite of all four</option><option value="luck">luck (most first)</option></select></label>
+      <label class="chk">Rank by <select class="rs-sort" aria-label="Rank resume table by"><option value="pnp">PnP Resume</option><option value="cfp">CFP Projection</option><option value="wab">wins above a playoff team</option><option value="dwab">deserved resume</option><option value="colley">Colley</option><option value="dcolley">deserved Colley</option><option value="composite">composite of all four</option><option value="luck">luck (most first)</option></select></label>
     </div>
     <div class="scroll">
       <table id="resume-table" data-source="resume" data-row-key="team">
         <thead><tr>
           <th data-field="pnp_rank">PnP Resume</th>
+          <th data-field="pnp_score">PnP score</th>
+          <th data-field="cfp_proj">CFP Projection</th>
+          <th data-field="cfp_seed">Proj. seed</th>
+          <th class="hide-narrow" data-field="cfp_rank">CFP (last)</th>
           <th class="l" data-field="team">Team</th>
           <th class="l hide-narrow" data-field="conf">Conf</th>
           <th data-field="wins">W</th>
@@ -311,6 +317,7 @@ select, input { font: inherit; color: var(--color-fg); background: var(--color-p
           <th class="hide-narrow" data-field="p_match4">Elite team matches</th>
           <th data-field="resume_rank">WAB rank</th>
           <th data-field="colley_rank">Colley</th>
+          <th class="hide-narrow" data-field="colley">Colley rating</th>
           <th data-field="xwins">Deserved W</th>
           <th data-field="luck">Luck</th>
           <th data-field="d_resume_rank">Deserved resume</th>
@@ -802,25 +809,31 @@ one('rs-under-p', 'resume_gaps', (r) => r.find((x) => x.kind === 'under'), (r) =
 one('rs-under-r', 'resume_gaps', (r) => r.find((x) => x.kind === 'under'), (r) => CF.f0(r.resume_rank));
 dash.draw('resume-body', (tbody) => {
   const s = dash.data('resume');
-  if (s.status === 'error') return CF.failRow(tbody, 21);
+  if (s.status === 'error') return CF.failRow(tbody, 26);
   if (s.status !== 'ok') return tbody.replaceChildren();
   const q = CF.query('.q-resume');
   let sort = 'pnp';
   document.querySelectorAll('.cf .rs-sort').forEach((el) => { sort = el.value || sort; });
   const n = CF.num;
-  const by = { pnp: (r) => n(r.pnp_rank), wab: (r) => n(r.resume_rank), dwab: (r) => n(r.d_resume_rank), colley: (r) => n(r.colley_rank),
+  const by = { pnp: (r) => n(r.pnp_rank), cfp: (r) => (Number.isNaN(n(r.cfp_proj)) ? 99 : n(r.cfp_proj)), wab: (r) => n(r.resume_rank), dwab: (r) => n(r.d_resume_rank), colley: (r) => n(r.colley_rank),
                dcolley: (r) => n(r.d_colley_rank), composite: (r) => n(r.composite), luck: (r) => -n(r.luck) }[sort] || ((r) => n(r.pnp_rank));
   let view = s.data.filter((r) => !q || String(r.team).toLowerCase().includes(q) || String(r.conf).toLowerCase().includes(q));
   view = view.slice().sort((a, b) => by(a) - by(b) || n(a.pnp_rank) - n(b.pnp_rank));
   tbody.replaceChildren(...view.map((r) => {
     const { tr, cell } = CF.makeRow(null);
-    cell(CF.intOr(n(r.pnp_rank)), 'big'); cell(r.team, 'l team'); cell(r.conf, 'l hide-narrow');
+    cell(CF.intOr(n(r.pnp_rank)), 'big');
+    const ps = n(r.pnp_score); cell(Number.isNaN(ps) ? '—' : (ps < 0 ? '−' : '+') + d3.format('.2f')(Math.abs(ps)));
+    cell(Number.isNaN(n(r.cfp_proj)) ? '—' : CF.intOr(n(r.cfp_proj)), 'big');
+    const sd = n(r.cfp_seed); cell(Number.isNaN(sd) ? '—' : CF.intOr(sd) + (sd <= 4 ? ' (bye)' : ''));
+    cell(Number.isNaN(n(r.cfp_rank)) ? '—' : CF.intOr(n(r.cfp_rank)), 'hide-narrow');
+    cell(r.team, 'l team'); cell(r.conf, 'l hide-narrow');
     cell(CF.intOr(n(r.wins))); cell(CF.intOr(n(r.losses)));
     const w = n(r.wab); cell(Number.isNaN(w) ? '—' : fWab(w).replace('-', '−'), 'big');
     const p = n(r.p_match); cell(Number.isNaN(p) ? '—' : (p < 0.01 ? '<1%' : Math.round(100 * p) + '%'), 'hide-narrow');
     const p4 = n(r.p_match4); cell(Number.isNaN(p4) ? '—' : (p4 < 0.01 ? '<1%' : Math.round(100 * p4) + '%'), 'hide-narrow');
     cell(CF.intOr(n(r.resume_rank)));
     cell(CF.intOr(n(r.colley_rank)));
+    const cv = n(r.colley); cell(Number.isNaN(cv) ? '—' : d3.format('.3f')(cv), 'hide-narrow');
     const xw = n(r.xwins); cell(Number.isNaN(xw) ? '—' : CF.f1(xw));
     const lk = n(r.luck); cell(Number.isNaN(lk) ? '—' : CF.sgn1(lk), lk >= 1.5 ? 'down' : lk <= -1.5 ? 'up' : '');
     cell(CF.intOr(n(r.d_resume_rank))); cell(CF.intOr(n(r.d_colley_rank)), 'hide-narrow');
@@ -834,6 +847,13 @@ dash.draw('resume-body', (tbody) => {
     cell(r.pnp_note ? r.pnp_note.charAt(0).toUpperCase() + r.pnp_note.slice(1) : '', 'l qb hide-narrow');
     return tr;
   }));
+});
+dash.draw('rs-field', (el) => {
+  const s = dash.data('resume'); if (s.status !== 'ok') { el.textContent = ''; return; }
+  const f = s.data.filter((r) => !Number.isNaN(CF.num(r.cfp_seed))).sort((a, b) => CF.num(a.cfp_seed) - CF.num(b.cfp_seed));
+  if (!f.length) { el.textContent = ''; return; }
+  el.replaceChildren(Object.assign(document.createElement('b'), { textContent: 'Projected field: ' }),
+    f.map((r) => `${CF.intOr(CF.num(r.cfp_seed))}. ${r.team}`).join(' · '));
 });
 document.querySelectorAll('.cf .q-resume').forEach((el) => el.addEventListener('input', () => dash.draw('resume-body')));
 document.querySelectorAll('.cf .rs-sort').forEach((el) => el.addEventListener('change', () => dash.draw('resume-body')));
