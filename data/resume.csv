@@ -4,26 +4,26 @@ pnp_rank,pnp_score,pnp_note,p_match4,resume_rank,team,conf,wins,losses,wab,p_mat
 3,1.993,,0.389,3,Utah,Big 12,11,0,1.7,0.143,1,0.92,10.05,0.95,0.76,7,5,0.846,3,4.0,13,10,65,BYU (No. 18),,2.0,2.0,2.0
 4,1.749,beat Miami head-to-head,0.666,7,Notre Dame,FBS Independents,10,1,1.03,0.338,5,0.876,10.08,-0.08,1.11,4,1,0.887,4,4.25,2,-2,50,Miami (No. 6),BYU (No. 18),6.0,5.0,5.0
 5,1.927,,0.396,4,Miami,ACC,10,1,1.69,0.138,4,0.879,9.31,0.69,1.0,5,6,0.812,5,4.75,6,1,28,Wake Forest (No. 5),Notre Dame (No. 2),7.0,6.0,6.0
-6,1.684,beat Alabama head-to-head,0.677,6,Tennessee,SEC,9,2,1.2,0.308,10,0.807,8.42,0.58,0.62,8,12,0.753,8,9.0,7,1,20,Alabama (No. 4),"Texas (No. 3), South Carolina (No. 28)",9.0,8.0,8.0
+6,1.684,beat Alabama head-to-head,0.677,6,Tennessee,SEC,9,2,1.2,0.308,10,0.807,8.42,0.58,0.62,8,12,0.753,8,9.0,7,1,20,Alabama (No. 4),"Texas (No. 3), South Carolina (No. 28)",9.0,7.0,7.0
 7,1.729,,0.599,5,Alabama,SEC,9,2,1.33,0.252,8,0.813,8.89,0.11,1.22,3,7,0.793,6,5.75,4,-3,16,LSU (No. 8),"Georgia (No. 1), Tennessee (No. 7)",3.0,3.0,3.0
-8,1.631,,0.754,9,UCLA,Big Ten,10,1,0.72,0.449,6,0.853,10.26,-0.26,0.98,6,4,0.856,7,6.25,17,9,64,Oregon (No. 9),Michigan (No. 42),4.0,7.0,7.0
+8,1.631,,0.754,9,UCLA,Big Ten,10,1,0.72,0.449,6,0.853,10.26,-0.26,0.98,6,4,0.856,7,6.25,17,9,64,Oregon (No. 9),Michigan (No. 42),4.0,8.0,8.0
 9,1.615,,0.683,8,Wake Forest,ACC,10,1,0.92,0.367,9,0.809,9.23,0.77,0.16,10,14,0.737,9,10.25,5,-4,55,Louisville (No. 14),Miami (No. 6),11.0,10.0,10.0
 10,1.524,,0.83,11,Texas Tech,Big 12,10,1,0.5,0.538,7,0.821,8.52,1.48,-0.98,20,17,0.706,13,13.75,19,9,69,Arizona (No. 27),Cincinnati (No. 73),12.0,11.0,11.0
 11,1.494,,0.825,10,BYU,Big 12,9,2,0.55,0.504,11,0.794,8.2,0.8,-0.25,16,11,0.755,10,12.0,18,7,32,Notre Dame (No. 2),"UCF (No. 50), Utah (No. 13)",10.0,9.0,9.0
 12,1.368,,0.896,13,Indiana,Big Ten,9,2,0.16,0.629,12,0.778,8.87,0.13,0.04,14,10,0.756,11,12.25,11,-1,41,Nebraska (No. 22),"Ohio State (No. 10), Washington (No. 30)",8.0,12.0,
 13,1.309,,0.902,14,Iowa,Big Ten,9,2,0.12,0.641,14,0.747,8.02,0.98,-0.86,19,24,0.663,17,17.75,16,3,45,Wisconsin (No. 26),"Ohio State (No. 10), Minnesota (No. 56)",15.0,14.0,
-14,1.209,beat Ole Miss head-to-head,0.929,15,Florida,SEC,7,4,-0.1,0.679,19,0.72,5.88,1.12,-1.22,25,39,0.595,22,24.5,21,7,3,Texas (No. 3),"South Carolina (No. 28), Oklahoma (No. 15), Missouri (No. 20), Georgia (No. 1)",24.0,22.0,
-15,1.136,"moved with Oklahoma (beat Oklahoma, who beat Ole Miss)",0.932,16,Kentucky,SEC,7,4,-0.14,0.679,24,0.681,4.91,2.09,-2.23,42,67,0.5,37,37.25,35,20,4,LSU (No. 8),"Alabama (No. 4), Florida (No. 21), Tennessee (No. 7), Missouri (No. 20)",16.0,18.0,
-16,1.102,beat Ole Miss head-to-head,0.965,21,Oklahoma,SEC,7,4,-0.5,0.79,18,0.721,7.14,-0.14,-0.37,17,19,0.687,19,18.75,15,-1,12,Texas (No. 3),"Kentucky (No. 35), South Carolina (No. 28), Michigan (No. 42), Georgia (No. 1)",22.0,19.0,
-17,1.258,,0.885,12,Ole Miss,SEC,7,4,0.25,0.574,21,0.693,6.82,0.18,0.07,12,23,0.671,14,17.0,12,-5,1,LSU (No. 8),"Georgia (No. 1), Florida (No. 21), Texas (No. 3), Oklahoma (No. 15)",25.0,23.0,
+14,1.209,beat Ole Miss head-to-head,0.929,15,Florida,SEC,7,4,-0.1,0.679,19,0.72,5.88,1.12,-1.22,25,39,0.595,22,24.5,21,7,3,Texas (No. 3),"South Carolina (No. 28), Oklahoma (No. 15), Missouri (No. 20), Georgia (No. 1)",24.0,20.0,
+15,1.136,"moved with Oklahoma (beat Oklahoma, who beat Ole Miss)",0.932,16,Kentucky,SEC,7,4,-0.14,0.679,24,0.681,4.91,2.09,-2.23,42,67,0.5,37,37.25,35,20,4,LSU (No. 8),"Alabama (No. 4), Florida (No. 21), Tennessee (No. 7), Missouri (No. 20)",16.0,25.0,
+16,1.102,beat Ole Miss head-to-head,0.965,21,Oklahoma,SEC,7,4,-0.5,0.79,18,0.721,7.14,-0.14,-0.37,17,19,0.687,19,18.75,15,-1,12,Texas (No. 3),"Kentucky (No. 35), South Carolina (No. 28), Michigan (No. 42), Georgia (No. 1)",22.0,18.0,
+17,1.258,,0.885,12,Ole Miss,SEC,7,4,0.25,0.574,21,0.693,6.82,0.18,0.07,12,23,0.671,14,17.0,12,-5,1,LSU (No. 8),"Georgia (No. 1), Florida (No. 21), Texas (No. 3), Oklahoma (No. 15)",25.0,21.0,
 18,1.228,,0.95,18,Oregon,Big Ten,8,3,-0.28,0.734,13,0.764,8.24,-0.24,-0.04,15,8,0.769,12,13.5,9,-9,26,Ohio State (No. 10),"UCLA (No. 17), Oklahoma State (No. 34), Illinois (No. 43)",13.0,13.0,
 19,1.188,,0.946,17,USC,Big Ten,8,3,-0.28,0.741,15,0.738,5.82,2.18,-2.47,48,41,0.588,25,30.25,24,5,25,Ohio State (No. 10),"Oregon (No. 9), Wisconsin (No. 26), Indiana (No. 11)",18.0,15.0,
-20,1.092,,0.951,19,Ohio State,Big Ten,7,4,-0.37,0.749,22,0.692,7.44,-0.44,0.07,13,16,0.711,16,17.5,10,-10,9,Indiana (No. 11),"Oregon (No. 9), Texas (No. 3), USC (No. 24), Nebraska (No. 22)",14.0,21.0,
+20,1.092,,0.951,19,Ohio State,Big Ten,7,4,-0.37,0.749,22,0.692,7.44,-0.44,0.07,13,16,0.711,16,17.5,10,-10,9,Indiana (No. 11),"Oregon (No. 9), Texas (No. 3), USC (No. 24), Nebraska (No. 22)",14.0,22.0,
 21,1.066,,0.989,23,UTSA,American Athletic,9,2,-0.71,0.933,16,0.732,6.08,2.92,-3.63,74,61,0.518,45,43.5,77,56,74,Texas State (No. 46),"Texas (No. 3), Florida Atlantic (No. 84)",,,
-22,1.025,,0.992,26,Boise State,Mountain West,9,2,-0.84,0.942,17,0.728,9.09,-0.09,-0.75,18,13,0.747,18,18.5,47,25,80,Texas State (No. 46),"San Diego State (No. 96), Oregon (No. 9)",17.0,24.0,12.0
+22,1.025,,0.992,26,Boise State,Mountain West,9,2,-0.84,0.942,17,0.728,9.09,-0.09,-0.75,18,13,0.747,18,18.5,47,25,80,Texas State (No. 46),"San Diego State (No. 96), Oregon (No. 9)",17.0,23.0,12.0
 23,1.021,,0.96,20,Auburn,SEC,7,4,-0.45,0.785,29,0.659,5.77,1.23,-1.68,31,51,0.567,30,32.75,25,2,11,Georgia (No. 1),"Florida (No. 21), LSU (No. 8), Tennessee (No. 7), Ole Miss (No. 12)",,,
-24,0.974,,0.972,22,Missouri,SEC,7,4,-0.63,0.823,28,0.661,6.64,0.36,-0.99,21,37,0.609,24,27.0,20,-4,14,Florida (No. 21),"Texas (No. 3), Mississippi State (No. 63), Ole Miss (No. 12), Georgia (No. 1)",,25.0,
-25,0.971,,0.982,25,Louisville,ACC,8,3,-0.82,0.867,23,0.69,8.95,-0.95,0.12,11,9,0.756,14,17.0,14,-11,40,SMU (No. 37),"Wake Forest (No. 5), Ole Miss (No. 12), NC State (No. 58)",23.0,20.0,
+24,0.974,,0.972,22,Missouri,SEC,7,4,-0.63,0.823,28,0.661,6.64,0.36,-0.99,21,37,0.609,24,27.0,20,-4,14,Florida (No. 21),"Texas (No. 3), Mississippi State (No. 63), Ole Miss (No. 12), Georgia (No. 1)",,24.0,
+25,0.971,,0.982,25,Louisville,ACC,8,3,-0.82,0.867,23,0.69,8.95,-0.95,0.12,11,9,0.756,14,17.0,14,-11,40,SMU (No. 37),"Wake Forest (No. 5), Ole Miss (No. 12), NC State (No. 58)",23.0,19.0,
 26,0.966,,0.997,24,Liberty,Conference USA,10,1,-0.74,0.978,25,0.674,9.73,0.27,-1.01,22,18,0.703,21,22.25,54,28,136,Delaware (No. 94),James Madison (No. 67),,,
 27,0.948,,0.99,28,Houston,Big 12,8,3,-1.07,0.914,20,0.717,6.86,1.14,-2.21,40,34,0.616,26,30.5,36,9,54,Oklahoma State (No. 34),"Texas Tech (No. 19), Utah (No. 13), Colorado (No. 74)",20.0,17.0,
 28,0.892,,0.996,27,Louisiana Tech,Conference USA,9,2,-0.89,0.971,31,0.65,8.76,0.24,-1.13,24,22,0.673,23,26.0,45,17,83,Army (No. 86),"LSU (No. 8), Baylor (No. 33)",,,
